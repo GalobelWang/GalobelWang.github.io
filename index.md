@@ -8,9 +8,9 @@ layout: page
 
 Here is **Zhenpeng Wang (Galobel, 王振澎)**.<br>
 
-I am a graduate student in the Department of Engineering at the University of Cambridge, advised by [Prof. Özgür Akan](https://ioe.eng.cam.ac.uk/directory/akan), within [Internet of Everything (IoE) Group](https://ioe.eng.cam.ac.uk/). I also spent a lovely summer research program with [Prof. Pietro Liò](https://www.cl.cam.ac.uk/~pl219/) at [Artificial Intelligence Group](https://www.cl.cam.ac.uk/research/ai/). Prior to Cambridge,  I have worked on System Engineering, Cybersecurity and Wireless Communication with [Prof. Zhezhuang Xu](https://scholar.google.com.hk/citations?user=iZ7LQRkAAAAJ&hl=zh-CN) and [Dr. Meng Yuan](https://myuan27.github.io/). Recently, I was honored to be selected as **AAAI-2024 and KDD-2024 Undergraduate Scholars**.<br>
+I am a PhD student in the Department of Mathematics at the University of Hong Kong, advised by [Prof. Guangyue Han](https://hkumath.hku.hk/~ghan/), within [Computational Mathematics Research Group](https://hkumath.hku.hk/web/research/cfm.php). Prior to the University of Hong Kong, I have worked on Dynamic System and Algebraic Topology with [Prof. Alexey Nikitin](https://www.researchgate.net/profile/Alexey-Nikitin-3) and [Prof. Tatiana N. Fomenko](https://scholar.google.com/citations?user=Q5VuN08AAAAJ). Recently, I was honored to be selected as **Members of the international cooperation and training programs with Russia, Ukraine, and Belarus**.<br>
 
-If you are interested in any aspect of me, I am always open to discussions and collaborations. Feel free to reach out to me at - hc663 [at] cam.ac.uk
+If you are interested in any aspect of me, I am always open to discussions and collaborations. Feel free to reach out to me at - u3011717 [at] connect.hku.hk
 
 ---
 
