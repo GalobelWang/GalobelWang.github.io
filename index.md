@@ -4,7 +4,7 @@ layout: page
 
 # About Me
 
-<img src="https://caihanlin.com/caihanlin.jpg" class="floatpic">
+<img src="images/wangzhenpeng.jpg" class="floatpic">
 
 Here is **Zhenpeng Wang (Galobel, 王振澎)**.<br>
 
