@@ -4,7 +4,7 @@ layout: page
 
 # About Me
 
-<img src="images/wangzhenpeng.jpg" class="floatpic">
+<img src="images/wang1zhenpeng.jpg" class="floatpic">
 
 Here is **Zhenpeng Wang (Galobel, 王振澎)**.<br>
 
