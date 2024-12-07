@@ -42,7 +42,6 @@ I really enjoy the joy of playing games in a five-stack with friends and the adr
 
 <div>
 <img src="/images/family1.jpg">
-<img src="/images/family2.jpg">
 </div>
 <br>
 ## My Dog
