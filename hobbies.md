@@ -6,15 +6,6 @@ title: Hobbies
 
 # Hobbies
 
-## Swimming & Surfing
-
-<div class="third">
-<img src="/images/swimming2.JPG">
-<img src="/images/swimming.JPG">
-<img src="/images/surfing1.JPG">
-</div>
-<br>Swimming removes my worries, refreshes my body, and brings me courage to address any challenges. I extremely enjoy the feeling of being immersed in the water. Besides, I am a member of the Swimming Team at Fuzhou University, where I meet many sincere friends. I have reached **China National Second-level athlete Standard** in 50m breaststroke and won **Five Gold Medals** during my 15-year swimming career. Recently, I am also keen on surfing.
-
 ## Workshop
 
 <div class="third">
@@ -31,18 +22,18 @@ title: Hobbies
 
 I previously enjoyed long-distance running, [vlog making](https://space.bilibili.com/594030035), and computer game developing/playing. However, I have no time to do any of these things recently.
 
-## My Cat
+## My Dog
 
-She is my love. Her name is Qbao (Q宝).
+I am a dog person. His name is Lucky.
 
 <div>
-<img src="/images/cat.JPG">
+<img src="images/dog.jpg">
 </div>
 <br>
 
 ## Chat with me
 
-**Jan 2023:** I have set up the [online-coffee-time](https://calendly.com/lancecai/meet-with-lance) (Inspired by [Shangzhe Wu](https://elliottwu.com/)). Welcome to chat with me!
+**Jan 2023:** I have set up the [online-discussion-time](https://calendly.com/hkuzpwang/30min). Welcome to chat with me!
 
 <!-- Calendly inline widget begin -->
 
