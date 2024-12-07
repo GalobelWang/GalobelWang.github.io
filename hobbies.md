@@ -27,7 +27,7 @@ I previously enjoyed long-distance running, [vlog making](https://space.bilibili
 I am a dog person. His name is Lucky.
 
 <div>
-<img src="images/dog.jpg">
+<img src="/images/dog.jpg">
 </div>
 <br>
 
@@ -37,7 +37,7 @@ I am a dog person. His name is Lucky.
 
 <!-- Calendly inline widget begin -->
 
-<div class="calendly-inline-widget" data-url="https://calendly.com/lancecai/meet-with-lance" style="min-width:320px;height:630px;"></div>
+<div class="calendly-inline-widget" data-url="https://calendly.com/hkuzpwang/30min" style="min-width:320px;height:630px;"></div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <!-- Calendly inline widget end -->
 
