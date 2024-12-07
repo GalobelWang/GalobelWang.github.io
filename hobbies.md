@@ -27,6 +27,7 @@ In my studies of real analysis, complex analysis, and functional analysis, I hav
 When studying Probability Theory and Mathematical Statistics, in addition to reviewing relevant lecture notes from Moscow University, I also read "A Probability Path" by Sidney Resnick. The latter rewrites probability theory using the language of measure theory and real analysis, and all theorems are given rigorous and detailed proofs. 
 
 For every course offered by the university, I dedicate my free time to reading textbooks by other authors, not just limiting myself to the school's lectures and materials. Although this has consumed a considerable amount of my time and involved going through a lot of repetitive content, different authors possess distinct logical approaches and unique insights. They have provided me with various ways of thinking and emphasis on understanding new knowledge. In the proof of some theorems, Walter Rudin's proofs are more innovative, placing greater importance on thought processes; Vladimir A. Zorich's proofs are more systematic; Sidney Resnick's proofs are exceptionally comprehensive; Elias M. Stein's proofs are more concise and clear, with a very definite purpose. The diversity in theorem proofing by these authors has also influenced my mathematical thinking and approach, guiding me on when to follow conventional methods, when to engage in critical thinking, and when to be more creative, such as in constructing appropriate variable relationships. I have also self-studied a significant amount of extracurricular knowledge. I have learned point-set topology and some content on algebraic topology, including homology theory. To engage in research, I taught myself commutative algebra and parts of algebraic geometry. I have also encountered Galois theory.
+<br>
 
 ## Valorant
 
@@ -35,15 +36,15 @@ For every course offered by the university, I dedicate my free time to reading t
 </div>
 
 I really enjoy the joy of playing games in a five-stack with friends and the adrenaline rush when clutching rounds and winning intense moments.
-
+<br>
 
 ## My Family
 
-<div class="second">
+<div>
 <img src="/images/family1.jpg">
 <img src="/images/family2.jpg">
 </div>
-
+<br>
 ## My Dog
 
 I am a dog person. His name is Lucky.
