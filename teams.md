@@ -8,7 +8,7 @@ title: Teams
 
 ## Motivation
 
-As a youth from southern Fujian (Hokkien), entrepreneurial spirit runs in my family's and my own bones. From a young age, we were instilled with the belief that one must become their own "boss" and setup their own business. My aspiration is to become a serial entrepreneur.<br>
+Mathematics is not just a subject, but also a beautiful language for exploring truth. Through establishing a mathematics association, we hope to bring together all students who love mathematics, share the joy of problem-solving, explore the beauty of mathematics, and experience the charm of logical reasoning.
 
 ---
 
