@@ -30,7 +30,7 @@ For every course offered by the university, I dedicate my free time to reading t
 
 ## Valorant
 
-<div class="third">
+<div>
 <img src="/images/game.jpg">
 </div>
 
@@ -39,7 +39,7 @@ I really enjoy the joy of playing games in a five-stack with friends and the adr
 
 ## My Family
 
-<div class="third">
+<div class="second">
 <img src="/images/family1.jpg">
 <img src="/images/family2.jpg">
 </div>
