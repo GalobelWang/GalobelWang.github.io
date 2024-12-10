@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /blogs/Fourier analysis/index.html
+permalink: /blogs/Fourieranalysis/index.html
 title: Fourier analysis
 ---
 
