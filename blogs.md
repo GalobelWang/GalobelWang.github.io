@@ -8,7 +8,7 @@ title: Blogs
 
 ### 2024
 
-- [Fourier analysis](https://galobelwang.github.io/blogs/Fourier anslysis/)
+- [Fourier analysis](https://galobelwang.github.io/blogs/Fourier analysis/)
 
 <br>
 
