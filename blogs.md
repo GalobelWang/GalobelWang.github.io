@@ -9,6 +9,7 @@ title: Blogs
 ### 2024
 
 - [Fourier analysis](https://galobelwang.github.io/blogs/Fourieranalysis/)
+- [Real analysis and Functional analysis](https://galobelwang.github.io/blogs/RealFunctional/)
 
 
 <br>
