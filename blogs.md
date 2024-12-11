@@ -18,7 +18,7 @@ title: Blogs
 - [Numerical Linear Algebra](https://galobelwang.github.io/blogs/numericalLA/)
 - [Stability Theory](https://galobelwang.github.io/blogs/StabilityTheory/)
 - [Galois Theory](https://galobelwang.github.io/blogs/Galois/)
-- [Algebra](https://galobelwang.github.io/blogs/algebra/)
+- [Abstract Algebra](https://galobelwang.github.io/blogs/algebra/)
 <br>
 
 ## HKU
