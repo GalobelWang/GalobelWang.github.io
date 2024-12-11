@@ -66,7 +66,7 @@ I am a dog person. His name is Lucky.
 
 ## Chat with me
 
-**Jan 2023:** I have set up the [online-discussion-time](https://calendly.com/hkuzpwang/30min). Welcome to chat with me!
+**Dec 2024:** I have set up the [online-discussion-time](https://calendly.com/hkuzpwang/30min). Welcome to chat with me!
 
 <!-- Calendly inline widget begin -->
 
