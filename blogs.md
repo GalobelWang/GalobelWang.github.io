@@ -16,5 +16,7 @@ title: Blogs
 - [Integration on Manifolds](https://galobelwang.github.io/blogs/Integration/)
 - [Mathematical Physics Equations](https://galobelwang.github.io/blogs/PDE/)
 - [Numerical Linear Algebra](https://galobelwang.github.io/blogs/numericalLA/)
-- [Numerical Linear Algebra](https://galobelwang.github.io/blogs/StabilityTheory/)
+- [Stability Theory](https://galobelwang.github.io/blogs/StabilityTheory/)
+- [Galois Theory](https://galobelwang.github.io/blogs/Galois/)
+- [Algebra](https://galobelwang.github.io/blogs/algebra/)
 <br>
