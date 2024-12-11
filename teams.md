@@ -21,6 +21,13 @@ Mathematics is not just a subject, but also a beautiful language for exploring t
 
 ---
 
+## Guiding Principle
+
+Pursue through observation; a small step leads to a thousand miles（执象而求，咫尺千里）
+
+
+---
+
 ## Some Group Photos
 
 <div>
