@@ -4,9 +4,9 @@ permalink: /blogs/index.html
 title: Blogs
 ---
 
-# 数学笔记
+# Mathematics Notes
 
-## 俄罗斯数学笔记
+## MSU
 - [Fourier Analysis](https://galobelwang.github.io/blogs/Fourieranalysis/)
 - [Real Analysis and Functional Analysis](https://galobelwang.github.io/blogs/RealFunctional/)
 - [Complex Analysis](https://galobelwang.github.io/blogs/Complexanalysis/)
@@ -20,3 +20,8 @@ title: Blogs
 - [Galois Theory](https://galobelwang.github.io/blogs/Galois/)
 - [Algebra](https://galobelwang.github.io/blogs/algebra/)
 <br>
+
+## HKU
+
+<br>
+# Chinese blogs
