@@ -9,7 +9,7 @@ title: Hobbies
 ## Mathematics
 
 <div>
-<img src="/images/study2.jpg">
+<img src="/images/daishu.jpg">
 </div>
 <br>
 As a mathematics student, I have always held myself to high standards, ensuring that every course I take has a solid foundation, rigorous logic, and a reasonable system framework. For each course, I use LaTeX to write my notes, and I also refer to many books by other authors. I integrate the more concise and clear theorem proof processes, more rigorous definitions, innovative course structures, and interesting ways of thinking into my notes. 
