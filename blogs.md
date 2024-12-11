@@ -6,8 +6,7 @@ title: Blogs
 
 ## 数学笔记
 
-### 2024
-
+###俄罗斯数学笔记
 - [Fourier Analysis](https://galobelwang.github.io/blogs/Fourieranalysis/)
 - [Real Analysis and Functional Analysis](https://galobelwang.github.io/blogs/RealFunctional/)
 - [Complex Analysis](https://galobelwang.github.io/blogs/Complexanalysis/)
@@ -17,4 +16,5 @@ title: Blogs
 - [Integration on Manifolds](https://galobelwang.github.io/blogs/Integration/)
 - [Mathematical Physics Equations](https://galobelwang.github.io/blogs/PDE/)
 - [Numerical Linear Algebra](https://galobelwang.github.io/blogs/numericalLA/)
+- [Numerical Linear Algebra](https://galobelwang.github.io/blogs/StabilityTheory/)
 <br>
