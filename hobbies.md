@@ -9,7 +9,11 @@ title: Hobbies
 ## Mathematics
 
 As a mathematics student, I have always held myself to high standards, ensuring that every course I take has a solid foundation, rigorous logic, and a reasonable system framework. For each course, I use LaTeX to write my notes, and I also refer to many books by other authors. I integrate the more concise and clear theorem proof processes, more rigorous definitions, innovative course structures, and interesting ways of thinking into my notes. 
-
+<br>
+<div>
+<img src="/images/xuexi.jpg">
+</div>
+<br>
 When I was studying the course on Mathematical Analysis, I read "Mathematical Analysis" by Vladimir A. Zorich, "A Course of Mathematical Analysis" by Grigorii Fikhtengol'ts, and "Principles of Mathematical Analysis" by Walter Rudin. Among these, I independently finished the entire "Mathematical Analysis" by Vladimir A. Zorich, carefully reading and attempting to derive every theorem and proof. This book also helped me get started with Point Set Topology and Elementary Differential Geometry. 
 <br>
 <div>
