@@ -4,9 +4,9 @@ permalink: /blogs/index.html
 title: Blogs
 ---
 
-#数学笔记
+# 数学笔记
 
-##俄罗斯数学笔记
+## 俄罗斯数学笔记
 - [Fourier Analysis](https://galobelwang.github.io/blogs/Fourieranalysis/)
 - [Real Analysis and Functional Analysis](https://galobelwang.github.io/blogs/RealFunctional/)
 - [Complex Analysis](https://galobelwang.github.io/blogs/Complexanalysis/)
