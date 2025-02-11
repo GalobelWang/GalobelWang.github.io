@@ -3,13 +3,14 @@ audio,canvas,video{display:inline-block;}
 audio:not([controls]){display:none;height:0;}
 [hidden]{display:none;}
 html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
-body { margin: 0; 
-        background-image: url('https://galobelwang.github.io/images/cover.png'); /* 替换为你的图片链接 */ 
-        background-size: cover; 
-        background-position: center; 
-        background-repeat: no-repeat; 
-        background-attachment: fixed; 
-} 
+body {  
+        margin: 0;  
+        background-image: url('https://galobelwang.github.io/images/hkulogo.png'); /* 替换为你的图片链接 */  
+        background-size: auto 100%; /* 宽度自适应，高度填满 */  
+        background-position: right top; /* 图片靠右上方 */  
+        background-repeat: repeat;  
+        /* background-attachment: fixed;  如果需要固定背景，可以保留 */  
+      }  
 a:focus{outline:thin dotted;}
 a:active,a:hover{outline:0;}
 h1{font-size:2em;margin:0.67em 0;}
