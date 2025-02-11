@@ -3,13 +3,13 @@ audio,canvas,video{display:inline-block;}
 audio:not([controls]){display:none;height:0;}
 [hidden]{display:none;}
 html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
-body {  
-  background-image: url('image/cover.png');  
-  background-size: cover;  /* 图片将覆盖整个容器 */  
-  background-position: center;  /* 图片居中显示 */  
-  background-repeat: no-repeat;  /* 图片不重复 */  
-  background-attachment: fixed;  /* 背景图片固定，不随页面滚动 */  
-}  
+body { margin: 0; 
+  background-image: url('https://galobelwang.github.io/images/cover.png'); /* 替换为你的图片链接 */ 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+} 
 a:focus{outline:thin dotted;}
 a:active,a:hover{outline:0;}
 h1{font-size:2em;margin:0.67em 0;}
