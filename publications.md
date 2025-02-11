@@ -27,6 +27,8 @@ title: Research
 
 - [Multivariable Calculus and Linear Algebra](https://hkumath.hku.hk/MathWWW/ucourse.php?MATH2014.teaching)<br>(Spring 2025)
 
+<img src="images/background.png">
+
 
 
 

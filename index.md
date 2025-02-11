@@ -14,8 +14,6 @@ Prior to the University of Hong Kong, I have worked on Dynamic System and Algebr
 
 ---
 
-<img src="images/background.png">
-
 ## Research Interests
 
 - Algebraic Coding Theory
