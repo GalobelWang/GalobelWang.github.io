@@ -14,7 +14,7 @@ Prior to the University of Hong Kong, I have worked on Dynamic System and Algebr
 
 ---
 
-<img src="images/cover.png" class="floatpic">
+<img src="images/background.png" class="floatpic">
 
 ## Research Interests
 
@@ -27,4 +27,4 @@ Prior to the University of Hong Kong, I have worked on Dynamic System and Algebr
 - Algebraic Geomerty
 - Algebraic Topology
 
-<img src="images/background.png">
+<img src="images/cover.png">
