@@ -25,4 +25,4 @@ If you are interested in any aspect of me, I am always open to discussions and c
 - Algebraic Geomerty
 - Algebraic Topology
 
-<img src="images/background.jpg" class="floatpic">
+<img src="images/background.png" class="floatpic">
