@@ -25,4 +25,4 @@ Prior to the University of Hong Kong, I have worked on Dynamic System and Algebr
 - Algebraic Geomerty
 - Algebraic Topology
 
-<img src="images/cover.png">
+<img src="images/background.png">
