@@ -28,3 +28,5 @@ title: Blogs
 # Chinese blogs
 
 ## 2025
+
+<img src="/images/cover.png">
