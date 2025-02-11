@@ -27,4 +27,4 @@ title: Blogs
 
 # Chinese blogs
 
-## 2024
+## 2025
