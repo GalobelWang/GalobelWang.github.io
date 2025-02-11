@@ -8,7 +8,7 @@ body {
   background-image: url('https://galobelwang.github.io/images/hkulogo.png'); /* 替换为你的图片链接 */  
   background-size: auto 100%; /* 宽度自适应，高度填满 */  
   background-position: right top; /* 图片靠右上方 */  
-  background-repeat: repeat;  
+  background-repeat: no-repeat;  
   /* background-attachment: fixed;  如果需要固定背景，可以保留 */  
 }  
 a:focus{outline:thin dotted;}
