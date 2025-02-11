@@ -4,22 +4,22 @@ permalink: /publications/index.html
 title: Publications
 ---
 
-## Publications
+# Publications
 
-# Degree Thesis
+## Degree Thesis
 
 - [On the integral equation obtained as a result of the closure of the third degree](https://galobelwang.github.io/mypaper/thesis/graduate thesis.pdf)<br>**Zhenpeng Wang** (Supervisor: Alexey Nikitin). 
 
-# Selected Papers (Full List)
+## Selected Papers (Full List)
 
 
 
 
 ---
 
-## Teaching
+# Teaching
 
-# Teaching assistant
+## Teaching assistant
 
 - [Multivariable Calculus and Linear Algebra](https://hkumath.hku.hk/MathWWW/ucourse.php?MATH2014.teaching)<br>(Spring 2025)
 
