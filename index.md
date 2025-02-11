@@ -14,7 +14,7 @@ If you are interested in any aspect of me, I am always open to discussions and c
 
 ---
 
-<img src="images/cover.jpg" class="floatpic">
+<img src="images/cover.png" class="floatpic">
 
 ## Research Interests
 
