@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /publications/index.html
-title: Publications
+title: Research
 ---
 
 # Publications
@@ -10,7 +10,7 @@ title: Publications
 
 - [On the integral equation obtained as a result of the closure of the third degree](https://galobelwang.github.io/mypaper/thesis/graduate thesis.pdf)<br>**Zhenpeng Wang** (Supervisor: Alexey Nikitin). 
 
-## Selected Papers (Full List)
+## Selected Papers
 
 
 
