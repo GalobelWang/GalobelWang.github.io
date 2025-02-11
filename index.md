@@ -14,6 +14,8 @@ If you are interested in any aspect of me, I am always open to discussions and c
 
 ---
 
+<img src="images/cover.jpg" class="floatpic">
+
 ## Research Interests
 
 - Algebraic Coding Theory
