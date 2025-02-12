@@ -23,6 +23,8 @@ title: Blogs
 
 ## HKU
 
+- [Topics in Algebraic Geometry]
+
 <br>
 
 # Chinese blogs
