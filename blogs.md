@@ -25,13 +25,12 @@ title: Blogs
 
 - [Topics in Algebraic Geometry]
 
-<br>
+---
 
 # Chinese blogs
 
 ## 2025
-
-<br>
+---
 # Chat with me
 
 **Dec 2024:** I have set up the [online-discussion-time](https://calendly.com/hkuzpwang/30min). Welcome to chat with me!
