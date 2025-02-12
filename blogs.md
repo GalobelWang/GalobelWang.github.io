@@ -21,7 +21,7 @@ title: Blogs
 - [Abstract Algebra](https://galobelwang.github.io/blogs/algebra/)
 <br>
 
-## HKU
+## HKU/CUHK/HKUST
 
 - [Topics in Algebraic Geometry]
 
