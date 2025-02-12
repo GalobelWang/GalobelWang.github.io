@@ -9,7 +9,7 @@ body {
   background-size: auto 47%; /* 宽度自适应，高度填满 */  
   background-position: right top; /* 图片靠右上方 */  
   background-repeat: no-repeat;  
-  /* background-attachment: fixed;  如果需要固定背景，可以保留 */  
+  background-attachment: fixed;
 }  
 a:focus{outline:thin dotted;}
 a:active,a:hover{outline:0;}
