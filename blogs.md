@@ -25,6 +25,8 @@ title: Blogs
 
 - [Topics in Algebraic Geometry]
 
+- [Topics in Advanced Algebra]
+
 ---
 
 # Chinese blogs
