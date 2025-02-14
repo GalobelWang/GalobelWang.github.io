@@ -21,7 +21,7 @@ Prior to the University of Hong Kong, I have worked on Dynamic System and Algebr
 
 ## Learning Interest
 
-- Convex Optimization
+- Optimization
 - Algebraic Geomerty
 - Algebraic Topology
 
