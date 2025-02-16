@@ -24,8 +24,6 @@ title: Blogs
 ## HKU/CUHK/HKUST
 
 - [Topics in Algebraic Geometry](https://galobelwang.github.io/blogs/algebraicgeometry/) (By [Prof. Qingyuan Jiang](https://sites.google.com/view/qyjiang/home))
-
-
 - [Topics in Advanced Algebra](https://galobelwang.github.io/blogs/advancedalgebra/) (By [Prof. Yongchang Zhu](https://www.math.hkust.edu.hk/people/faculty/profile/mazhu/))
 
 ---
