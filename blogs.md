@@ -23,9 +23,12 @@ title: Blogs
 
 ## HKU/CUHK/HKUST
 
-- [Topics in Algebraic Geometry]
+# Topics in Algebraic Geometry (By [Prof. Qingyuan Jiang](https://sites.google.com/view/qyjiang/home))
 
-- [Topics in Advanced Algebra]
+- [Riemann-Roch theorem](https://galobelwang.github.io/blogs/RiemannRochTheorem/)
+<br>
+
+# Topics in Advanced Algebra (By [Prof. Yongchang Zhu](https://www.math.hkust.edu.hk/people/faculty/profile/mazhu/))
 
 ---
 
