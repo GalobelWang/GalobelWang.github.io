@@ -6,7 +6,7 @@ title: Algebraic Geometry
 
 > The course will focus on using cohomological tools to study algebraic geometry. We will generally follow the structure of Chapter III of [Hartshorne’s book](https://link.springer.com/book/10.1007/978-1-4757-3849-0) but will incorporate more modern perspectives and techniques as appropriate. 
 
-> Topics planned for coverage include: **Derived Functors and Derived Categories**, **Cohomology of Sheaves**, **ˇCech Cohomology**, **Various Finiteness Theorems**, **Cohomology of Projective Spaces**, **Serre’s Vanishing Theorems**, **Serre Duality**, **Flat and Smooth Morphisms**, **Base-Change and Semi-continuity Theorems**.
+> Topics planned for coverage include: **Derived Functors and Derived Categories**, **Cohomology of Sheaves**, **Cech Cohomology**, **Various Finiteness Theorems**, **Cohomology of Projective Spaces**, **Serre’s Vanishing Theorems**, **Serre Duality**, **Flat and Smooth Morphisms**, **Base-Change and Semi-continuity Theorems**.
 
 
 # Riemann-Roch theorem
