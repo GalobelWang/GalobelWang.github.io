@@ -15,5 +15,5 @@ title: Algebraic Geometry
 
 [NOTE](https://galobelwang.github.io/file/RiemannRochTheorem.pdf)
 
-
+<br>
 <img src="/images/ALGEBRAICGEOMETRY.png">
