@@ -18,6 +18,7 @@ Prior to the University of Hong Kong, I have worked on Dynamic System and Algebr
 
 - Algebraic Coding Theory
 - Information Theory
+- Entropy and Cohomology
 
 ## Learning Interest
 
