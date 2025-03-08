@@ -4,9 +4,8 @@ permalink: /blogs/index.html
 title: Blogs
 ---
 
-# Mathematics Notes
+# Notes on Elementary Mathematics
 
-## MSU
 - [Fourier Analysis](https://galobelwang.github.io/blogs/Fourieranalysis/)
 - [Real Analysis and Functional Analysis](https://galobelwang.github.io/blogs/RealFunctional/)
 - [Complex Analysis](https://galobelwang.github.io/blogs/Complexanalysis/)
@@ -19,9 +18,6 @@ title: Blogs
 - [Stability Theory](https://galobelwang.github.io/blogs/StabilityTheory/)
 - [Galois Theory](https://galobelwang.github.io/blogs/Galois/)
 - [Abstract Algebra](https://galobelwang.github.io/blogs/algebra/)
-<br>
-
-## HKU/CUHK/HKUST
 
 - [Topics in Algebraic Geometry](https://galobelwang.github.io/blogs/algebraicgeometry/) (By [Prof. Qingyuan Jiang](https://sites.google.com/view/qyjiang/home))
 - [Topics in Advanced Algebra](https://galobelwang.github.io/blogs/advancedalgebra/) (By [Prof. Yongchang Zhu](https://www.math.hkust.edu.hk/people/faculty/profile/mazhu/))
