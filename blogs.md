@@ -18,7 +18,6 @@ title: Blogs
 - [Stability Theory](https://galobelwang.github.io/blogs/StabilityTheory/)
 - [Galois Theory](https://galobelwang.github.io/blogs/Galois/)
 - [Abstract Algebra](https://galobelwang.github.io/blogs/algebra/)
-
 - [Topics in Algebraic Geometry](https://galobelwang.github.io/blogs/algebraicgeometry/) (By [Prof. Qingyuan Jiang](https://sites.google.com/view/qyjiang/home))
 - [Topics in Advanced Algebra](https://galobelwang.github.io/blogs/advancedalgebra/) (By [Prof. Yongchang Zhu](https://www.math.hkust.edu.hk/people/faculty/profile/mazhu/))
 
@@ -26,7 +25,7 @@ title: Blogs
 
 # Chinese blogs
 
-## 2025
+## 喂饱韩老师
 ---
 # Chat with me
 
