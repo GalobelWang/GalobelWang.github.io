@@ -27,7 +27,7 @@ title: Blogs
 
 - [Educational Journey and Insights](https://galobelwang.github.io/blogs/EducationalJourneyandInsights/)
 
-# 喂饱韩老师 (meeting with Prof. Han)
+# 喂饱韩老师
 ---
 # Chat with me
 
