@@ -23,9 +23,11 @@ title: Blogs
 
 ---
 
-# Chinese blogs
+# Study blogs
 
-## 喂饱韩老师
+- [Educational Journey and Insights](https://galobelwang.github.io/blogs/EducationalJourneyandInsights/)
+
+# 喂饱韩老师 (meeting with Prof. Han)
 ---
 # Chat with me
 
