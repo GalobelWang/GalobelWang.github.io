@@ -4,7 +4,7 @@ permalink: /blogs/index.html
 title: Blogs
 ---
 
-# Notes on Elementary Mathematics
+# Notes on Mathematics
 
 - [Fourier Analysis](https://galobelwang.github.io/blogs/Fourieranalysis/)
 - [Real Analysis and Functional Analysis](https://galobelwang.github.io/blogs/RealFunctional/)
@@ -20,6 +20,7 @@ title: Blogs
 - [Abstract Algebra](https://galobelwang.github.io/blogs/algebra/)
 - [Topics in Algebraic Geometry](https://galobelwang.github.io/blogs/algebraicgeometry/) (By [Prof. Qingyuan Jiang](https://sites.google.com/view/qyjiang/home))
 - [Topics in Advanced Algebra](https://galobelwang.github.io/blogs/advancedalgebra/) (By [Prof. Yongchang Zhu](https://www.math.hkust.edu.hk/people/faculty/profile/mazhu/))
+- [Topics in Advanced Optimization](https://galobelwang.github.io/blogs/advancedoptimization/) (By [Prof. Xiaoming Yuan](https://hkumath.hku.hk/~xmyuan/))
 
 ---
 
