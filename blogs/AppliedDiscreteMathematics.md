@@ -10,7 +10,7 @@ It introduces people to some powerful linear algebra and probabilistic methods t
 
 > Linear algebra method: rank argument, eigenvalue technique, polynomial technique, general position method.
 
-[Lecture note (Rank Argument)](https://galobelwang.github.io/file/LinearAlgebraMethodRankArgumnt.pdf)
+[Lecture note (Rank Argument)](https://galobelwang.github.io/file/LinearAlgebraMethodRankArgument.pdf)
 
 > Probabilistic method: basic method, linearity of expectation, deletion method, Lovász local lemma, second moment method.
 
