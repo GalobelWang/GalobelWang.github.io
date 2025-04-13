@@ -21,6 +21,7 @@ title: Blogs
 - [Topics in Algebraic Geometry](https://galobelwang.github.io/blogs/algebraicgeometry/) (By [Prof. Qingyuan Jiang](https://sites.google.com/view/qyjiang/home))
 - [Topics in Advanced Algebra](https://galobelwang.github.io/blogs/advancedalgebra/) (By [Prof. Yongchang Zhu](https://www.math.hkust.edu.hk/people/faculty/profile/mazhu/))
 - [Topics in Advanced Optimization](https://galobelwang.github.io/blogs/advancedoptimization/) (By [Prof. Xiaoming Yuan](https://hkumath.hku.hk/~xmyuan/))
+- [Applied Discrete Mathematics](https://galobelwang.github.io/blogs/AppliedDiscreteMathematics/) (By [Prof. Wenan Zang](https://www.scifac.hku.hk/people/zang-wenan))
 
 ---
 
