@@ -4,4 +4,14 @@ permalink: /blogs/AppliedDiscreteMathematics/index.html
 title: Applied Discrete Mathematics
 ---
 
-[NOTE (ADMM algorithm)](https://galobelwang.github.io/file/Advanced_optimization.pdf)
+# Applied Discrete Mathematics
+
+It introduces people to some powerful linear algebra and probabilistic methods that have been used with striking success in discrete mathematics, and covers some of the most fundamental and beautiful results obtained by these methods.
+
+> Linear algebra method: rank argument, eigenvalue technique, polynomial technique, general position method.
+
+[Lecture note (Rank Argument)](https://galobelwang.github.io/file/LinearAlgebraMethodRankArgumnt.pdf)
+
+> Probabilistic method: basic method, linearity of expectation, deletion method, Lovász local lemma, second moment method.
+
+> Additional techniques if time permits.
