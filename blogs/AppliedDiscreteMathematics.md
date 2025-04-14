@@ -11,7 +11,7 @@ It introduces people to some powerful linear algebra and probabilistic methods t
 > Linear algebra method: rank argument, eigenvalue technique, polynomial technique, general position method.
 
 [Lecture note (Rank Argument)](https://galobelwang.github.io/file/LinearAlgebraMethodRankArgument.pdf)
-
+[Exercise (Rank Argument)](https://galobelwang.github.io/file/adm_exercise1.pdf)
 <img src="/images/adm_chapter1.png">
 <br>
 
