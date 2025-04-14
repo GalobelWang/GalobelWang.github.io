@@ -15,7 +15,9 @@ It introduces people to some powerful linear algebra and probabilistic methods t
 <img src="/images/adm_chapter1.png">
 <br>
 
-[Lecture note (Eigenvalue Technique)]
+- [Lecture note (Eigenvalue Technique)]
+<img src="/images/adm_chapter2.png">
+<br>
 
 > Probabilistic method: basic method, linearity of expectation, deletion method, Lovász local lemma, second moment method.
 
