@@ -12,6 +12,10 @@ It introduces people to some powerful linear algebra and probabilistic methods t
 
 [Lecture note (Rank Argument)](https://galobelwang.github.io/file/LinearAlgebraMethodRankArgument.pdf)
 
+<img src="/images/adm_chapter1.png">
+
+[Lecture note (Eigenvalue Technique)]
+
 > Probabilistic method: basic method, linearity of expectation, deletion method, Lovász local lemma, second moment method.
 
 > Additional techniques if time permits.
