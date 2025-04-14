@@ -13,6 +13,7 @@ It introduces people to some powerful linear algebra and probabilistic methods t
 [Lecture note (Rank Argument)](https://galobelwang.github.io/file/LinearAlgebraMethodRankArgument.pdf)
 
 <img src="/images/adm_chapter1.png">
+<br>
 
 [Lecture note (Eigenvalue Technique)]
 
