@@ -19,7 +19,7 @@ It introduces people to some powerful linear algebra and probabilistic methods t
 <img src="/images/adm_chapter2.png">
 <br>
 
-- [Lecture note (Polynomial Technique, General Position Method and Miscellaneous Topics)]
+- [Lecture note (Polynomial Technique, General Position Method and Miscellaneous Topics)](https://galobelwang.github.io/file/LinearAlgebraMethodPolynomialTechnique.pdf)
 <img src="/images/adm_chapter3.png">
 <img src="/images/adm_chapter4.png">
 <img src="/images/adm_chapter5.png">
