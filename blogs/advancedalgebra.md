@@ -10,5 +10,6 @@ title: Advanced Algebra
 > Representation theory (reference: [Introduction to Representation Theory](https://math.mit.edu/~etingof/reprbook.pdf) by Pavel Etingof)
 
 - [Chapter1: Introduction to Representation Theory](https://galobelwang.github.io/file/Chapter1introductiontorepresentationtheory.pdf)
+- [Chapter2: General results of Representation Theory](https://galobelwang.github.io/file/Chapter2GeneralresultsofRepresentationTheory.pdf)
 
 <img src="/images/ADVANCEDALGEBRA.png">
