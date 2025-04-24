@@ -16,13 +16,11 @@ Prior to the University of Hong Kong, I have worked on Dynamic System and Algebr
 
 ## Research Interests
 
-- Algebraic Geometry Codes
+- Integrable Probability
 - Information Theory
 
 ## Learning Interest
 
-- Optimization
-- Algebraic Geomerty
-- Algebraic Topology
+- Algebraic Geometry Codes
 
 <img src="images/background.png">
