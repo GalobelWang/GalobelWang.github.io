@@ -14,13 +14,10 @@ Prior to the University of Hong Kong, I have worked on Dynamic System and Algebr
 
 ---
 
-## Research Interests
+## Learning and Research Interests
 
-- Integrable Probability
-- Information Theory
-
-## Learning Interest
-
+- Integrable Probability and Random Walk
+- Information and Coding Theory
 - Algebraic Geometry Codes
 
 <img src="images/background.png">
