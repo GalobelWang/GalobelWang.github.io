@@ -11,5 +11,6 @@ title: Advanced Algebra
 
 - [Chapter1: Introduction to Representation Theory](https://galobelwang.github.io/file/Chapter1introductiontorepresentationtheory.pdf)
 - [Chapter2: General results of Representation Theory](https://galobelwang.github.io/file/Chapter2GeneralresultsofRepresentationTheory.pdf)
+- [Chapter2: Representations of finite groups (Basic results)](https://galobelwang.github.io/file/Chapter3Representationsoffinitegroups(Basicresults).pdf)
 
 <img src="/images/ADVANCEDALGEBRA.png">
