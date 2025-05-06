@@ -4,7 +4,7 @@ permalink: /research/index.html
 title: Awards
 ---
 
-# Study and research on Integrable Probability
+# Integrable Probability
 
 
 
