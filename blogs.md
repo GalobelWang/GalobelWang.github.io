@@ -23,13 +23,6 @@ title: Blogs
 - [Applied Discrete Mathematics](https://galobelwang.github.io/blogs/AppliedDiscreteMathematics/) (By [Prof. Wenan Zang](https://www.scifac.hku.hk/people/zang-wenan))
 
 ---
-
-# Study blogs
-
-- [Educational Journey and Insights](https://galobelwang.github.io/blogs/EducationalJourneyandInsights/)
-- [Casas-Alvero conjucture](https://galobelwang.github.io/blogs/CAconjecture/)
-
----
 # Chat with me
 
 **Dec 2024:** I have set up the [online-discussion-time](https://calendly.com/hkuzpwang/30min). Welcome to chat with me!
@@ -42,4 +35,4 @@ title: Blogs
 
 
 
-<img src="/images/pathsIP.jpg">
+<img src="/images/cover.png">
