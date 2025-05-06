@@ -6,19 +6,11 @@ html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:1
 body {  
   margin: 0;  
   background-image: url('https://galobelwang.github.io/images/hkulogo.jpg'); /* 替换为你的图片链接 */  
-  background-size: auto 30%; /* 宽度自适应，高度填满 */  
+  background-size: auto 40%; /* 宽度自适应，高度填满 */  
   background-position: right top; /* 图片靠右上方 */  
   background-repeat: no-repeat;  
   background-attachment: fixed;
 }
-body {  
-  margin: 0;  
-  background-image: url('https://galobelwang.github.io/images/pathsIP.jpg'); /* 替换为你的图片链接 */  
-  background-size: auto 30%; /* 宽度自适应，高度填满 */  
-  background-position: left bottom; /* 图片靠右上方 */  
-  background-repeat: no-repeat;  
-  background-attachment: fixed;
-}  
 a:focus{outline:thin dotted;}
 a:active,a:hover{outline:0;}
 h1{font-size:2em;margin:0.67em 0;}
