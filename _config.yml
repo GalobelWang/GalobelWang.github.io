@@ -40,6 +40,8 @@ links:
     url: /awards/
   - title: Blogs
     url: /blogs/
+  - title: Research
+    url: /research/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone: China/Beijing
