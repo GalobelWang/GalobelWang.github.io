@@ -42,4 +42,4 @@ title: Blogs
 
 
 
-<img src="/images/cover.png">
+<img src="/images/pathsIP.jpg">
