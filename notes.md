@@ -13,7 +13,6 @@ title: Notes
 - [Integrals with Parameters](https://galobelwang.github.io/blogs/IntegralswithParameters/)
 - [Series of Numbers and Series of Functions](https://galobelwang.github.io/blogs/Series/)
 - [Integration on Manifolds](https://galobelwang.github.io/blogs/Integration/)
-- [Mathematical Physics Equations](https://galobelwang.github.io/blogs/PDE/)
 - [Numerical Linear Algebra](https://galobelwang.github.io/blogs/numericalLA/)
 - [Stability Theory](https://galobelwang.github.io/blogs/StabilityTheory/)
 - [Galois Theory](https://galobelwang.github.io/blogs/Galois/)
