@@ -4,8 +4,6 @@ permalink: /notes/index.html
 title: Notes
 ---
 
-> Update: 7th Dec 2024
-
 # Notes on Mathematics
 
 - [Fourier Analysis](https://galobelwang.github.io/blogs/Fourieranalysis/)
