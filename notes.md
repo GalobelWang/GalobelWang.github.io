@@ -20,6 +20,7 @@ title: Notes
 - [Topics in Algebraic Geometry](https://galobelwang.github.io/blogs/algebraicgeometry/) (By [Prof. Qingyuan Jiang](https://sites.google.com/view/qyjiang/home))
 - [Topics in Advanced Algebra](https://galobelwang.github.io/blogs/advancedalgebra/) (By [Prof. Yongchang Zhu](https://www.math.hkust.edu.hk/people/faculty/profile/mazhu/))
 - [Applied Discrete Mathematics](https://galobelwang.github.io/blogs/AppliedDiscreteMathematics/) (By [Prof. Wenan Zang](https://www.scifac.hku.hk/people/zang-wenan))
+- [Advanced Probability](https://galobelwang.github.io/blogs/advancedprobability/) (By [Prof. Marius Hofert](https://saasresearch.hku.hk/~mhofert/))
 
 
 
