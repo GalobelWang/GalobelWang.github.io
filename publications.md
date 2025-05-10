@@ -25,7 +25,7 @@ title: Research
 
 ## Teaching assistant
 
-- [Multivariable Calculus and Linear Algebra](https://hkumath.hku.hk/MathWWW/ucourse.php?MATH2014.teaching)<br>(Spring 2025)
+- [MATH2014: Multivariable Calculus and Linear Algebra](https://hkumath.hku.hk/MathWWW/ucourse.php?MATH2014.teaching)<br>(Spring 2025)
 
 <img src="/images/cover.png">
 
