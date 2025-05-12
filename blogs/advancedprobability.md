@@ -10,7 +10,7 @@ title: Advanced Probability
 
 - [Slide 1](https://galobelwang.github.io/file/advancedprobability_slide1.pdf)
 
-> Basic concepts in advanced probability (including: random variable, conditional probability, integration and expectation, conditional expection, martingales)
+> Basic concepts in advanced probability (including: random variable, conditional probability, integration and expectation, conditional expectation, martingales and modes of convergence)
 
 - [Slide 2](https://galobelwang.github.io/file/advancedprobability_slide2.pdf)
 
