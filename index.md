@@ -17,8 +17,9 @@ Prior to the University of Hong Kong, I have worked on Dynamic System and Algebr
 
 - Integrable Probability and Random Walk
 - Quantum Information and Coding Theory
-- Representation Theory and Lie Algebra
+- Representation Theory
 - Stochastic Geometry and Random Algebraic Geometry
 - Algebraic Geometry Codes
+- Combinatorics
 
 <img src="images/background.png">
