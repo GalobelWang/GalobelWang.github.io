@@ -28,3 +28,14 @@ It introduces people to some powerful linear algebra and probabilistic methods t
 > Probabilistic method: basic method, linearity of expectation, deletion method, Lovász local lemma, second moment method.
 
 - [Lecture note (Probabilistic Method and Lovász Local Lemma)](https://galobelwang.github.io/file/ProbabilisticMethod.pdf)
+<img src="/images/adm_chapter6.1.png">
+<img src="/images/adm_chapter6.2.png">
+<img src="/images/adm_chapter7.1.png">
+<img src="/images/adm_chapter7.2.png">
+<img src="/images/adm_chapter7.3.png">
+<img src="/images/adm_chapter8.png">
+
+
+
+
+
