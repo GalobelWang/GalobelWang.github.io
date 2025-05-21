@@ -16,6 +16,7 @@ Prior to the University of Hong Kong, I have worked on Dynamic System and Algebr
 ## Research Interests
 
 - Integrable Probability and Random Walk
+- Information Strucutre and Cohomology
 - Symbolic Dynamical System, Ergodic Theory and Cybernetics
 - Quantum Information and Coding Theory
 
