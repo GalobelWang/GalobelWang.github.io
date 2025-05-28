@@ -17,7 +17,6 @@ Prior to the University of Hong Kong, I have worked on Dynamic System and Algebr
 
 - Integrable Probability and Random Walk
 - Information Strucutre and Cohomology
-- Symbolic Dynamical System, Ergodic Theory and Cybernetics
 - Quantum Information and Coding Theory
 
 ## Learning Interests
@@ -25,6 +24,6 @@ Prior to the University of Hong Kong, I have worked on Dynamic System and Algebr
 - Representation Theory and Lie Algebra
 - Algebraic Geometry Codes
 - Stochastic Geometry and Random Algebraic Geometry
-- Combinatorics
+- Symbolic Dynamical System, Ergodic Theory and Cybernetics
 
 <img src="images/background.png">
