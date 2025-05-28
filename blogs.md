@@ -8,7 +8,6 @@ title: Blogs
 # Study blogs
 
 - [Educational Journey and Insights](https://galobelwang.github.io/blogs/EducationalJourneyandInsights/)
-- [Casas-Alvero conjucture](https://galobelwang.github.io/blogs/CAconjecture/)
 
 ---
 
