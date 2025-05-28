@@ -31,6 +31,10 @@ The concept of "integrability" in this context is notably flexible. For instance
 
 
 
+
+
+# AI for Mathematics (LEAN 4)
+
 <br>
 
 <img src="/images/pathsIP.jpg">
