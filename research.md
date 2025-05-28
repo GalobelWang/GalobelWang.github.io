@@ -26,13 +26,13 @@ The concept of "integrability" in this context is notably flexible. For instance
 
 
 
-
+---
 # Information Structures and their Cohomology
 
 
 
 
-
+---
 # AI for Mathematics (LEAN 4)
 
 <br>
