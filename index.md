@@ -4,7 +4,7 @@ layout: page
 
 # About Me
 
-Hello! Here is **Zhenpeng Wang (Galobel, 王振澎)**.<br>
+Hello! Here is **Zhenpeng Wang (Galobel, 王振澎)**.
 
 I am a PhD student in the Department of Mathematics at the University of Hong Kong under the supervision of [Prof. Guangyue Han](https://hkumath.hku.hk/~ghan/), advised by [Prof. Wenan Zang](https://www.scifac.hku.hk/people/zang-wenan) and [Prof. Yunwen Lei](https://leiyw.github.io/). 
 
