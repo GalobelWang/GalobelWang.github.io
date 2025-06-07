@@ -16,7 +16,7 @@ Despite their differences, these models share a common thread: their transition 
 
 The concept of "integrability" in this context is notably flexible. For instance, within the **KPZ universality class**, some models that lack strict solvability have still been proven to converge to KPZ limits, broadening the traditional boundaries of integrable systems. The ultimate ambition of integrable probability is to construct a unified framework—akin to the **Central Limit Theorem (CLT)**—that comprehensively explains the limiting behaviors of **integrable**, **approximately integrable**, and even **non-integrable models**. This vision underscores the field’s potential to bridge diverse probabilistic phenomena under a single theoretical umbrella.
 
-
+- [Introduction to Integrable Probability](https://galobelwang.github.io/file/integrable_probability_introduction.pdf)
 
 
 
