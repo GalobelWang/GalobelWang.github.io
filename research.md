@@ -21,7 +21,7 @@ title: Awards
 
 
 ---
-# Information Theory and Channel Coding Theory
+# Information Theory with Algebraic Geometry
 
 <br>
 
