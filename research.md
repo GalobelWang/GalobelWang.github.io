@@ -29,7 +29,7 @@ title: Awards
 
 > Inspired by the algebraic geometry method introduced by [June Huh](https://web.math.princeton.edu/~huh/), GCMC is reformulated in the form of a log-convex sequence. In general, a completely monotone function can admit a log-convex sequence and a log-convex sequence can further induce a log-concave sequence. The new formulation may guide GCMC to the marvelous temple of algebraic geometry.
 
-- [GCMC and its proposer, Prof. [Fan Cheng](https://ichengfan.github.io/)](https://arxiv.org/pdf/2208.13108)
+- [GCMC and its proposer, Prof. Fan Cheng](https://arxiv.org/pdf/2208.13108)
 
 
 
