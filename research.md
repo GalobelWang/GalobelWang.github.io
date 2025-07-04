@@ -31,6 +31,7 @@ title: Awards
 
 - [GCMC and its proposer, Prof. Fan Cheng](https://arxiv.org/pdf/2208.13108)
 - [Algebraic structure on information theory](https://galobelwang.github.io/file/algebraic_structure_on_information_theory.pdf)
+- [Differential manifold and Hodge theory](https://galobelwang.github.io/file/Differential_manifold_and_Hodge_theory.pdf)
 - [Hodge theory for matroids](https://galobelwang.github.io/file/Hodge_theory_for_matroids.pdf)
 
 
