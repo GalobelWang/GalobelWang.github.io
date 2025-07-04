@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /research/index.html
-title: Awards
+title: Research
 ---
 # GCMC conjecture
 
