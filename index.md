@@ -15,7 +15,6 @@ Prior to the University of Hong Kong, I have worked on Dynamic System and Algebr
 
 - Information and Coding Theory
 - Integrable Probability and Random Walk
-- Algebraic geometry and AG code
-- Algebraic topology and quantum topology code
+- Information Geometry and Algebraic Geometry
 
 <img src="images/background.png">
