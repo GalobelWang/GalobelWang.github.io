@@ -13,6 +13,7 @@ title: Research
 
 > Inspired by the algebraic geometry method introduced by [June Huh](https://web.math.princeton.edu/~huh/), GCMC is reformulated in the form of a log-convex sequence. In general, a completely monotone function can admit a log-convex sequence and a log-convex sequence can further induce a log-concave sequence. The new formulation may guide GCMC to the marvelous temple of algebraic geometry.
 
+- [Research on GCM conjecture](https://galobelwang.github.io/file/GCMC.pdf)
 - [Algebraic structure on information theory](https://galobelwang.github.io/file/algebraic_structure_on_information_theory.pdf)
 - [Differential manifold and Hodge theory](https://galobelwang.github.io/file/Differential_manifold_and_Hodge_theory.pdf)
 - [Hodge theory for matroids](https://galobelwang.github.io/file/Hodge_theory_for_matroids.pdf)
