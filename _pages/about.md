@@ -10,8 +10,8 @@ profile:
   more_info: >
     <p>(852) 55133911</p>
     <p>Room 211, Run Run Shaw Building</p>
-    <p>The University of Hong Kong</p>
-    <p>Pokfulam Road, Pokfulam, Hong Kong</p>
+    <p>University of Hong Kong</p>
+    <p>Pokfulam, Hong Kong</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
