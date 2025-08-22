@@ -16,8 +16,8 @@
       year: 2025-Present
       description:
         - Department:Mathematics
-        - Supervisor:[Prof. Guangyue Han](https://hkumath.hku.hk/~ghan/)
-        - title Research area
+        - Supervisor: "[Prof. Guangyue Han](https://hkumath.hku.hk/~ghan/)"
+        - title: Research area
           contents:
             - Information and Coding theory
             - Algebraic geometry
