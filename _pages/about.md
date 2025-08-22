@@ -5,7 +5,7 @@ permalink: /
 
 profile:
   align: right
-  image: https://galobelwang.github.io/image/zhen1pengwang.jpg
+  image: zhen1pengwang.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>(852) 55133911</p>
