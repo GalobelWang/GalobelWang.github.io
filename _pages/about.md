@@ -22,12 +22,12 @@ announcements:
   limit:  # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
+  scrollable: false # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: # leave blank to include all the blog posts
 ---
 
-I am a PhD student in the Department of Mathematics at the University of Hong Kong under the supervision of [Prof. Guangyue Han](https://hkumath.hku.hk/~ghan/). 
+I am a 1st-year PhD student in the Department of Mathematics at the University of Hong Kong under the supervision of [Prof. Guangyue Han](https://hkumath.hku.hk/~ghan/). 
 
 I am broadly interested in information theory, especially in problems related to algebraic geometry and algebraic topology. I am currently working on the Gaussian complete monotonicity conjecture and exploring the potential applications of Hodge structures in information theory and the heat equation.
 
