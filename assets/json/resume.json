@@ -1,24 +1,24 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Zhenpeng Wang",
+    "label": "",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "u3011717@connect.hku.hk",
+    "phone": "(852) 55133911",
+    "url": "",
+    "summary": "A PhD student in Mathematics at the University of Hong Kong",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "Room 211, Run Run Shaw Building, the University of Hong Kong",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "",
+      "region": "Hong Kong"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "",
+        "username": "",
+        "url": ""
       }
     ]
   },
@@ -47,24 +47,35 @@
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
+      "institution": "The University of Hong Kong",
+      "location": "Hong Kong, China",
+      "url": "https://www.hku.hk/",
+      "area": "Mathematics (Information and Coding theory)",
       "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "startDate": "2025-01-01",
+      "endDate": "",
+      "score": "",
+      "courses": [""]
+    }
+    {
+      "institution": "Lomonosov Moscow State University",
+      "location": "Moscow, Russia",
+      "url": "https://msu.ru/",
+      "area": "Computational Mathematics and Cybernetics",
+      "studyType": "BSc",
+      "startDate": "2020-09-01",
+      "endDate": "2024-06-25",
+      "score": "",
+      "courses": [""]
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
+      "title": "Special Talent Training Program for Russia, Ukraine, and Belarus",
+      "date": "2024-01-01",
+      "awarder": "China Scholarship Council",
       "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "summary": ""
     }
   ],
   "certificates": [
