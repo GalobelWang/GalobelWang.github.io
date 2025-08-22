@@ -13,20 +13,22 @@
   contents:
     - title: Doctor of Philosophy
       institution: The University of Hong Kong, China
-      year: 2025
+      year: 2025-2028(expected)
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - Department: Mathematics
+        - Advisor: [Prof. Guangyue Han](https://hkumath.hku.hk/~ghan/)
+        - title: Research area
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
+            - Information and Coding theory
+            - Algebraic geometry
+            - Algebraic Combinatorics
     - title: Bachelor of Science
       institution: Lomonosov Moscow State University, Russia
       year: 2020-2024
       description:
-        - Description 1.
-        - Description 2.
+        - Department: Computational Mathematics and Cybernetics
+        - Advisor: [Prof. Alexey Nikitin](https://www.researchgate.net/profile/Alexey-Nikitin-3) and [Prof. Tatiana N. Fomenko](https://scholar.google.com/citations?user=Q5VuN08AAAAJ)
+        - GPA: 3.86/4 (rank first)
 
 - title: Experience
   type: time_table
