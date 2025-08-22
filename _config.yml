@@ -6,15 +6,13 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Zhenpeng
 middle_name: Galobel
 last_name: Wang
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+email: u3011717@connect.hku.hk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Information and Coding theory, Algebraic geometry and Hodge theory, etc.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: Information and Coding theory, Algebraic geometry, Optimal transport # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -41,7 +39,7 @@ repo_trophies:
 # -----------------------------------------------------------------------------
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
-
+rss_icon: false
 # -----------------------------------------------------------------------------
 # Layout
 # -----------------------------------------------------------------------------
@@ -54,7 +52,7 @@ posts_in_search: true
 bib_search: true
 
 # Dimensions
-max_width: 930px
+max_width: 870px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -66,6 +64,56 @@ max_width: 930px
 serve_og_meta: false # Include Open Graph meta tags in the HTML head
 serve_schema_org: false # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
+
+
+# -----------------------------------------------------------------------------
+# Social integration
+# -----------------------------------------------------------------------------
+
+acm_id: # your dl.acm.org/profile/id
+blogger_url: # your blogger URL
+bluesky_url: # your bluesky URL
+dblp_url: # your DBLP profile url
+discord_id: # your discord id (18-digit unique numerical identifier)
+facebook_id: # your facebook id
+flickr_id: # your flickr id
+github_username: GalobelWang # your GitHub user name
+gitlab_username: # your GitLab user name
+ieee_id: # your ieeexplore.ieee.org/author/id
+inspirehep_id: # Inspire HEP author ID
+instagram_id: # your instagram id
+kaggle_id: # your kaggle id
+keybase_username: # your keybase user name
+lastfm_id: # your lastfm id
+lattes_id: # your ID on Lattes (Brazilian Lattes CV)
+linkedin_username: # your LinkedIn user name
+mastodon_username: # your mastodon instance+username in the format instance.tld/@username
+medium_username: # your Medium username
+orcid_id: # your ORCID ID
+osf_id: # your OSF ID
+pinterest_id: # your pinterest id
+publons_id: # your ID on Publons
+quora_username: # your Quora username
+research_gate_profile: https://www.researchgate.net/profile/Zhenpeng-Wang-9?ev=hdr_xprf # your profile on ResearchGate
+scholar_userid: # your Google Scholar ID
+scopus_id: # your profile on Scopus
+semanticscholar_id: # your Semantic Scholar ID
+spotify_id: # your spotify id
+stackoverflow_id: # your stackoverflow id
+telegram_username: # your Telegram user name
+unsplash_id: # your unsplash id
+wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
+whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
+wikidata_id: # your wikidata id
+wikipedia_id: # your wikipedia id (Case sensitive)
+work_url: # work page URL
+x_username: # your X handle
+youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
+zotero_username: # your zotero username
+
+contact_note: # You can even add a little note about which of these is the best way to reach you.
+
+
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -86,8 +134,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: Galobel Wang's blog # blog_name will be displayed in your blog page
+blog_description: Information and Coding theory, Algebraic geometry and Hodge theory, etc.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -121,13 +169,13 @@ disqus_shortname: al-folio # put your disqus shortname
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
+#external_sources:
+#  - name: medium.com
+#    rss_url: https://medium.com/@al-folio/feed
+#  - name: Google Blog
+#    posts:
+#      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
+#        published_date: 2024-05-14
 
 # -----------------------------------------------------------------------------
 # Newsletter
