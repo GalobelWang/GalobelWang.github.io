@@ -15,7 +15,7 @@
       institution: The University of Hong Kong, China
       year: 2025-Present
       description:
-        - Department:Mathematics
+        - Department of Mathematics
         - Supervisor: "[Prof. Guangyue Han](https://hkumath.hku.hk/~ghan/)"
         - title: Research area
           contents:
@@ -26,9 +26,9 @@
       institution: Lomonosov Moscow State University, Russia
       year: 2020-2024
       description:
-        - Department: Computational Mathematics and Cybernetics
-        - Advisor:  <a href="https://www.researchgate.net/profile/Alexey-Nikitin-3">Prof. Alexey Nikitin</a> and <a href="https://scholar.google.com/citations?user=Q5VuN08AAAAJ">Prof. Tatiana N. Fomenko</a>
-        - GPA: 3.86/4 (rank first)
+        - Department of Computational Mathematics and Cybernetics
+        - Advisor:<a href="https://www.researchgate.net/profile/Alexey-Nikitin-3">Prof. Alexey Nikitin</a> and <a href="https://scholar.google.com/citations?user=Q5VuN08AAAAJ">Prof. Tatiana N. Fomenko</a>
+        - GPA:3.86/4 (rank first)
 
 #- title: Experience
 #  type: time_table
