@@ -9,7 +9,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>(852) 55133911</p>
-    <p>Room 423, Run Run Shaw Building</p>
+    <p>Room 211, Run Run Shaw Building</p>
     <p>The University of Hong Kong</p>
     <p>Pokfulam Road, Pokfulam, Hong Kong</p>
 
