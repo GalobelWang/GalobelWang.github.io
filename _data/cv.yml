@@ -103,3 +103,14 @@
 #  type: list
 #  contents:
 #    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+
+- title: Chat with me
+
+I have set up the [online-discussion-time](https://calendly.com/hkuzpwang/30min). Welcome to chat with me!
+
+<!-- Calendly inline widget begin -->
+
+<div class="calendly-inline-widget" data-url="https://calendly.com/hkuzpwang/30min" style="min-width:320px;height:680px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
+
