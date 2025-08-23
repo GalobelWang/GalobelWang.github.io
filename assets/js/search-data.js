@@ -410,7 +410,7 @@ ninja.data = [{
               window.location.href = "/projects/Integral/";
             },},{id: "projects-integration-on-manifolds",
           title: 'Integration on Manifolds',
-          description: "with background image",
+          description: "a brief introduction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/IntonManifolds/";
             },},{id: "projects-numerical-linear-algebra",
