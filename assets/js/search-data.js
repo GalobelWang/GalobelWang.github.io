@@ -405,7 +405,7 @@ ninja.data = [{
               window.location.href = "/projects/Galois/";
             },},{id: "projects-integrals-with-parameters",
           title: 'Integrals with Parameters',
-          description: "",
+          description: "a brief introduction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Integral/";
             },},{id: "projects-integration-on-manifolds",
