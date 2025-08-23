@@ -378,7 +378,12 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "projects-complex-analysis",
+      },{id: "projects-abstract-algebra",
+          title: 'Abstract Algebra',
+          description: "a brief introduction",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/AA/";
+            },},{id: "projects-complex-analysis",
           title: 'Complex Analysis',
           description: "a brief introduction",
           section: "Projects",handler: () => {
@@ -408,11 +413,6 @@ ninja.data = [{
           description: "a brief introduction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/NLA/";
-            },},{id: "projects-probability-theory-and-mathematical-statistics",
-          title: 'Probability Theory and Mathematical Statistics',
-          description: "a brief introduction",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/PT%20-%20Copy/";
             },},{id: "projects-probability-theory-and-mathematical-statistics",
           title: 'Probability Theory and Mathematical Statistics',
           description: "a brief introduction",
