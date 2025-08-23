@@ -405,12 +405,12 @@ ninja.data = [{
               window.location.href = "/projects/Galois/";
             },},{id: "projects-integrals-with-parameters",
           title: 'Integrals with Parameters',
-          description: "a brief introduction",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Integral/";
             },},{id: "projects-integration-on-manifolds",
           title: 'Integration on Manifolds',
-          description: "a brief introduction",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/IntonManifolds/";
             },},{id: "projects-numerical-linear-algebra",
