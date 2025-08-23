@@ -415,12 +415,12 @@ ninja.data = [{
               window.location.href = "/projects/IntonManifolds/";
             },},{id: "projects-numerical-linear-algebra",
           title: 'Numerical Linear Algebra',
-          description: "a brief introduction",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/NLA/";
             },},{id: "projects-probability-theory-and-mathematical-statistics",
           title: 'Probability Theory and Mathematical Statistics',
-          description: "a brief introduction",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/PT/";
             },},{id: "projects-real-analysis-and-functional-analysis",
