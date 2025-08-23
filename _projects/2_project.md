@@ -12,4 +12,4 @@ giscus_comments: true
 
 **Functional Analysis** generalizes the concepts of real analysis to abstract—typically infinite-dimensional—linear spaces, chiefly function spaces, together with the operators acting on them. Originating in the early twentieth century through the work of Hilbert, Banach, and others, it treats functions as points of topological vector spaces and investigates their topological and algebraic structures. Central notions include normed and Banach spaces, Hilbert spaces, and linear operator theory. Properties such as the completeness of Banach spaces and the orthogonality structure of Hilbert spaces yield powerful methods for the analysis of differential and integral equations.
 
-[here](https://galobelwang.github.io/file/RealFunctionalAnalysis.pdf)
+Click [here](https://galobelwang.github.io/file/RealFunctionalAnalysis.pdf) to access the lecture notes.
