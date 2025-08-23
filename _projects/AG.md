@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Stability Theory
-description: a brief introduction
-img: assets/img/MSUpicture.jpg
-category: BSc
+title: Complex algebraic geometry
+img: assets/img/hkulogo.jpg
+category: PhD
 giscus_comments: false
 ---
 
