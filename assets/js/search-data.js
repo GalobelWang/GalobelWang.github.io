@@ -388,6 +388,11 @@ ninja.data = [{
           description: "a brief introduction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/FourierA/";
+            },},{id: "projects-galois-theory",
+          title: 'Galois Theory',
+          description: "a brief introduction",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Galois/";
             },},{id: "projects-integrals-with-parameters",
           title: 'Integrals with Parameters',
           description: "a brief introduction",
@@ -398,11 +403,6 @@ ninja.data = [{
           description: "with background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/IntonManifolds/";
-            },},{id: "projects-numerical-linear-algebra",
-          title: 'Numerical Linear Algebra',
-          description: "a brief introduction",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/NLA%20-%20Copy/";
             },},{id: "projects-numerical-linear-algebra",
           title: 'Numerical Linear Algebra',
           description: "a brief introduction",
