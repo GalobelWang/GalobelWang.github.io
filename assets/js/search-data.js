@@ -378,12 +378,7 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
+      },{id: "projects-project-7",
           title: 'project 7',
           description: "with background image",
           section: "Projects",handler: () => {
@@ -423,6 +418,11 @@ ninja.data = [{
           description: "a brief introduction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/RAFA/";
+            },},{id: "projects-series",
+          title: 'Series',
+          description: "a brief introduction",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Series/";
             },},{
         id: 'social-email',
         title: 'email',
