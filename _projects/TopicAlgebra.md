@@ -2,8 +2,8 @@
 layout: page
 title: Stability Theory
 description: a brief introduction
-img: assets/img/MSUpicture.jpg
-category: BSc
+img: assets/img/hkulogo.jpg
+category: PhD
 giscus_comments: false
 ---
 
