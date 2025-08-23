@@ -378,12 +378,7 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
+      },{id: "projects-project-8",
           title: 'project 8',
           description: "an other project with a background image and giscus comments",
           section: "Projects",handler: () => {
@@ -408,6 +403,11 @@ ninja.data = [{
           description: "a brief introduction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Integral/";
+            },},{id: "projects-integration-on-manifolds",
+          title: 'Integration on Manifolds',
+          description: "with background image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/IntonManifolds/";
             },},{id: "projects-probability-theory-and-mathematical-statistics",
           title: 'Probability Theory and Mathematical Statistics',
           description: "a brief introduction",
