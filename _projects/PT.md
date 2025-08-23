@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Probability Theory and Mathematical Statistics
-description: a brief introduction
 img: assets/img/MSUpicture.jpg
 category: BSc
 giscus_comments: false

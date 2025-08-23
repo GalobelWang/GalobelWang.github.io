@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Numerical Linear Algebra
-description: a brief introduction
 img: assets/img/MSUpicture.jpg
 category: BSc
 giscus_comments: false

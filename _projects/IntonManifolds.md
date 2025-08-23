@@ -1,11 +1,9 @@
 ---
 layout: page
 title: Integration on Manifolds
-description: with background image
-img: assets/img/4.jpg
-importance: 1
-category: work
-related_publications: true
+img: assets/img/MSUpicture.jpg
+category: BSc
+giscus_comments: false
 ---
 
 **Chapter 1** covers preparatory material, including an introduction to analysis and integration, as well as the foundational theories of **Jordan measure** and **Lebesgue measure**.
