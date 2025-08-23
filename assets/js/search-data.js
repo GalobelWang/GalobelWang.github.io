@@ -395,7 +395,7 @@ ninja.data = [{
               window.location.href = "/projects/CA/";
             },},{id: "projects-fourier-analysis",
           title: 'Fourier Analysis',
-          description: "",
+          description: "a brief introduction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/FourierA/";
             },},{id: "projects-galois-theory",
