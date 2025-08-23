@@ -378,12 +378,7 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
-            },},{id: "projects-complex-analysis",
+      },{id: "projects-complex-analysis",
           title: 'Complex Analysis',
           description: "a brief introduction",
           section: "Projects",handler: () => {
@@ -423,6 +418,11 @@ ninja.data = [{
           description: "a brief introduction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Series/";
+            },},{id: "projects-stability-theory",
+          title: 'Stability Theory',
+          description: "a brief introduction",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/StabilityT/";
             },},{
         id: 'social-email',
         title: 'email',
