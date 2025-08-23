@@ -425,12 +425,12 @@ ninja.data = [{
               window.location.href = "/projects/PT/";
             },},{id: "projects-real-analysis-and-functional-analysis",
           title: 'Real Analysis and Functional Analysis',
-          description: "a brief introduction",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/RAFA/";
             },},{id: "projects-series",
           title: 'Series',
-          description: "a brief introduction",
+          description: "a project with no image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Series/";
             },},{id: "projects-stability-theory",
