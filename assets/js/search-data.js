@@ -402,7 +402,17 @@ ninja.data = [{
           title: 'Numerical Linear Algebra',
           description: "a brief introduction",
           section: "Projects",handler: () => {
+              window.location.href = "/projects/NLA%20-%20Copy/";
+            },},{id: "projects-numerical-linear-algebra",
+          title: 'Numerical Linear Algebra',
+          description: "a brief introduction",
+          section: "Projects",handler: () => {
               window.location.href = "/projects/NLA/";
+            },},{id: "projects-probability-theory-and-mathematical-statistics",
+          title: 'Probability Theory and Mathematical Statistics',
+          description: "a brief introduction",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/PT%20-%20Copy/";
             },},{id: "projects-probability-theory-and-mathematical-statistics",
           title: 'Probability Theory and Mathematical Statistics',
           description: "a brief introduction",
@@ -412,12 +422,27 @@ ninja.data = [{
           title: 'Real Analysis and Functional Analysis',
           description: "a brief introduction",
           section: "Projects",handler: () => {
+              window.location.href = "/projects/RAFA%20-%20Copy/";
+            },},{id: "projects-real-analysis-and-functional-analysis",
+          title: 'Real Analysis and Functional Analysis',
+          description: "a brief introduction",
+          section: "Projects",handler: () => {
               window.location.href = "/projects/RAFA/";
             },},{id: "projects-series",
           title: 'Series',
           description: "a brief introduction",
           section: "Projects",handler: () => {
+              window.location.href = "/projects/Series%20-%20Copy/";
+            },},{id: "projects-series",
+          title: 'Series',
+          description: "a brief introduction",
+          section: "Projects",handler: () => {
               window.location.href = "/projects/Series/";
+            },},{id: "projects-stability-theory",
+          title: 'Stability Theory',
+          description: "a brief introduction",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/StabilityT%20-%20Copy/";
             },},{id: "projects-stability-theory",
           title: 'Stability Theory',
           description: "a brief introduction",
