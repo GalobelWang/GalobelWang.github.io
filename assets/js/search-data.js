@@ -440,7 +440,7 @@ ninja.data = [{
               window.location.href = "/projects/StabilityT/";
             },},{id: "projects-stability-theory",
           title: 'Stability Theory',
-          description: "a brief introduction",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/TopicAlgebra/";
             },},{
