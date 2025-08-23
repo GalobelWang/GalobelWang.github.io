@@ -430,7 +430,7 @@ ninja.data = [{
               window.location.href = "/projects/RAFA/";
             },},{id: "projects-series",
           title: 'Series',
-          description: "a project with no image",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Series/";
             },},{id: "projects-stability-theory",
