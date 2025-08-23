@@ -378,12 +378,7 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "projects-complex-analysis",
-          title: 'Complex Analysis',
-          description: "a brief introduction",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
+      },{id: "projects-project-4",
           title: 'project 4',
           description: "another without an image",
           section: "Projects",handler: () => {
@@ -413,6 +408,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-complex-analysis",
+          title: 'Complex Analysis',
+          description: "a brief introduction",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/CAmd/";
             },},{id: "projects-fourier-analysis",
           title: 'Fourier Analysis',
           description: "a brief introduction",
