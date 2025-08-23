@@ -3,7 +3,6 @@ layout: page
 title: Real Analysis and Functional Analysis
 description: a brief introduction
 img: assets/img/MSUpicture.jpg
-importance: 2
 category: BSc
 giscus_comments: false
 ---
