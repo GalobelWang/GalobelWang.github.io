@@ -378,9 +378,9 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+      },{id: "projects-probability-theory-and-mathematical-statistics",
+          title: 'Probability Theory and Mathematical Statistics',
+          description: "a brief introduction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
             },},{id: "projects-project-5",
