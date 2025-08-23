@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Series
-description: a project with no image
 img: assets/img/MSUpicture.jpg
 category: BSc
 giscus_comments: false
