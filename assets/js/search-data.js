@@ -380,7 +380,7 @@ ninja.data = [{
         },
       },{id: "projects-abstract-algebra",
           title: 'Abstract Algebra',
-          description: "a brief introduction",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/AA/";
             },},{id: "projects-complex-algebraic-geometry",
@@ -390,12 +390,12 @@ ninja.data = [{
               window.location.href = "/projects/AG/";
             },},{id: "projects-complex-analysis",
           title: 'Complex Analysis',
-          description: "a brief introduction",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/CA/";
             },},{id: "projects-fourier-analysis",
           title: 'Fourier Analysis',
-          description: "a brief introduction",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/FourierA/";
             },},{id: "projects-galois-theory",
