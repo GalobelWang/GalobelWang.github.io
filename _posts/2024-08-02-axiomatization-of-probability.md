@@ -8,9 +8,9 @@ date: 2024-08-02
 featured: true
 
 authors:
-  - name: Juan Pablo Vigneaux
+  - name: Galobel Wang
     affiliations:
-      name: Caltech
+      name: HKU
 
 # Optionally, you can add a table of contents to your post.
 # NOTES:
