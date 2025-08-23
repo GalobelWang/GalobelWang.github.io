@@ -383,8 +383,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/AA/";
-            },},{id: "projects-complex-algebraic-geometry",
-          title: 'Complex algebraic geometry',
+            },},{id: "projects-complex-algebraic-geometry-and-hodge-theory",
+          title: 'Complex algebraic geometry and Hodge theory',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/AG/";
@@ -438,8 +438,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/StabilityT/";
-            },},{id: "projects-stability-theory",
-          title: 'Stability Theory',
+            },},{id: "projects-topics-in-algebra",
+          title: 'Topics in algebra',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/TopicAlgebra/";
