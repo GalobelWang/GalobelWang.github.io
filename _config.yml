@@ -135,7 +135,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Galobel Wang's blog # blog_name will be displayed in your blog page
-blog_description: Information and Coding theory, Algebraic geometry and Hodge theory, etc.
+blog_description: Information and Coding theory, Algebraic geometry and Hodge theory, Algebraic combinatorics etc.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
