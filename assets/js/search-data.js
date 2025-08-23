@@ -388,9 +388,9 @@ ninja.data = [{
           description: "a brief introduction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-complex-analysis",
+          title: 'Complex Analysis',
+          description: "a brief introduction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "projects-project-4",
