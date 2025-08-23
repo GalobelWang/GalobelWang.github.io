@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Fourier Analysis
-description: a brief introduction
 img: assets/img/MSUpicture.jpg
 category: BSc
 related_publications: false
