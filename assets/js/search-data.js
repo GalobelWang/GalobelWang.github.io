@@ -430,12 +430,12 @@ ninja.data = [{
               window.location.href = "/projects/RAFA/";
             },},{id: "projects-series",
           title: 'Series',
-          description: "a brief introduction",
+          description: "a project with no image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Series/";
             },},{id: "projects-stability-theory",
           title: 'Stability Theory',
-          description: "a brief introduction",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/StabilityT/";
             },},{id: "projects-stability-theory",
