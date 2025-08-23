@@ -438,6 +438,11 @@ ninja.data = [{
           description: "a brief introduction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/StabilityT/";
+            },},{id: "projects-stability-theory",
+          title: 'Stability Theory',
+          description: "a brief introduction",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/TopicAlgebra/";
             },},{
         id: 'social-email',
         title: 'email',
