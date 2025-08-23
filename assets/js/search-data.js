@@ -378,12 +378,7 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
+      },{id: "projects-project-6",
           title: 'project 6',
           description: "a project with no image",
           section: "Projects",handler: () => {
@@ -413,6 +408,11 @@ ninja.data = [{
           description: "a brief introduction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/FourierA/";
+            },},{id: "projects-integrals-with-parameters",
+          title: 'Integrals with Parameters',
+          description: "a brief introduction",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Integral/";
             },},{id: "projects-probability-theory-and-mathematical-statistics",
           title: 'Probability Theory and Mathematical Statistics',
           description: "a brief introduction",
