@@ -383,9 +383,9 @@ ninja.data = [{
           description: "a brief introduction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/AA/";
-            },},{id: "projects-stability-theory",
-          title: 'Stability Theory',
-          description: "a brief introduction",
+            },},{id: "projects-complex-algebraic-geometry",
+          title: 'Complex algebraic geometry',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/AG/";
             },},{id: "projects-complex-analysis",
