@@ -383,6 +383,11 @@ ninja.data = [{
           description: "a brief introduction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/AA/";
+            },},{id: "projects-stability-theory",
+          title: 'Stability Theory',
+          description: "a brief introduction",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/AG/";
             },},{id: "projects-complex-analysis",
           title: 'Complex Analysis',
           description: "a brief introduction",
@@ -428,11 +433,6 @@ ninja.data = [{
           description: "a brief introduction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Series/";
-            },},{id: "projects-stability-theory",
-          title: 'Stability Theory',
-          description: "a brief introduction",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/StabilityT%20-%20Copy/";
             },},{id: "projects-stability-theory",
           title: 'Stability Theory',
           description: "a brief introduction",
