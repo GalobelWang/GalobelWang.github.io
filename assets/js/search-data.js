@@ -378,12 +378,7 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
+      },{id: "projects-project-9",
           title: 'project 9',
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
@@ -408,6 +403,11 @@ ninja.data = [{
           description: "with background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/IntonManifolds/";
+            },},{id: "projects-numerical-linear-algebra",
+          title: 'Numerical Linear Algebra',
+          description: "a brief introduction",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/NLA/";
             },},{id: "projects-probability-theory-and-mathematical-statistics",
           title: 'Probability Theory and Mathematical Statistics',
           description: "a brief introduction",
