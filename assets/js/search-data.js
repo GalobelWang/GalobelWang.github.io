@@ -383,8 +383,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/AA/";
-            },},{id: "projects-complex-algebraic-geometry-and-hodge-theory",
-          title: 'Complex algebraic geometry and Hodge theory',
+            },},{id: "projects-complex-algebraic-geometry",
+          title: 'Complex algebraic geometry',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/AG/";
