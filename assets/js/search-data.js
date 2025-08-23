@@ -427,11 +427,6 @@ ninja.data = [{
           title: 'Series',
           description: "a brief introduction",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/Series%20-%20Copy/";
-            },},{id: "projects-series",
-          title: 'Series',
-          description: "a brief introduction",
-          section: "Projects",handler: () => {
               window.location.href = "/projects/Series/";
             },},{id: "projects-stability-theory",
           title: 'Stability Theory',
