@@ -383,11 +383,6 @@ ninja.data = [{
           description: "a brief introduction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-real-analysis-and-functional-analysis",
-          title: 'Real Analysis and Functional Analysis',
-          description: "a brief introduction",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
             },},{id: "projects-complex-analysis",
           title: 'Complex Analysis',
           description: "a brief introduction",
@@ -423,6 +418,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-real-analysis-and-functional-analysis",
+          title: 'Real Analysis and Functional Analysis',
+          description: "a brief introduction",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/RAFA/";
             },},{
         id: 'social-email',
         title: 'email',
