@@ -390,7 +390,7 @@ ninja.data = [{
               window.location.href = "/projects/AG/";
             },},{id: "projects-complex-analysis",
           title: 'Complex Analysis',
-          description: "",
+          description: "a brief introduction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/CA/";
             },},{id: "projects-fourier-analysis",
