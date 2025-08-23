@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "projects-abstract-algebra",
+        },{id: "post-kolmogorov-39-s-axiomatization-of-probability",
+        
+          title: "Kolmogorov&#39;s axiomatization of probability",
+        
+        description: "Where I attempt to provide historical context for Kolmogorov&#39;s axiomatization of probability.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/axiomatization-of-probability/";
+          
+        },
+      },{id: "projects-abstract-algebra",
           title: 'Abstract Algebra',
           description: "",
           section: "Projects",handler: () => {
