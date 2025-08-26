@@ -73,8 +73,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Galois/";
-            },},{id: "projects-information-geometry",
-          title: 'Information geometry',
+            },},{id: "projects-information-geometry-and-optimal-transport",
+          title: 'Information geometry and optimal transport',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/IGOT/";
