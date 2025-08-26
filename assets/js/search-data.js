@@ -73,8 +73,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Galois/";
-            },},{id: "projects-information-geometry-and-optimal-transport",
-          title: 'Information geometry and optimal transport',
+            },},{id: "projects-information-geometry",
+          title: 'Information geometry',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/IGOT/";
@@ -113,6 +113,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/StabilityT/";
+            },},{id: "projects-statistical-mechanics",
+          title: 'Statistical mechanics',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/StatMe/";
             },},{id: "projects-topics-in-algebra",
           title: 'Topics in algebra',
           description: "",
