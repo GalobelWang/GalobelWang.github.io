@@ -63,17 +63,14 @@ Differential geometry provides the tools to perform calculus on these more gener
 
 Intuitively, an $$n$$-dimensional manifold is a space that, if you "zoom in" enough at any point, looks like an open subset of $$\mathbb{R}^n$$.
 
-<blockquote class="box-definition" markdown="1">
-<div class="title" markdown="1">
-**Definition.** An **$$n$$-dimensional topological manifold** $$M$$
-</div>
+<div class="definition" markdown="1" text="An **$$n$$-dimensional topological manifold** $$M$$">
 A topological space $$M$$ is an $$n$$-dimensional topological manifold if:
 1.  $$M$$ is **Hausdorff**: Any two distinct points have disjoint open neighborhoods.
 2.  $$M$$ is **second-countable**: $$M$$ has a countable basis for its topology. (These ensure $$M$$ is "nice" enough.)
 3.  $$M$$ is **locally Euclidean of dimension $$n$$**: Every point $$p \in M$$ has an open neighborhood $$U$$ that is homeomorphic to an open subset $$V \subseteq \mathbb{R}^n$$. A homeomorphism is a continuous bijection with a continuous inverse.
 
 The pair $$(U, \phi)$$, where $$\phi: U \to V \subseteq \mathbb{R}^n$$ is such a homeomorphism, is called a **chart** (or coordinate system) around $$p$$. The functions $$x^i = \pi^i \circ \phi$$ (where $$\pi^i$$ are projections onto coordinate axes in $$\mathbb{R}^n$$) are local coordinate functions.
-</blockquote>
+</div>
 
 <details class="details-block" markdown="1">
 <summary markdown="1">
