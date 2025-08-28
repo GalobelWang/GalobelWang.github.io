@@ -37,11 +37,11 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-kolmogorov-39-s-axiomatization-of-probability",
+        },{id: "post-a-brief-introduction-to-differential-geometry",
         
-          title: "Kolmogorov&#39;s axiomatization of probability",
+          title: "A brief introduction to differential geometry",
         
-        description: "Where I attempt to provide historical context for Kolmogorov&#39;s axiomatization of probability.",
+        description: "Foundational preliminaries of information geometry",
         section: "Posts",
         handler: () => {
           
