@@ -45,7 +45,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/axiomatization-of-probability/";
+            window.location.href = "/blog/2025/axiomatization-of-probability/";
           
         },
       },{id: "projects-abstract-algebra",
