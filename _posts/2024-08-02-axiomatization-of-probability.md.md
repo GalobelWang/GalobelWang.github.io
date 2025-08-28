@@ -63,14 +63,17 @@ Differential geometry provides the tools to perform calculus on these more gener
 
 Intuitively, an $$n$$-dimensional manifold is a space that, if you "zoom in" enough at any point, looks like an open subset of $$\mathbb{R}^n$$.
 
-<div class="definition" markdown="1" text="An **$$n$$-dimensional topological manifold** $$M$$">
+<blockquote class="box-definition" markdown="1">
+<div class="title" markdown="1">
+**Definition.** An **$$n$$-dimensional topological manifold** $$M$$
+</div>
 A topological space $$M$$ is an $$n$$-dimensional topological manifold if:
 1.  $$M$$ is **Hausdorff**: Any two distinct points have disjoint open neighborhoods.
 2.  $$M$$ is **second-countable**: $$M$$ has a countable basis for its topology. (These ensure $$M$$ is "nice" enough.)
 3.  $$M$$ is **locally Euclidean of dimension $$n$$**: Every point $$p \in M$$ has an open neighborhood $$U$$ that is homeomorphic to an open subset $$V \subseteq \mathbb{R}^n$$. A homeomorphism is a continuous bijection with a continuous inverse.
 
 The pair $$(U, \phi)$$, where $$\phi: U \to V \subseteq \mathbb{R}^n$$ is such a homeomorphism, is called a **chart** (or coordinate system) around $$p$$. The functions $$x^i = \pi^i \circ \phi$$ (where $$\pi^i$$ are projections onto coordinate axes in $$\mathbb{R}^n$$) are local coordinate functions.
-</div>
+</blockquote>
 
 <details class="details-block" markdown="1">
 <summary markdown="1">
@@ -269,7 +272,368 @@ $$
 Gradient descent involves taking steps in the direction of $$-X_L(p)$$. More generally, on a Riemannian manifold (which we'll introduce later), the gradient vector field $$\nabla L$$ is intrinsically defined. Optimization algorithms often aim to follow trajectories of such (or related) vector fields to find minima of $$L$$.
 </blockquote>
 
+# Riemannian Metrics and Geodesics
 
+### Introduction
 
+We have already introduced smooth manifolds as generalized spaces and tangent spaces as the local linear approximations where derivatives live. However, manifolds themselves don't inherently come with a way to measure distances, angles, or volumes. To do this, we need to equip them with additional structure: a **Riemannian metric**.
 
+A Riemannian metric provides an inner product on each tangent space, varying smoothly from point to point. This is the key to unlocking a wealth of geometric notions:
+- How long is a curve on the manifold?
+- What is the shortest path (geodesic) between two points?
+- What is the angle between two intersecting curves?
+- How can we define volumes and integrate functions over manifolds?
 
+Understanding these concepts is crucial for appreciating how the "shape" of a parameter space influences optimization algorithms in machine learning.
+
+### Riemannian Metrics: Defining Local Geometry
+
+<blockquote class="box-definition" markdown="1">
+<div class="title" markdown="1">
+**Definition.** **Riemannian Metric**
+</div>
+A **Riemannian metric** $$g$$ on a smooth manifold $$M$$ is a smooth assignment of an inner product $$g_p: T_p M \times T_p M \to \mathbb{R}$$ to each tangent space $$T_p M$$.
+This means that for each $$p \in M$$, $$g_p$$ is a symmetric, positive-definite bilinear form on $$T_p M$$.
+"Smooth assignment" means that if $$X, Y$$ are smooth vector fields on $$M$$, then the function $$p \mapsto g_p(X_p, Y_p)$$ is a smooth function on $$M$$.
+A smooth manifold $$M$$ equipped with a Riemannian metric $$g$$ is called a **Riemannian manifold**, denoted $$(M, g)$$.
+</blockquote>
+
+In local coordinates $$(x^1, \dots, x^n)$$ around a point $$p$$, the metric $$g_p$$ is completely determined by its values on the basis vectors $$\{\partial_i = \partial/\partial x^i\vert_p\}$$:
+
+$$
+g_{ij}(p) := g_p\left(\frac{\partial}{\partial x^i}\Big\vert_p, \frac{\partial}{\partial x^j}\Big\vert_p\right)
+$$
+
+The functions $$g_{ij}(p)$$ are the **components of the metric tensor** in these coordinates. They form a symmetric, positive-definite matrix $$[g_{ij}(p)]$$ for each $$p$$.
+If $$v = v^i \partial_i$$ and $$w = w^j \partial_j$$ are two tangent vectors at $$p$$ (using Einstein summation convention), their inner product is:
+
+$$
+g_p(v, w) = \sum_{i,j=1}^n g_{ij}(p) v^i w^j
+$$
+
+The length (or norm) of a tangent vector $$v$$ is $$\Vert v \Vert_p = \sqrt{g_p(v,v)}$$.
+The angle $$\theta$$ between two non-zero tangent vectors $$v, w$$ at $$p$$ is defined by $$\cos \theta = \frac{g_p(v,w)}{\Vert v \Vert_p \Vert w \Vert_p}$$.
+
+<blockquote class="box-example" markdown="1">
+<div class="title" markdown="1">
+**Example.** Euclidean Metric on $$\mathbb{R}^n$$
+</div>
+On $$M = \mathbb{R}^n$$ with standard Cartesian coordinates $$(x^1, \dots, x^n)$$, the standard Euclidean metric has $$g_{ij}(p) = \delta_{ij}$$ (the Kronecker delta) for all $$p$$.
+So, $$g_p(v,w) = \sum_{i=1}^n v^i w^i = v \cdot w$$ (the usual dot product).
+</blockquote>
+
+<blockquote class="box-example" markdown="1">
+<div class="title" markdown="1">
+**Example.** Metric on the Sphere $$S^2$$
+</div>
+The sphere $$S^2$$ can be parameterized by spherical coordinates $$(\theta, \phi)$$. The metric induced from the standard Euclidean metric in $$\mathbb{R}^3$$ is (for radius $$R=1$$):
+
+$$
+(g_{ij}) = \begin{pmatrix} 1 & 0 \\ 0 & \sin^2\theta \end{pmatrix}
+$$
+
+So $$ds^2 = d\theta^2 + \sin^2\theta \, d\phi^2$$. This is non-Euclidean; the components $$g_{ij}$$ are not constant.
+</blockquote>
+
+### Arc Length, Distance, and Volume
+
+With a Riemannian metric, we can define:
+- **Length of a Curve:** If $$\gamma: [a,b] \to M$$ is a smooth curve, its length is
+
+  $$
+  L(\gamma) = \int_a^b \Vert \gamma'(t) \Vert_{\gamma(t)} \, dt = \int_a^b \sqrt{g_{\gamma(t)}(\gamma'(t), \gamma'(t))} \, dt
+  $$
+
+  In local coordinates $$x^i(t) = (\phi \circ \gamma)^i(t)$$, this becomes
+
+  $$
+  L(\gamma) = \int_a^b \sqrt{\sum_{i,j} g_{ij}(x(t)) \frac{dx^i}{dt} \frac{dx^j}{dt}} \, dt
+  $$
+
+  The infinitesimal arc length element is often written as $$ds^2 = \sum_{i,j} g_{ij} dx^i dx^j$$.
+
+- **Distance (Riemannian Distance):** The distance $$d(p,q)$$ between two points $$p, q \in M$$ is the infimum of the lengths of all piecewise smooth curves connecting $$p$$ to $$q$$:
+
+  $$
+  d(p,q) = \inf \{ L(\gamma) \mid \gamma \text{ is a piecewise smooth curve from } p \text{ to } q \}
+  $$
+
+- **Volume Form and Integration:** On an oriented $$n$$-dimensional Riemannian manifold $$(M,g)$$, there's a natural **volume form** (an $$n$$-form) $$\text{vol}_g$$. In local oriented coordinates $$(x^1, \dots, x^n)$$, it's given by:
+
+  $$
+  \text{vol}_g = \sqrt{\det(g_{ij})} \, dx^1 \wedge \dots \wedge dx^n
+  $$
+
+  This allows us to integrate functions $$f: M \to \mathbb{R}$$ over $$M$$:
+
+  $$
+  \int_M f \, \text{vol}_g = \int_{\phi(U)} (f \circ \phi^{-1})(x) \sqrt{\det(g_{ij}(x))} \, dx^1 \dots dx^n
+  $$
+
+  (using a partition of unity for global integration).
+
+<blockquote class="box-info" markdown="1">
+<div class="title" markdown="1">
+**A Note on Metrics in Machine Learning: The Fisher Information Metric**
+</div>
+While we are discussing general Riemannian metrics, it's worth noting a particularly important one in statistics and machine learning: the **Fisher Information Metric (FIM)**.
+If our manifold $$M$$ is a space of probability distributions $$p(x; \theta)$$ parameterized by $$\theta = (\theta^1, \dots, \theta^n)$$, the FIM provides a natural way to measure "distance" or "distinguishability" between nearby distributions. Its components are given by:
+
+$$
+(g_{ij})_{\text{Fisher}}(\theta) = E_{p(x;\theta)}\left[ \frac{\partial \log p(x;\theta)}{\partial \theta^i} \frac{\partial \log p(x;\theta)}{\partial \theta^j} \right]
+$$
+
+The FIM captures the sensitivity of the distribution to changes in its parameters. Optimization algorithms that use the FIM (like Natural Gradient Descent) often exhibit better convergence properties by taking into account the geometry of this parameter space.
+
+We will *not* delve into the details or derivations of the FIM here. It serves as a prime example of how Riemannian geometry finds deep applications in ML. The FIM and its consequences will be the central topic of the **Information Geometry crash course**.
+</blockquote>
+
+### Geodesics: "Straightest" Paths
+
+In Euclidean space, the shortest path between two points is a straight line. On a curved manifold, the concept of a "straight line" is replaced by a **geodesic**.
+
+Intuitively, a geodesic is a curve that is locally distance-minimizing. More formally:
+- A curve $$\gamma(t)$$ is a geodesic if its tangent vector $$\gamma'(t)$$ is "parallel transported" along itself. (We'll formalize parallel transport in Part 3 with connections).
+- Equivalently, geodesics are critical points of the **energy functional** $$E(\gamma) = \frac{1}{2} \int_a^b g(\gamma'(t), \gamma'(t)) \, dt$$. Curves that minimize length also minimize energy (if parameterized by arc length).
+- Geodesics are curves with zero "acceleration" in the context of the manifold's geometry.
+
+<blockquote class="box-definition" markdown="1">
+<div class="title" markdown="1">
+**Definition.** **Geodesic Equation**
+</div>
+A curve $$\gamma(t)$$ with local coordinates $$x^i(t)$$ is a geodesic if it satisfies the geodesic equations:
+
+$$
+\frac{d^2 x^k}{dt^2} + \sum_{i,j=1}^n \Gamma^k_{ij}(x(t)) \frac{dx^i}{dt} \frac{dx^j}{dt} = 0 \quad \text{for } k=1, \dots, n
+$$
+
+Here, $$\Gamma^k_{ij}$$ are the **Christoffel symbols** (of the second kind), which depend on the metric $$g_{ij}$$ and its first derivatives:
+
+$$
+\Gamma^k_{ij} = \frac{1}{2} \sum_{l=1}^n g^{kl} \left( \frac{\partial g_{jl}}{\partial x^i} + \frac{\partial g_{il}}{\partial x^j} - \frac{\partial g_{ij}}{\partial x^l} \right)
+$$
+
+where $$[g^{kl}]$$ is the inverse matrix of $$[g_{kl}]$$.
+(We will formally introduce Christoffel symbols as components of a connection in Part 3).
+</blockquote>
+
+<blockquote class="box-example" markdown="1">
+<div class="title" markdown="1">
+**Examples of Geodesics**
+</div>
+- On $$\mathbb{R}^n$$ with the Euclidean metric, $$g_{ij} = \delta_{ij}$$, so all $$\Gamma^k_{ij} = 0$$. The geodesic equations become $$\frac{d^2 x^k}{dt^2} = 0$$, whose solutions are straight lines $$x^k(t) = a^k t + b^k$$.
+- On the sphere $$S^2$$, geodesics are great circles (e.g., lines of longitude, the equator).
+- On a cylinder, geodesics are helices, circles, and straight lines along the axis.
+</blockquote>
+
+**Existence and Uniqueness:** For any point $$p \in M$$ and any tangent vector $$v \in T_p M$$, there exists a unique geodesic $$\gamma_v(t)$$ defined on some interval $$(-\epsilon, \epsilon)$$ such that $$\gamma_v(0)=p$$ and $$\gamma_v'(0)=v$$.
+
+**Exponential Map:** The **exponential map** at $$p$$, denoted $$\exp_p: T_p M \to M$$, is defined by $$\exp_p(v) = \gamma_v(1)$$. It maps a tangent vector $$v$$ (thought of as an initial velocity) to the point reached by following the geodesic starting at $$p$$ with velocity $$v$$ for unit time. This map is a local diffeomorphism near the origin of $$T_p M$$.
+
+<blockquote class="box-tip" markdown="1">
+<summary markdown="1">
+**Geodesics and Optimization**
+</summary>
+In optimization, we often think of gradient descent as following the "steepest descent" direction. If the parameter space has a non-Euclidean Riemannian metric (like the FIM), the "straightest path" for an optimization update might not be a straight line in the coordinate representation but rather a geodesic of this metric.
+- **Gradient Flow:** The continuous version of gradient descent, $$\frac{dx}{dt} = -\nabla_g L(x)$$, describes curves whose tangent is the negative gradient vector field (with respect to the metric $$g$$). Understanding geodesics helps understand the behavior of such flows.
+- Some optimization methods (like trust-region methods on manifolds) explicitly try to take steps along geodesics.
+</details>
+
+# Connections, Covariant Derivatives, and Curvature
+
+### Introduction
+
+In the previous parts, we established smooth manifolds as our geometric spaces (Part 1) and endowed them with Riemannian metrics to measure lengths and angles. Now, we need tools to understand how geometric objects, particularly vector fields, *change* as we move across the manifold.
+- How do we differentiate a vector field in a way that is intrinsic to the manifold, not dependent on a specific embedding in a higher-dimensional Euclidean space?
+- How can we compare tangent vectors at different points? This leads to the idea of **parallel transport**.
+- How do we quantify the "bending" or **curvature** of a manifold?
+
+These concepts are captured by **connections**, **covariant derivatives**, and the **Riemann curvature tensor**. They are vital for a deeper understanding of optimization on manifolds, as curvature, for instance, directly impacts the behavior of geodesics and the complexity of loss landscapes.
+
+### The Need for a Covariant Derivative
+
+Consider a vector field $$Y$$ on a manifold $$M$$ and another vector field $$X$$ (or a curve $$\gamma(t)$$ with tangent $$X = \gamma'(t)$$). We want to define the derivative of $$Y$$ in the "direction" of $$X$$, denoted $$\nabla_X Y$$.
+In $$\mathbb{R}^n$$, if $$Y(x) = (Y^1(x), \dots, Y^n(x))$$ and $$X_p = (X^1, \dots, X^n)$$, the directional derivative is
+
+$$
+(\nabla_X Y)(p) = \lim_{h \to 0} \frac{Y(p+hX_p) - Y(p)}{h} = \sum_j X^j \frac{\partial Y}{\partial x^j}(p)
+$$
+
+Each component $$(\nabla_X Y)^i = X(Y^i) = \sum_j X^j \frac{\partial Y^i}{\partial x^j}$$.
+This simple component-wise differentiation doesn't work directly on a general manifold because:
+1.  $$Y(p+hX_p)$$ is not well-defined: there's no canonical "addition" on a manifold.
+2.  Even if we use charts, $$Y(q) - Y(p)$$ is not meaningful as $$T_q M$$ and $$T_p M$$ are different vector spaces.
+3.  The basis vectors $$\partial/\partial x^i$$ themselves change from point to point if the coordinates are curvilinear. Taking partial derivatives of components $$Y^j$$ of $$Y = Y^j \partial_j$$ does not capture this change in basis vectors.
+
+We need a derivative operator that produces a tangent vector and behaves like a derivative. This is an **affine connection**.
+
+<blockquote class="box-definition" markdown="1">
+<div class="title" markdown="1">
+**Definition.** **Affine Connection (Covariant Derivative)**
+</div>
+An **affine connection** $$\nabla$$ on a smooth manifold $$M$$ is an operator
+
+$$
+\nabla: \mathfrak{X}(M) \times \mathfrak{X}(M) \to \mathfrak{X}(M), \quad (X, Y) \mapsto \nabla_X Y
+$$
+
+(where $$\mathfrak{X}(M)$$ is the space of smooth vector fields on $$M$$) satisfying:
+1.  **$$C^\infty(M)$$-linearity in $$X$$:** $$\nabla_{fX_1 + gX_2} Y = f \nabla_{X_1} Y + g \nabla_{X_2} Y$$ for $$f,g \in C^\infty(M)$$.
+2.  **$$\mathbb{R}$$-linearity in $$Y$$:** $$\nabla_X (aY_1 + bY_2) = a \nabla_X Y_1 + b \nabla_X Y_2$$ for $$a,b \in \mathbb{R}$$.
+3.  **Leibniz rule (product rule) in $$Y$$:** $$\nabla_X (fY) = (Xf)Y + f \nabla_X Y$$ for $$f \in C^\infty(M)$$.
+
+The vector field $$\nabla_X Y$$ is called the **covariant derivative** of $$Y$$ with respect to $$X$$.
+If $$X_p \in T_pM$$, then $$(\nabla_X Y)_p$$ depends only on $$X_p$$ and the values of $$Y$$ in a neighborhood of $$p$$. So we can also define $$\nabla_v Y$$ for $$v \in T_p M$$.
+</blockquote>
+
+In local coordinates $$(x^1, \dots, x^n)$$ with basis vector fields $$\partial_i = \partial/\partial x^i$$, the connection is determined by how it acts on these basis fields:
+
+$$
+\nabla_{\partial_i} \partial_j = \sum_{k=1}^n \Gamma^k_{ij} \partial_k
+$$
+
+The $$n^3$$ functions $$\Gamma^k_{ij}$$ are called the **Christoffel symbols** (or connection coefficients) of $$\nabla$$. These are the same symbols that appeared in the geodesic equation in Part 2 if we use a specific connection.
+With these, the covariant derivative of $$Y = Y^j \partial_j$$ along $$X = X^i \partial_i$$ has components:
+
+$$
+(\nabla_X Y)^k = X(Y^k) + \sum_{i,j=1}^n X^i Y^j \Gamma^k_{ij} = \sum_{i=1}^n X^i \left( \frac{\partial Y^k}{\partial x^i} + \sum_{j=1}^n Y^j \Gamma^k_{ij} \right)
+$$
+
+The term $$\sum Y^j \Gamma^k_{ij}$$ corrects for the change in the coordinate basis vectors.
+
+### The Levi-Civita Connection
+
+A general manifold can have many affine connections. If $$(M,g)$$ is a Riemannian manifold, there is a unique connection that is "compatible" with the metric and "symmetric": the **Levi-Civita connection**.
+
+<blockquote class="box-theorem" markdown="1">
+<div class="title" markdown="1">
+**Theorem.** **Fundamental Theorem of Riemannian Geometry**
+</div>
+On any Riemannian manifold $$(M,g)$$, there exists a unique affine connection $$\nabla$$ (called the **Levi-Civita connection** or Riemannian connection) satisfying:
+1.  **Metric compatibility:** $$\nabla$$ preserves the metric. That is, for any vector fields $$X, Y, Z$$:
+
+    $$
+    X(g(Y,Z)) = g(\nabla_X Y, Z) + g(Y, \nabla_X Z)
+    $$
+
+    (This means the metric is "covariantly constant": $$\nabla g = 0$$).
+2.  **Torsion-free (Symmetry):** For any vector fields $$X, Y$$:
+
+    $$
+    \nabla_X Y - \nabla_Y X = [X,Y]
+    $$
+
+    where $$[X,Y]$$ is the Lie bracket of vector fields. In local coordinates, this is equivalent to $$\Gamma^k_{ij} = \Gamma^k_{ji}$$ (symmetry of Christoffel symbols in lower indices).
+</blockquote>
+
+The Christoffel symbols for the Levi-Civita connection are precisely those given in Part 2, derived from the metric $$g_{ij}$$:
+
+$$
+\Gamma^k_{ij} = \frac{1}{2} \sum_{l=1}^n g^{kl} \left( \frac{\partial g_{jl}}{\partial x^i} + \frac{\partial g_{il}}{\partial x^j} - \frac{\partial g_{ij}}{\partial x^l} \right)
+$$
+
+From now on, unless stated otherwise, $$\nabla$$ will refer to the Levi-Civita connection on a Riemannian manifold.
+
+### Parallel Transport
+
+The covariant derivative allows us to define what it means for a vector field to be "constant" along a curve.
+Let $$\gamma: I \to M$$ be a smooth curve, and let $$V(t)$$ be a vector field along $$\gamma$$ (i.e., $$V(t) \in T_{\gamma(t)}M$$ for each $$t \in I$$).
+The **covariant derivative of $$V$$ along $$\gamma$$** is denoted $$\frac{DV}{dt}$$ or $$\nabla_{\gamma'(t)} V$$.
+
+<blockquote class="box-definition" markdown="1">
+<div class="title" markdown="1">
+**Definition.** **Parallel Transport**
+</div>
+A vector field $$V(t)$$ along a curve $$\gamma(t)$$ is said to be **parallel transported** along $$\gamma$$ if its covariant derivative along $$\gamma$$ is zero:
+
+$$
+\frac{DV}{dt}(t) = \nabla_{\gamma'(t)} V(t) = 0 \quad \text{for all } t \in I
+$$
+
+</blockquote>
+Given a vector $$v_0 \in T_{\gamma(t_0)}M$$ at a point $$\gamma(t_0)$$ on the curve, there exists a unique parallel vector field $$V(t)$$ along $$\gamma$$ such that $$V(t_0) = v_0$$. This process defines a linear isomorphism, called **parallel transport map** $$P_{\gamma, t_0, t_1}: T_{\gamma(t_0)}M \to T_{\gamma(t_1)}M$$, by $$P_{\gamma, t_0, t_1}(v_0) = V(t_1)$$.
+If the connection is metric-compatible (like Levi-Civita), parallel transport preserves inner products, lengths, and angles: $$g(V(t), W(t)) = \text{const}$$ if $$V,W$$ are parallel along $$\gamma$$.
+
+<blockquote class="box-info" markdown="1">
+**Holonomy.**
+If you parallel transport a vector around a closed loop $$\gamma$$, it may not return to its original orientation. The difference measures the **holonomy** of the connection, which is related to curvature. On a flat space like $$\mathbb{R}^n$$ with the standard connection, a vector always returns to itself. On a sphere, parallel transporting a vector around a latitude (other than the equator) will result in a rotated vector.
+</blockquote>
+
+**Geodesics Revisited:** A curve $$\gamma(t)$$ is a geodesic if and only if its tangent vector $$\gamma'(t)$$ is parallel transported along itself: $$\nabla_{\gamma'(t)} \gamma'(t) = 0$$. This is exactly the geodesic equation we saw earlier.
+
+### Curvature: Measuring the "Bending" of a Manifold
+
+Curvature quantifies how much the geometry of a Riemannian manifold deviates from being Euclidean ("flat"). A key way it manifests is that the result of parallel transporting a vector between two points can depend on the path taken.
+
+The **Riemann curvature tensor** (or Riemann tensor) $$R$$ measures the non-commutativity of covariant derivatives, or equivalently, the failure of second covariant derivatives to commute.
+For vector fields $$X, Y, Z$$, the Riemann tensor is defined as:
+
+$$
+R(X,Y)Z = \nabla_X \nabla_Y Z - \nabla_Y \nabla_X Z - \nabla_{[X,Y]} Z
+$$
+
+It's a $$(1,3)$$-tensor, meaning it takes three vector fields and produces one vector field. Its components in a local coordinate system $$(\partial_i = \partial/\partial x^i)$$ are $$R^l_{ijk}$$, where
+
+$$
+R(\partial_i, \partial_j)\partial_k = \sum_l R^l_{ijk} \partial_l
+$$
+
+Explicitly:
+
+$$
+R^l_{ijk} = \frac{\partial \Gamma^l_{kj}}{\partial x^i} - \frac{\partial \Gamma^l_{ki}}{\partial x^j} + \sum_m (\Gamma^m_{kj} \Gamma^l_{im} - \Gamma^m_{ki} \Gamma^l_{jm})
+$$
+
+A manifold is **flat** (locally isometric to Euclidean space) if and only if its Riemann curvature tensor is identically zero.
+
+**Symmetries of the Riemann Tensor:**
+The Riemann tensor (in its $$(0,4)$$ form, $$R_{lijk} = g_{lm}R^m_{ijk}$$) has several symmetries:
+1.  $$R_{lijk} = -R_{ljik}$$
+2.  $$R_{lijk} = -R_{klij}$$ (from $$R(X,Y)Z = -R(Y,X)Z$$ and others)
+3.  First Bianchi Identity: $$R(X,Y)Z + R(Y,Z)X + R(Z,X)Y = 0$$ (or $$R_{lijk} + R_{ljki} + R_{lkij} = 0$$)
+
+These symmetries reduce the number of independent components. For an $$n$$-manifold, there are $$n^2(n^2-1)/12$$ independent components.
+- For $$n=2$$ (surfaces), there is 1 independent component.
+- For $$n=3$$, there are 6 independent components.
+- For $$n=4$$, there are 20 independent components.
+
+#### Sectional Curvature
+For a 2D plane $$\sigma \subset T_p M$$ spanned by orthonormal vectors $$u, v$$, the **sectional curvature** $$K(\sigma)$$ or $$K(u,v)$$ is given by:
+
+$$
+K(u,v) = g(R(u,v)v, u)
+$$
+
+This measures the Gaussian curvature of the 2D surface formed by geodesics starting at $$p$$ in directions within $$\sigma$$. If all sectional curvatures are constant $$c$$, the manifold is a **space of constant curvature**.
+- $$c > 0$$: e.g., sphere (locally).
+- $$c = 0$$: e.g., Euclidean space.
+- $$c < 0$$: e.g., hyperbolic space (locally).
+
+##### Ricci Curvature and Scalar Curvature
+By contracting the Riemann tensor, we get simpler curvature measures:
+- **Ricci Tensor ($$(0,2)$$-tensor):**
+
+  $$
+  \text{Ric}(X,Y) = \sum_i g(R(E_i, X)Y, E_i) \quad \text{(trace over first and third index of } R^l_{ijk})$$
+  In coordinates: $$R_{jk} = \sum_i R^i_{jik}$$.
+  The Ricci tensor measures how the volume of a small geodesic ball deviates from that of a Euclidean ball. It plays a key role in Einstein's theory of general relativity.
+
+- \ast \ast Scalar Curvature ($$0$$-tensor, i.e., a scalar function):\ast \ast 
+  $$
+
+  S = \text{tr}_g(\text{Ric}) = \sum_i \text{Ric}(E_i, E_i)
+
+  $$
+  In coordinates: $$S = \sum_j g^{jk} R_{jk}$$.
+  It's the "total" curvature at a point. For surfaces ($$n=2$$), $$S = 2K$$, where $$K$$ is the Gaussian curvature.
+
+<blockquote class="box-info" markdown="1">
+<div class="title" markdown="1">
+\ast \ast Curvature in Machine Learning\ast \ast 
+</div>
+Curvature of the parameter manifold (or loss landscape) has significant implications for optimization:
+- \ast \ast Positive curvature (like a bowl):\ast \ast  Often associated with well-behaved minima. Gradients point consistently towards the minimum.
+- \ast \ast Negative curvature (like a saddle):\ast \ast  Characterizes saddle points, which can slow down first-order optimization methods. Second-order methods (using Hessian information) can exploit negative curvature to escape saddles. The Hessian of the loss function can be related to the Ricci curvature of the parameter manifold under certain conditions (e.g., with FIM).
+- \ast \ast Flat regions (zero curvature):\ast \ast  Can lead to plateaus where gradients are very small, slowing convergence.
+- The \ast \ast Riemann curvature tensor\ast \ast  of a statistical manifold equipped with the FIM provides detailed information about the interactions between parameters and the local geometry. These concepts are explored in Information Geometry. For example, Amari's $$\alpha$$-connections and $$\alpha$$-curvatures generalize these notions.
+</blockquote>
