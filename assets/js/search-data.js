@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "projects-abstract-algebra",
+        },{id: "post-a-brief-introduction-to-differential-geometry",
+        
+          title: "A brief introduction to differential geometry",
+        
+        description: "Foundational preliminaries of information geometry",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/axiomatization-of-probability.md/";
+          
+        },
+      },{id: "projects-abstract-algebra",
           title: 'Abstract Algebra',
           description: "",
           section: "Projects",handler: () => {
