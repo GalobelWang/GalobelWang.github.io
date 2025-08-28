@@ -28,8 +28,8 @@ In another formulation, Gaussian completely monotone conjecture is referred to a
 
 ### Algebraic approach to information theory
 
-* [Topological characterization of information measures](/_Research/information-topology) 
-* [Information dimension and measures with geometric structure](/_Research/information-dimension)
+* [Topological characterization of information measures](/Research/information-topology) 
+* [Information dimension and measures with geometric structure](/Research/information-dimension)
 * [Magnitude and diversity](/Research/magnitude)
 
 # Probability theory
