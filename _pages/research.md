@@ -26,6 +26,8 @@ A function is called completely monotone if its derivatives alternate in signs; 
 
 In another formulation, Gaussian completely monotone conjecture is referred to as: the $m$-th time-derivative of the entropy along the heat flow on $\mathbb{R}^d$ is positive for $m$ even and negative for $m$ odd. Recent progress on this topic is due to Guillaume Wang. In his article, [A Higher-Order Otto Calculus Approach to the Gaussian Completely Monotone Conjecture](https://ieeexplore.ieee.org/document/10979490), he have proven the GCM conjecture for orders up to $m=5$, assuming that the initial measure is log-concave, in any dimension. His work based on Otto calculus and on the interpretation of the heat flow as the Wasserstein gradient flow of the entropy.
 
+* [Notes for GCM conjecture and Hodge theory](https://galobelwang.github.io/file/GCMC.pdf)
+
 ### Algebraic approach to information theory
 
 In "simple" terms, *information topology* regards a statistical system (a collection of interrelated observables) as a generalized topological space (a *topos*) and identifies Shannon entropy, along other important "measures of information" used in information theory, as a possible [invariant](https://en.wikipedia.org/wiki/Invariant_(mathematics)) associated to this space. 
@@ -79,7 +81,7 @@ Hilbert, who was one of the most important mathematicians of his time, proposed 
 
 >"The investigations on the foundations of geometry suggest
 the problem: To treat in the same manner, by means of axioms, those physical sciences in which mathematics plays an important part; in the first rank are the theory of probabilities and mechanics.<br>
->As to the axioms of the theory of probabilities,* it seems
+>As to the axioms of the theory of probabilities, it seems
 to me desirable that their logical investigation should be
 accompanied by a rigorous and satisfactory development
 of the method of mean values in mathematical physics, and
