@@ -744,22 +744,9 @@ By contracting the Riemann tensor, we get simpler curvature measures:
   In coordinates: $$R_{jk} = \sum_i R^i_{jik}$$.
   The Ricci tensor measures how the volume of a small geodesic ball deviates from that of a Euclidean ball. It plays a key role in Einstein's theory of general relativity.
 
-- \ast \ast Scalar Curvature ($$0$$-tensor, i.e., a scalar function):\ast \ast 
+- Scalar Curvature ($$0$$-tensor, i.e., a scalar function):
   $$
-
   S = \text{tr}_g(\text{Ric}) = \sum_i \text{Ric}(E_i, E_i)
-
   $$
   In coordinates: $$S = \sum_j g^{jk} R_{jk}$$.
   It's the "total" curvature at a point. For surfaces ($$n=2$$), $$S = 2K$$, where $$K$$ is the Gaussian curvature.
-
-<blockquote class="box-info" markdown="1">
-<div class="title" markdown="1">
-\ast \ast Curvature in Machine Learning\ast \ast 
-</div>
-Curvature of the parameter manifold (or loss landscape) has significant implications for optimization:
-- \ast \ast Positive curvature (like a bowl):\ast \ast  Often associated with well-behaved minima. Gradients point consistently towards the minimum.
-- \ast \ast Negative curvature (like a saddle):\ast \ast  Characterizes saddle points, which can slow down first-order optimization methods. Second-order methods (using Hessian information) can exploit negative curvature to escape saddles. The Hessian of the loss function can be related to the Ricci curvature of the parameter manifold under certain conditions (e.g., with FIM).
-- \ast \ast Flat regions (zero curvature):\ast \ast  Can lead to plateaus where gradients are very small, slowing convergence.
-- The \ast \ast Riemann curvature tensor\ast \ast  of a statistical manifold equipped with the FIM provides detailed information about the interactions between parameters and the local geometry. These concepts are explored in Information Geometry. For example, Amari's $$\alpha$$-connections and $$\alpha$$-curvatures generalize these notions.
-</blockquote>
