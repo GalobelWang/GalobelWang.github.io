@@ -14,7 +14,7 @@ toc:
 
 ---
 
-# Mathematics of information 
+# Information theory
 
 More broadly, I'm interested in mathematical aspects of **information theory**, particularly in connection with category theory, algebra and geometry (metric geometry, geometric measure theory, complex algebraic geometry...).
 
