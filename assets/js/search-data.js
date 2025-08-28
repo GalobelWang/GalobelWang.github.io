@@ -37,7 +37,40 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "projects-abstract-algebra",
+        },{id: "post-a-brief-introduction-to-differential-geometry",
+        
+          title: "A brief introduction to differential geometry",
+        
+        description: "Foundational preliminaries of information geometry",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/ungrading/";
+          
+        },
+      },{id: "post-kolmogorov-39-s-axiomatization-of-probability",
+        
+          title: "Kolmogorov&#39;s axiomatization of probability",
+        
+        description: "Where I attempt to provide historical context for Kolmogorov&#39;s axiomatization of probability.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/axiomatization-of-probability/";
+          
+        },
+      },{id: "post-making-sense-of-the-kolmogorov-backward-equation-for-diffusion-processes",
+        
+          title: "Making sense of the Kolmogorov backward equation (for diffusion processes)",
+        
+        description: "Most of the content here is taken or extrapolated from [Applied stochastic analysis](https://www.ams.org/books/gsm/199/gsm199-endmatter.pdf).",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/KBE/";
+          
+        },
+      },{id: "projects-abstract-algebra",
           title: 'Abstract Algebra',
           description: "",
           section: "Projects",handler: () => {
