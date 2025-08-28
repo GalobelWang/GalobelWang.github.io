@@ -563,6 +563,7 @@ In optimization, we often think of gradient descent as following the "steepest d
 - **Gradient Flow:** The continuous version of gradient descent, $$\frac{dx}{dt} = -\nabla_g L(x)$$, describes curves whose tangent is the negative gradient vector field (with respect to the metric $$g$$). Understanding geodesics helps understand the behavior of such flows.
 - Some optimization methods (like trust-region methods on manifolds) explicitly try to take steps along geodesics.
 </details>
+</blockquote>
 
 # Connections, Covariant Derivatives, and Curvature
 
@@ -722,7 +723,7 @@ These symmetries reduce the number of independent components. For an $$n$$-manif
 - For $$n=3$$, there are 6 independent components.
 - For $$n=4$$, there are 20 independent components.
 
-#### Sectional Curvature
+##### Sectional Curvature
 For a 2D plane $$\sigma \subset T_p M$$ spanned by orthonormal vectors $$u, v$$, the **sectional curvature** $$K(\sigma)$$ or $$K(u,v)$$ is given by:
 
 $$
