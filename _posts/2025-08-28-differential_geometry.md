@@ -1,5 +1,5 @@
 ---
-layout: distill
+layout: post
 title: A brief introduction to differential geometry
 description: Foundational preliminaries of information geometry
 tags: geometry
