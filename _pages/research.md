@@ -20,7 +20,9 @@ More broadly, I'm interested in mathematical aspects of **information theory**, 
 
 ### Gaussian completely monotone conjecture
 
-In the past decade, [J. Huh](https://web.math.princeton.edu/~huh/) solved several long-standing open problems on log-concave sequences in combinatorics. The ground-breaking techniques developed in those work are from algebraic geometry: "We believe that behind any log-concave sequence that appears in nature there is such a Hodge structure responsible for the log-concavity".
+In the past decade, [J. Huh](https://web.math.princeton.edu/~huh/) solved several long-standing open problems on log-concave sequences in combinatorics. The ground-breaking techniques developed in those work are from algebraic geometry: 
+
+> "We believe that behind any log-concave sequence that appears in nature there is such a Hodge structure responsible for the log-concavity".
 
 A function is called completely monotone if its derivatives alternate in signs; e.g., $e^{-t}$. A fundamental conjecture in mathematical physics and Shannon information theory is on the complete monotonicity of Gaussian distribution (GCM conjecture), which states that $I(X+Z_t)$ is completely monotone in $t$, where $I$ is Fisher information, random variables $X$ and $Z_t$ are independent and $Z_t \sim \mathcal{N}(0,t)$ is Gaussian. Inspired by the algebraic geometry method introduced by J. Huh, GCMC is reformulated in the form of a log-convex sequence. In general, a completely monotone function can admit a log-convex sequence and a log-convex sequence can further induce a log-concave sequence. The new formulation may guide GCM conjecture to the marvelous temple of algebraic geometry.
 
