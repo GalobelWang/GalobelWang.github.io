@@ -1,8 +1,8 @@
 ---
 layout: distill
-title: Kolmogorov's axiomatization of probability
-description: Where I attempt to provide historical context for Kolmogorov's axiomatization of probability. 
-tags: education
+title: A brief introduction to differential geometry
+description: Foundational preliminaries of information geometry
+tags: geometry
 giscus_comments: true
 date: 2025-08-28
 featured: true
@@ -33,252 +33,246 @@ toc:
 
 ---
 
-*The history of probability is a complex and convoluted subject that has been treated at length in many books. What I've collected here are just a few aspects of it, that I'd discussed with my students during the first lecture of my course* Ma4 Probability *at Caltech. My aim was to contextualize Kolmogorov's axiomatization of probability theory; namely, to motivate the introduction of the seemingly complex machinery of measure theory to students that are usually only familiar with very elementary accounts of probability.* 
+# Smooth Manifolds and Tangent Spaces
 
-## Origins  
+### Introduction
 
-First, I'd like to talk a little bit about the history of probability to put certain ideas that you might already have about the subject in context. It'll also help us understand better the role of Kolmogorov's axiomatization. This won't be a historically thorough account by any means. 
+Welcome to the first part of our crash course on Differential Geometry for Machine Learning! In this post, we'll explore the fundamental concept of a **smooth manifold**. Think of manifolds as generalized surfaces – spaces that locally "look like" familiar Euclidean space (e.g., $$\mathbb{R}^n$$) but can have a more complex global structure.
 
-Although randomness is present in ancient philosophy (e.g. in Democritus), there was no mathematical treatment of probability in antiquity.
+Why are manifolds important in machine learning?
+- The **parameter space** of many machine learning models (like neural networks) can be viewed as a high-dimensional manifold.
+- The **loss landscape**, which we navigate during optimization, is often a function defined over such a manifold.
+- Some models have **constraints** on their parameters (e.g., weights of an autoencoder forming a low-dimensional representation, orthogonal matrices in certain RNNs) which naturally define manifolds.
 
-The mathematical theory of randomness can be traced back to Cardano (Italy, 1501-1576), who was the first to attempt a systematic study of probability in connection with games of chance. But his work was only published posthumously.
+Our goal here is to build intuition for what manifolds are and introduce **tangent spaces**, which are crucial for understanding concepts like gradients in these curved settings.
 
-Cardano still mixes the mathematical concept of probability with the unscientific concept of luck (an external force responsible for the fluctuations of outcomes).  
+### Beyond Euclidean Space: The Need for Manifolds
 
-Moreover, he rather unsuccessfully attempted to base his theory on the notion of "odds", rather than probabilities.
+In basic calculus and linear algebra, we often work within Euclidean spaces like $$\mathbb{R}^2$$ (the plane) or $$\mathbb{R}^3$$ (3D space). These spaces are "flat" and have a global coordinate system. However, many interesting spaces are not globally flat.
 
+Consider the surface of a sphere, $$S^2$$. Locally, any small patch on the sphere looks like a piece of the flat plane $$\mathbb{R}^2$$. But globally, you can't map the entire sphere to a single flat plane without distortion (think of world maps). The sphere is a simple example of a manifold.
+
+In machine learning:
+- The set of all probability distributions of a certain type (e.g., all Gaussian distributions) forms a manifold. The parameters (mean and covariance) live in this space.
+- The set of weight matrices for a neural network layer, perhaps with some normalization constraints (e.g., weights on a sphere, orthogonal matrices), can form a manifold.
+- The loss function of a neural network is a function $$L: \mathcal{W} \to \mathbb{R}$$, where $$\mathcal{W}$$ is the space of all possible weights. This space $$\mathcal{W}$$ is typically a very high-dimensional manifold (often just $$\mathbb{R}^N$$ for unconstrained networks, but its geometry under a suitable metric, like the Fisher Information Metric, can be non-trivial).
+
+Differential geometry provides the tools to perform calculus on these more general spaces.
+
+### What is a Smooth Manifold?
+
+Intuitively, an $$n$$-dimensional manifold is a space that, if you "zoom in" enough at any point, looks like an open subset of $$\mathbb{R}^n$$.
+
+<blockquote class="box-definition" markdown="1">
+<div class="title" markdown="1">
+**Definition.** An **$$n$$-dimensional topological manifold** $$M$$
+</div>
+A topological space $$M$$ is an $$n$$-dimensional topological manifold if:
+1.  $$M$$ is **Hausdorff**: Any two distinct points have disjoint open neighborhoods.
+2.  $$M$$ is **second-countable**: $$M$$ has a countable basis for its topology. (These ensure $$M$$ is "nice" enough.)
+3.  $$M$$ is **locally Euclidean of dimension $$n$$**: Every point $$p \in M$$ has an open neighborhood $$U$$ that is homeomorphic to an open subset $$V \subseteq \mathbb{R}^n$$. A homeomorphism is a continuous bijection with a continuous inverse.
+
+The pair $$(U, \phi)$$, where $$\phi: U \to V \subseteq \mathbb{R}^n$$ is such a homeomorphism, is called a **chart** (or coordinate system) around $$p$$. The functions $$x^i = \pi^i \circ \phi$$ (where $$\pi^i$$ are projections onto coordinate axes in $$\mathbb{R}^n$$) are local coordinate functions.
+</blockquote>
+
+<details class="details-block" markdown="1">
+<summary markdown="1">
+**Analogy.** Chart on Earth
+</summary>
+Think of a map of a small region on Earth (e.g., a city map). This map is a chart. It represents a piece of the curved surface of the Earth on a flat piece of paper ($$\mathbb{R}^2$$). You need many such maps (an atlas) to cover the entire Earth, and where they overlap, they must be consistent.
+</details>
+
+For calculus, we need more than just a topological manifold; we need a **smooth manifold**. This means that when two charts overlap, the transition from one set of coordinates to another must be smooth (infinitely differentiable, $$C^\infty$$).
+
+<blockquote class="box-definition" markdown="1">
+<div class="title" markdown="1">
+**Definition.** **Smooth Atlas and Smooth Manifold**
+</div>
+Let $$M$$ be an $$n$$-dimensional topological manifold.
+1.  Two charts $$(U_\alpha, \phi_\alpha)$$ and $$(U_\beta, \phi_\beta)$$ are **smoothly compatible** if $$U_\alpha \cap U_\beta = \emptyset$$, or the **transition map**
+
+    $$
+    \psi_{\beta\alpha} = \phi_\beta \circ \phi_\alpha^{-1} : \phi_\alpha(U_\alpha \cap U_\beta) \to \phi_\beta(U_\alpha \cap U_\beta)
+    $$
+
+    is a diffeomorphism (a smooth map with a smooth inverse). Both $$\phi_\alpha(U_\alpha \cap U_\beta)$$ and $$\phi_\beta(U_\alpha \cap U_\beta)$$ are open subsets of $$\mathbb{R}^n$$.
+2.  An **atlas** for $$M$$ is a collection of charts $$\mathcal{A} = \{(U_\alpha, \phi_\alpha)\}$$ such that $$\bigcup_\alpha U_\alpha = M$$.
+3.  A **smooth atlas** is an atlas whose charts are all pairwise smoothly compatible.
+4.  A **smooth structure** on $$M$$ is a maximal smooth atlas (one that contains every chart compatible with it, and any two charts in it are smoothly compatible).
+5.  A **smooth manifold** (or differentiable manifold) is a topological manifold equipped with a smooth structure.
+</blockquote>
+
+The key idea is that we can do calculus locally within each chart using standard multivariable calculus, and the smoothness of transition maps ensures that these local calculations are consistent across different charts.
+
+<blockquote class="box-example" markdown="1">
+<div class="title" markdown="1">
+**Example.** The Circle $$S^1$$
+</div>
+The unit circle $$S^1 = \{(x, y) \in \mathbb{R}^2 \vert x^2 + y^2 = 1\}$$ is a 1-dimensional manifold.
+We need at least two charts to cover $$S^1$$. A common way is using angular parameterizations:
+- Chart 1: Let $$U_1 = S^1 \setminus \{(1,0)\}$$ (circle minus the point $$(1,0)$$). Define $$\phi_1: U_1 \to (0, 2\pi)$$ by $$\phi_1(\cos\theta, \sin\theta) = \theta$$.
+- Chart 2: Let $$U_2 = S^1 \setminus \{(-1,0)\}$$ (circle minus the point $$(-1,0)$$). Define $$\phi_2: U_2 \to (-\pi, \pi)$$ by $$\phi_2(\cos\theta, \sin\theta) = \theta$$.
+
+Consider the overlap. For instance, take the upper semi-circle, corresponding to $$\theta \in (0, \pi)$$.
+Points here are in both $$U_1$$ and $$U_2$$.
+$$\phi_1(U_1 \cap U_2) = (0, \pi) \cup (\pi, 2\pi)$$.
+$$\phi_2(U_1 \cap U_2) = (-\pi, 0) \cup (0, \pi)$$.
+
+Let $$p \in U_1 \cap U_2$$.
+If $$\phi_1(p) = \theta_1 \in (0, \pi)$$, then $$\phi_2(p) = \theta_1$$. The transition map $$\phi_2 \circ \phi_1^{-1}(\theta_1) = \theta_1$$.
+If $$\phi_1(p) = \theta_1 \in (\pi, 2\pi)$$ (e.g., lower semi-circle), then $$\phi_2(p) = \theta_1 - 2\pi$$. The transition map $$\phi_2 \circ \phi_1^{-1}(\theta_1) = \theta_1 - 2\pi$$.
+These transition functions are smooth (linear, in fact).
+(Another common way to define charts for spheres is using stereographic projection).
+</blockquote>
+
+Other examples of smooth manifolds:
+- Any open subset of $$\mathbb{R}^n$$ is an $$n$$-manifold (with a single chart: the identity map).
+- The sphere $$S^n = \{x \in \mathbb{R}^{n+1} \mid \Vert x \Vert = 1\}$$.
+- The torus $$T^n = S^1 \times \dots \times S^1$$ ($$n$$ times).
+- The space of $$m \times n$$ matrices, $$\mathbb{R}^{m \times n}$$, which is just Euclidean space.
+- **Lie groups:** Manifolds with a compatible group structure. Examples:
+    - $$GL(n, \mathbb{R})$$: invertible $$n \times n$$ real matrices.
+    - $$O(n)$$: orthogonal $$n \times n$$ matrices ($$A^T A = I$$).
+    - $$SO(n)$$: special orthogonal matrices ($$A^T A = I, \det A = 1$$).
+    - These are crucial in physics and also appear in ML (e.g., orthogonal RNNs, parameterizing rotations).
+
+##### Smooth Functions on Manifolds
+A function $$f: M \to \mathbb{R}$$ is **smooth** if for every chart $$(U, \phi)$$ on $$M$$, the composite function $$f \circ \phi^{-1}: \phi(U) \to \mathbb{R}$$ is smooth in the usual sense of multivariable calculus (i.e., it has continuous partial derivatives of all orders on the open set $$\phi(U) \subseteq \mathbb{R}^n$$).
+Similarly, a map $$F: M \to N$$ between two smooth manifolds is smooth if its representation in local coordinates is smooth. Loss functions in ML are typically assumed to be smooth (or at least twice differentiable) on the parameter manifold.
+
+### Tangent Vectors and Tangent Spaces
+
+Now that we have a notion of a smooth manifold, we want to do calculus. The first step is to define derivatives. On a manifold, derivatives are captured by **tangent vectors**.
+
+Intuitively, a tangent vector at a point $$p \in M$$ is a vector that "points along" a curve passing through $$p$$, representing the instantaneous velocity of the curve.
+
+There are several equivalent ways to define tangent vectors:
+
+##### a) Equivalence Classes of Curves (Intuitive)
+A smooth curve through $$p \in M$$ is a smooth map $$\gamma: (-\epsilon, \epsilon) \to M$$ such that $$\gamma(0) = p$$.
+Two curves $$\gamma_1, \gamma_2$$ through $$p$$ are considered equivalent if their representations in any local chart $$(U, \phi)$$ around $$p$$ have the same derivative (velocity vector in $$\mathbb{R}^n$$) at $$t=0$$:
 
 $$
-\operatorname{Odds}(\text{event E}) =  \frac{\#\text{ of outcomes favorable to } E}{\#\text{ of outcomes unfavorable to } E}.
+\frac{d}{dt}(\phi \circ \gamma_1)(t) \Big\vert_{t=0} = \frac{d}{dt}(\phi \circ \gamma_2)(t) \Big\vert_{t=0}
 $$
 
+A tangent vector at $$p$$ is an equivalence class of such curves. The set of all tangent vectors at $$p$$ is the **tangent space** $$T_p M$$. This space can be shown to have the structure of an $$n$$-dimensional vector space.
 
-Partially because Cardano's work was not published, and also because the "odds" were not the good quantity for convenient computations, the historical origin of probability theory is attributed to the [correspondence between Blaise Pascal and Pierre de Fermat](https://www.york.ac.uk/depts/maths/histstat/pascal.pdf) around 1654. They discussed the "problem of the division of a stake between two players whose game was interrupted before its close."
+##### b) Derivations (Abstract and Powerful)
+A **derivation** at a point $$p \in M$$ is a linear map $$v: C^\infty(M) \to \mathbb{R}$$ (where $$C^\infty(M)$$ is the space of smooth real-valued functions on $$M$$) satisfying the Leibniz rule (product rule):
 
-For them and their successors in the XVII and XVIII centuries, probability was understood as follows. 
-
-
-
-> **Principle of Indifference (sometimes called Laplace's principle).**<br>
->The probability of an event is the ratio of the number of cases favorable to it, to the number of all cases possible when nothing else leads us to expect that any one of these cases should occur more than any other, which renders them, for us, equally possible.<br><br>
->—Laplace, "Analytical Theory of Probability", 1812
- 
-
-In practice, they introduced a set $S$ of possible outcomes of a certain "experiment" (such as tossing a die), and an *event* $A$ is defined by a set of "favorable" outcomes, whose probability is 
 $$
-\mathbb P(A)=|A|/|S|.$$
-
-Here's an example of a "classical" problem, the likes of which you might have already seen. Two dice are thrown together; let $X$ be the sum of both outcomes. The problem is to show that $X=9$ is more probable than $X=10$. To solve it, one introduces the set   $S= \lbrace 1,2,3,4,5,6 \rbrace^2=\lbrace (i,j)\mid 1\leq i,j\leq 6 \rbrace$ as a model of the possible outcomes; $S$ has  has 36 elements. 
-The favorable cases to $X=9$ are $(3,6),\, (6,3) \,(4,5)$ and $(5,4)$, hence $\mathbb P(X=9)=4/36$ according to the principle of indifference. Similarly, the favorable cases to $X=10$ are $(4,6)\,, (5,4)$ and $(5,5)$, hence $\mathbb P(X=10)=3/36$. 
-
-We see in this example that the *events* "the sum of both outcomes is $9$" and "the sum of both outcomes is $10$" are represented by *subsets* of the set $S$ of possible outcomes. This change of perspective, from *outcomes to events*, plays a key role in the axiomatization of probability. 
-
-
-
-## Law of large numbers and frequentism
-
-One can also attach a number to the occurrence of a certain event. One obtains in this way the notion of a **random variable**. For example, at least for rational $p=n/(n+m)$, one might realize 
-$$
-X= \begin{cases}
-1 & \text{ with probability } p \\
-0 & \text{ with probability } 1-p
-\end{cases}. 
-$$
- under the paradigm of the principle of indifference: for instance, by filling an urn with $n$ white balls and $m$ red balls, all identical in shape, and assigning the value $1$ to $X$ whenever a white is drawn.  (Today we say that $X$ is a random variable *with Bernoulli distribution* of parameter $p$, denoted $\operatorname{Ber}(p)$.)
-
-By introducing numbers this way, one can combine several random variables using arithmetic operations $+$, $-$, $/$, and $\cdot$. 
-
-Very fundamental was also the notion of *independence* of random variables: $X$ and $Y$ are independent if for any possible values $x$ and $y$ that they may respectively take
-$$
-\mathbb P(X=x \text{ and } Y=y) = \mathbb P (X=x)\mathbb P(Y=y).$$
-
-In 1962, Jakob Bernoulli (1655-1705) proved a first version of the law of large numbers (published in 1713): if $(X_i)_{i=1}^\infty$ is a sequence of independent random variables, each with distribution $\operatorname{Ber}(p)$, then 
-$$
-\frac{\sum_{i=1}^n X_n}{n} \to p \quad \text{as} \quad n\to \infty.
+v(fg) = f(p)v(g) + g(p)v(f) \quad \text{for all } f, g \in C^\infty(M)
 $$
 
-This is a first example of an **asymptotic law of randomness**: a random quantity, $\frac{\sum_{i=1}^n X_n}{n}$, is shown to approximate a deterministic one, $p$, as $n\to \infty$. The central limit theory is another example of such a law. ([This video is a nice introduction to the central limit theorem.](https://www.youtube.com/watch?v=AwEaHCjgeXk))
+It can be shown that the set of all derivations at $$p$$ forms an $$n$$-dimensional vector space, and this vector space is isomorphic to the tangent space defined via curves. This is often taken as the formal definition of $$T_p M$$.
 
-In fact, Bernoulli proved something more refined: that 
+<blockquote class="box-definition" markdown="1">
+<div class="title" markdown="1">
+**Definition.** **Tangent Space $$T_p M$$**
+</div>
+The **tangent space** to a smooth manifold $$M$$ at a point $$p \in M$$, denoted $$T_p M$$, is the vector space of all derivations at $$p$$.
+An element $$v \in T_p M$$ is called a **tangent vector** at $$p$$.
+If $$M$$ is an $$n$$-dimensional manifold, then $$T_p M$$ is an $$n$$-dimensional real vector space.
+</blockquote>
+
+Given a chart $$(U, \phi)$$ with local coordinates $$(x^1, \dots, x^n)$$ around $$p$$, a natural basis for $$T_p M$$ is given by the partial derivative operators with respect to these coordinates, evaluated at $$p$$:
+
 $$
-\mathbb P\left(\left| \frac{ \sum_{i=1}^n X_n}{n} - p\right| >\epsilon \right) \leq b(n,\epsilon)
-$$ 
-for an explicit upper bound $b(n,\epsilon)$ that vanishes as $n\to \infty$. (Nowadays, we call this *convergence in probability*.)
-
-
-
-The principle of indifference is well adapted to problems that have some natural symmetry, such as those connected with games of chance.  In turn, the law of large numbers led to a *frequentist* interpretation of probability, under which symmetry is no longer needed: the probability of an event could be *defined* as the limit of its relative frequency under many trials. Probabilistic ideas were progressively applied to situations without evident symmetries, in the context of lawsuits, insurance, and demographics (tables of natality and mortality). 
-
-
-
-
-## Statistical mechanics
- 
-
-The field of applications of probabilistic ideas was considerably expanded in the XIX century. 
-
-Most notably, Ludwig Boltzmann (Austria, 1844-1906) proposed that thermodynamic macroscopic observables, such as the temperature and the entropy, could be explained from microscopic considerations, using a probabilistic description of the possible configurations of the molecules that compose a given substance. 
-
-For this, it was necessary to take limits as the number of particles goes to infinity and/or to consider continuous models (particles distributed in Euclidean space). 
-
-Boltzmann ideas were further developed by Josiah Williard Gibbs (USA, 1839-1903), who also coined the term **statistical mechanics**. 
-
-For instance, Boltzmann proposed that the entropy $S$ of a system is given by
-$$
-S=k_B \log(\#\text{ microscopic configurations of the system}),
-$$
-when all the configurations $X$ are equiprobable and the argument of the logarithm is finite. Here $k_B$ denotes a universal constant (Boltzmann's constant). More generally, Gibbs gave the formula
-$$
-S= - k_B \sum_{x\in X} p(x) \log p(x),
-$$
-where $p:X\to \mathbb R_{\geq 0}$ satisfies $\sum_{x\in X} p(x) = 1$. 
-
-
-In actual systems, the number of configurations is a priori infinite. The formulas above only make sense on finite portions of the system, and one is forced to consider a limiting procedure. 
-
-The simplest setting on which one can perform this kind of limiting operation is the *Ising model*: 
-
-Consider a finite and discrete set 
-$\Lambda \subset \mathbb Z^2$ of sites organized in a square array. 
-
-Let $s_{x,y}\in \lbrace  +1,-1 \rbrace$ be a "spin" associated to the site $(x,y)\in \Lambda$. Then  $\vec s = \lbrace  s_{x,y} \rbrace_{(x,y)\in \Lambda}$ is a possible configuration of the system. 
-
-The energy of this configuration is given by the Hamiltonian:
-$$
- \mathcal{H}(\vec s, BC) = -  \sum\limits_{(x,y)} s_{x,y} \left(s_{x+1,y} + s_{x,y+1} \right) - h \sum\limits_{(x,y)} s_{x,y}
-$$
-Because of the interactions between neighbors in the sum, the hamiltonian depends on some given boundary conditions $BC$. Remark that two neighboring spins that are equal decrease the energy. 
-
-The Boltzmann-Gibb's theory postulates that, in equilibrium, the configurations of the system are distributed according to the probability law 
-$$
-\mathbb P(\vec s) \propto \exp \left(- \frac{\mathcal{H}(\vec s)}{k_B T} \right),
-$$
-where $T$ is the temperature of the system. This is called today a *Gibb's state.* 
-
-It turns out that the ``typical'' or more probable configurations are very different, depending on the value of $T$.  If $T$ is much smaller that a certain *critical temperature* $T_c$, then the alignment tendency of the spins predominates and one sees big clusters with the same spin. Whereas if $T\gg T_c$, disorder predominates. A phase transition happens at $T_c$. In fact, this $T_c$ is only well defined in the limit where the diameter of $\Lambda$ goes to infinity and the boundary conditions become irrelevant. 
-
-
-[You can see some simulations of this phenomenon here.](https://rf.mokslasplius.lt/ising-model/)
-
-
-
-## Hilbert's sixth problem
-
-Hilbert, who was one of the most important mathematicians of his time, proposed in 1900 a list of the most important problems in mathematics, which still inspires mathematicians today. Some of them had to do with the axiomatization of physics under the model of mathematics. His sixth problem concerned statistical mechanics:
-
->"The investigations on the foundations of geometry suggest
-the problem: To treat in the same manner, by means of axioms, those physical sciences in which mathematics plays an important part; in the first rank are the theory of probabilities and mechanics.<br>
->As to the axioms of the theory of probabilities,* it seems
-to me desirable that their logical investigation should be
-accompanied by a rigorous and satisfactory development
-of the method of mean values in mathematical physics, and
-in particular in the kinetic theory of gases" <br>
->[...]
->Thus Boltzmann's
-work on the principles of mechanics suggests the problem
-of developing mathematically the limiting processes, there
-merely indicated, which lead from the atomistic view to the
-laws of motion of continua. 
-
-An axiomatization of the theory of probability was proposed by the russian mathematician Andrei Kolmogorov in the monograph ["Foundations of the Theory of Probability"](https://altexploit.files.wordpress.com/2017/07/a-n-kolmogorov-foundations-of-the-theory-of-probability-chelsea-pub-co-1960.pdf), first published in German (as *Grundbegriffe der Wahrsckeinlichkeitrecknung*)  in 1933. In its preface, Kolmogorov says:
-
-> [The axiomatization of probability] would have been a rather hopeless one before the
-introduction of Lebesgue's theories of measure and integration.
-However, after Lebesgue's publication of his investigations, the
-analogies between measure of a set and probability of an event,
-and between integral of a function and mathematical expectation
-of a random variable, became apparent. These analogies allowed
-of further extensions ; thus, for example, various properties of
-independent random variables were seen to be in complete analogy
-with the corresponding properties of orthogonal functions. 
-
-Although Kolmogorov humbly claimed that the basic ideas were already known to the specialists, his was the first "complete exposition of the
-whole system". (I advise you to read Kolmogorov's monograph: it remains one of the clearest expositions of the foundations of the theory.)
-
-Lebesgue's theory of measure, extended later by Fréchet, was based on set theory (itself axiomatized by Zermelo in 1908). The theory of sets arose from problems concerning limits in analysis and the quest for ``foundations'' for mathematics based on formal, logical procedures (see the work by Frege, Cantor, Zermelo, Russell and Whitehead...). At the beginning of the XXth century, set theory was imposing itself as the foundational tool of mathematics. Hence Kolmogorov's probability is intrinsically set-theoretic; this has not been revisited until very recently, in the attempt to develop a categorical approach ([see this workshop](http:*tobiasfritz.science/2019/cps_workshop/schedule.html); category-theorists also have in mind a completely new approach to the foundation of mathematics called [Univalent foundations](https:*en.wikipedia.org/wiki/Univalent_foundation)). 
-
-
-
-## Axiomatization in the "elementary" (finite) case
-
-Let $X$ denote an experiment with possible outcomes $E_X= \lbrace   x_1 ,...., x_n \rbrace$. 
-According to the principle of indifference,  each outcome has probability $ 1/n$.  Similarly, any subset $A$ of $E_X$ (an event) has probability $|A| / n$. "Elementary" probability theory deals with many examples of this kind, involving coins, cards, urns, etc. 
-
-However, the principle of indifference has limitations: maybe *something* leads us to expect that one of the cases occurs more than the others. So more generally, one introduces a function of probabilities $p:E_X \to [0,1]$ such that  $\sum_{x\in E_X} p(x) = 1$. This induces a probability for every subset $A$ of $E_X$ via the formula
-$$
-\mathbb P(A) = \sum_{x\in A} p(x).
-$$
-The equality $P(E_X)=1$ expresses that with certainty one of the possible outcomes is going to be observed. 
-
- Where do these $p(x)$ come from? It depends on your philosophical views. For frequentists,  $p(x)$ should be an asymptotic approximation to the relative frequency of the output $x$ if the experiment $X$ is repeated a large number of times; the existence of a limit of this relative frequencies is thus supposed. Some claim that  $p(x)$ expresses some propensity of nature to give the output $x$. For bayesians, the numbers $p(x)$ are just a quantification of our beliefs (i.e. a reasonable expectation); so a Bayesian might start supposing that a coin is fair (a *prior* belief), and then update this belief after some measurements using Bayes' theorem, getting a *posterior*.  (Bayesianism is not necessarily subjective i.e. "influenced by personal feelings, tastes, or opinions.", as some claim; the question is rather: what are the beliefs that an *idealized rational observer* of a situation can have about it, given limited information e.g. certain observations?). See  [Interpretations of probability](https://plato.stanford.edu/archives/win2012/entries/probability-interpret/) in *The Stanford Encyclopedia of Philosophy*.
-
-As we briefly mentioned above, for the purpose of generalizing this story to infinite sets $E$, it is convenient to reformulate the definition of probability in terms of events rather than outcomes. This is done in two stages, defining first an *algebra of sets (a.k.a. events)* and then a *probability measure*. 
-
-Let $E$ be a set. A set $\mathfrak F$ of subsets of $E$ is called an *algebra of sets* if 
-* $\mathfrak F$ contains $E$;
-* $\mathfrak F$ is closed under complementation: If $A$ belongs to $\mathfrak F$, its complement $\bar A$ too.
-*  $\mathfrak F$ is closed under binary unions:  If $A$ and $B$ belong to $\mathfrak F$, their union $A\cup B$  too.
-
-**Exercise.** Prove that $\mathfrak F$ is also closed under binary intersections, finite unions, and finite intersections. 
-
-**Exercise/Remark:** When $\mathfrak F$ is finite, one can restate the definition in purely algebraic terms, without reference to the set $E$.   (In case you run out of ideas, [the answer is here](https://en.wikipedia.org/wiki/Field_of_sets#Fields_of_sets_in_the_representation_theory_of_Boolean_algebras).)
-
-A *finite probability space* is given by a set $E$ (of any cardinality), a *finite* algebra of sets $\mathfrak F$, and a function $P:\mathfrak F\to [0,\infty)$ (*probability measure*, finite case)  such that $P(E)=1$ and 
-$$
-P(A\cup B)= P(A) + P(B)
-$$
-whenever $A$ and $B$ have no elements in common. This last property is called *additivity*.
-
-The elements of $\mathfrak F$ are called *random events*, and $P(A)$ is called the *probability* of the event $A$. 
-
-If we think about $P(A)$ in frequentist terms i.e. as a quotient $ N(A)/N$ where $N(A)$ are occurrences of the event $A$ among $N$ trials, we can justify the requirements of $0 \leq P(A) \leq 1$ and additivity of disjoint events, since $N(A\sqcup B) = N(A) + N(B)$ (the symbol $\sqcup $ is disjoint union), hence $P(A\sqcup B) = P(A) + P(B).$ But of course this is just an heuristic motivation for the axioms.
-
-When $E$ is a finite set $E = \lbrace  x_1,..., x_n  \rbrace $ and $\mathfrak F$ equals the set of all subsets of $E$, the function $P:\mathfrak F\to [0,1]$ is uniquely determined by $\lbrace P(x_i) \rbrace _{i=1}^n$ and one recovers the outcome-based description that we introduced above. 
-
-There is a dictionary between the language of sets and that of events. 
-
-* If $A\cap B= \emptyset$, then the random events $A$ and $B$ are *incompatible* or *mutually exclusive*. 
-*  If $X=A\cap B$, the event $X$ corresponds to the simultaneous occurrence of $A$ and $B$; if $X=A\cup B$, the event $X$ is the occurrence of $A$ or $B$. 
-* The complementary set $\bar A$ corresponds to the non-occurrence of $A$. 
-* $\emptyset$ is the impossible event; $E$ is certitude (contains all possible outputs). 
-* If $B\subset A$, then the occurrence of $B$ implies the occurrence of $A$. 
-
-**Exercise.** Prove the elementary formulas:
-* $P(\bar A) = 1-P(A). $ 
-* If $A_1,...,A_n$ are incompatible, then 
-$$
-P(A_1) + \cdots + P(A_n) = 1.
+\left\{ \frac{\partial}{\partial x^1}\Big\vert_p, \dots, \frac{\partial}{\partial x^n}\Big\vert_p \right\}
 $$
 
+Here, $$\frac{\partial}{\partial x^i}\Big\vert_p$$ is the derivation that acts on a function $$f \in C^\infty(M)$$ as:
 
-## Infinite families of events
-
-At first sight, the previous definition should work just fine if one allows algebras of fields of arbitrary cardinality, and not just finite ones.  But infinities always come with delicate unwanted problems.
-
-At least two types of problems arise. First, there is no consistent way of assigning a probability $P(A)$ to *all* subsets of an infinite set respecting additivity; one runs into paradoxes ultimately connected with the axiom of choice (beware, one cannot picture the wildest sets!). Second, one wants to guarantee that limits are '"well behaved"; as we saw, one of the main reasons for axiomatizing probability  was to make formal the "limiting processes" used in statistical physics.
-
-An illustration of the first kind of problem [was provided by Hausdorff in 1914](https://proofwiki.org/wiki/Hausdorff_Paradox). He showed that, if one first removes certain countable set of points of $S^2$ (the 2-dimensional sphere in $\mathbb R^3$), the remainder $E$ can be divided into three disjoint subsets $A$, $B$ and $C$ such that $A$, $B$, $C$, and $B\cup C$ are all congruent (i.e. equivalent under a rotation of the sphere). Therefore it is not possible to have an additive probability on all subsets of $E$ that would assign the same probability to congruent sets (in accordance with our geometrical intuitions), since $B\cup C$ should have probability $1/3$, $1/2$ and $2/3$ at the same time. 
-
-Concerning limits, one requires a language rich enough to talk about an arbitrarily large number of events (or of conditions imposed on the outcomes of an experiment). For instance, consider the set $E=\lbrace H,T \rbrace^{\mathbb N}$, which models the fact of throwing a coin infinitely many times (i.e. an arbitrarily large number of times); an element $\omega = (\omega_0,\omega_1, \omega_2,...)$ is a particular sequence of heads and tails obtained performing the experiment. Then the (intuitively very unlikely) event of getting only heads can be written as an countable intersection of simpler events of the form $\lbrace \omega_i = H \rbrace$. Hence it's natural to require that the algebra of events $\mathcal F$ be also closed under countable unions (equivalently, intersections): we call these $\sigma$-algebras. Similarly, the probability measures $P$ should be $\sigma$-additive: given a sequence $A_1,A_2,...$ of mutually exclusive events, 
 $$
-P(\bigcup_{i=1}^\infty A_i) = \sum_{i=1}^\infty P(A_i) := \lim_{N\to \infty}  \sum_{i=1}^N P(A_i).
+\left(\frac{\partial}{\partial x^i}\Big\vert_p\right)(f) := \frac{\partial (f \circ \phi^{-1})}{\partial u^i} \Big\vert_{\phi(p)}
 $$
 
-A pair $(E, \mathfrak F)$ made of a set $E$ and a $\sigma$-algebra of subsets of $E$ is called a measurable space. A triple $(E, \mathfrak F, P)$ such that $(E, \mathfrak F)$ is a measurable space and $P:\mathfrak F\to [0,\infty)$ is a $\sigma$-additive function such that $P(E)=1$ is called a *probability space*. 
+where $$(u^1, \dots, u^n)$$ are the standard coordinates on $$\mathbb{R}^n$$ corresponding to $$\phi(U)$$.
+Any tangent vector $$v \in T_p M$$ can be written uniquely as a linear combination of these basis vectors:
 
-Kolmogorov provided an equivalent characterization, that we propose here as an exercise. 
+$$
+v = \sum_{i=1}^n v^i \frac{\partial}{\partial x^i}\Big\vert_p
+$$
+
+The coefficients $$v^i$$ are the **components** of the vector $$v$$ in the coordinate basis $$\{\partial/\partial x^i\vert_p\}$$.
+
+<blockquote class="box-info" markdown="1">
+**Connection to Gradients in ML.**
+In Euclidean space $$\mathbb{R}^n$$, the gradient $$\nabla f(p)$$ of a function $$f$$ at $$p$$ is a vector. If we consider a path $$\gamma(t)$$ with $$\gamma(0)=p$$ and velocity $$\gamma'(0) = v$$, then the directional derivative of $$f$$ along $$v$$ is $$ D_v f(p) = \nabla f(p) \cdot v $$.
+On a manifold, the concept analogous to the gradient is related to the **differential** $$df_p$$ of a function $$f: M \to \mathbb{R}$$. This differential $$df_p$$ is an element of the *cotangent space* $$T_p^\ast M$$ (the dual space of $$T_p M$$). It acts on tangent vectors: $$df_p(v) = v(f)$$.
+If the manifold has a Riemannian metric (Part 2), there's a natural way to identify tangent vectors with cotangent vectors. This allows us to define a **gradient vector field** $$\text{grad } f$$ (or $$\nabla f$$) which is a tangent vector field. Its components in a local coordinate system are related to the partial derivatives $$\partial f / \partial x^i$$.
+For now, think of tangent vectors as the "directions" in which one can move from $$p$$, and $$T_p M$$ is the space where these directions (and eventually gradients) live.
+</blockquote>
+
+### The Differential (Pushforward) of a Smooth Map
+
+If we have a smooth map $$F: M \to N$$ between two smooth manifolds, it induces a linear map between their tangent spaces at corresponding points.
+
+<blockquote class="box-definition" markdown="1">
+<div class="title" markdown="1">
+**Definition.** **Differential (or Pushforward)**
+</div>
+Let $$F: M \to N$$ be a smooth map between smooth manifolds. For any point $$p \in M$$, the **differential** of $$F$$ at $$p$$ (also called the **pushforward** by $$F$$ at $$p$$) is the linear map:
+
+$$
+(F_\ast )_p : T_p M \to T_{F(p)} N
+$$
+
+(also denoted $$dF_p$$ or $$DF(p)$$) defined as follows: for any tangent vector $$v \in T_p M$$ (viewed as a derivation) and any smooth function $$g \in C^\infty(N)$$,
+
+$$
+((F_\ast )_p v)(g) := v(g \circ F)
+$$
+
+The function $$g \circ F$$ is a smooth function on $$M$$, so $$v(g \circ F)$$ is well-defined.
+Alternatively, if $$v \in T_p M$$ is represented by a curve $$\gamma: (-\epsilon, \epsilon) \to M$$ with $$\gamma(0)=p$$ and $$\gamma'(0)=v$$, then $$(F_\ast )_p v$$ is the tangent vector at $$F(p) \in N$$ represented by the curve $$F \circ \gamma: (-\epsilon, \epsilon) \to N$$. That is, $$(F_\ast )_p(\gamma'(0)) = (F \circ \gamma)'(0)$$.
+</blockquote>
+
+In local coordinates, let $$M$$ have coordinates $$(x^1, \dots, x^m)$$ near $$p$$ and $$N$$ have coordinates $$(y^1, \dots, y^n)$$ near $$F(p)$$. If $$F$$ is represented by coordinate functions $$y^j = F^j(x^1, \dots, x^m)$$, then the matrix representation of $$(F_\ast )_p$$ with respect to the coordinate bases $$\{\partial/\partial x^i\vert_p\}$$ and $$\{\partial/\partial y^j\vert_{F(p)}\}$$ is the **Jacobian matrix** of $$F$$ at $$p$$:
+
+$$
+[ (F_\ast )_p ]^j_i = \frac{\partial F^j}{\partial x^i} \Big\vert_p
+$$
+
+So, if $$v = \sum_i v^i \frac{\partial}{\partial x^i}\Big\vert_p$$, then $$(F_\ast )_p v = w = \sum_j w^j \frac{\partial}{\partial y^j}\Big\vert_{F(p)}$$, where
+
+$$
+w^j = \sum_{i=1}^m \left( \frac{\partial F^j}{\partial x^i} \Big\vert_p \right) v^i
+$$
+
+### Vector Fields
+
+A **smooth vector field** $$X$$ on a manifold $$M$$ is a smooth assignment of a tangent vector $$X_p \in T_p M$$ to each point $$p \in M$$.
+"Smooth" here means that if we express $$X$$ in any local coordinate system $$(x^1, \dots, x^n)$$ as
+
+$$
+X(p) = \sum_{i=1}^n X^i(p) \frac{\partial}{\partial x^i}\Big\vert_p
+$$
+
+then the component functions $$X^i: U \to \mathbb{R}$$ are smooth functions on the chart's domain $$U$$.
+Equivalently, a vector field $$X$$ is smooth if for every smooth function $$f \in C^\infty(M)$$, the function $$p \mapsto X_p(f)$$ (which can be written as $$(Xf)(p)$$) is also a smooth function on $$M$$.
+
+<blockquote class="box-example" markdown="1">
+<div class="title" markdown="1">
+**Example.** Gradient Fields in Optimization
+</div>
+If $$M = \mathbb{R}^n$$ (a trivial manifold), and $$L: \mathbb{R}^n \to \mathbb{R}$$ is a smooth loss function, its gradient
+
+$$
+\nabla L(p) = \left( \frac{\partial L}{\partial x^1}(p), \dots, \frac{\partial L}{\partial x^n}(p) \right)
+$$
+
+is typically identified with the vector field
+
+$$
+X_L(p) = \sum_{i=1}^n \frac{\partial L}{\partial x^i}(p) \frac{\partial}{\partial x^i}\Big\vert_p
+$$
+
+Gradient descent involves taking steps in the direction of $$-X_L(p)$$. More generally, on a Riemannian manifold (which we'll introduce later), the gradient vector field $$\nabla L$$ is intrinsically defined. Optimization algorithms often aim to follow trajectories of such (or related) vector fields to find minima of $$L$$.
+</blockquote>
 
 
-**Exercise.** Let $(E,\mathfrak F)$ be a measurable space and  $P:\mathfrak F\to [0,1)$ an additive function. Prove that $\sigma$-additivity of $P$ is equivalent to the following property (Kolmogorov's axiom VI): if 
-$(B_i)_{i=1}^{\infty}$  is a sequence of elements of $\mathfrak F$ such that 
 
-$B_1 \supset B_2 \supset B_3 \supset \cdots$ and $\bigcap_i B_i = \emptyset,$ 
 
-then $\lim_{k\to \infty} P(B_k) = 0$. 
 
-If $\mathfrak F$ is finite, this axiom VI (or $\sigma$-additivity) adds nothing new. Kolmogorov remarks that, in the truly infinite case, many events "are generally merely ideal events to which
-nothing corresponds in the outside world." However, "if reasoning
-which utilizes the probabilities of such ideal events leads us to a
-determination of the probability of an actual event, then,
-from an empirical point of view also, this determination will
-automatically fail to be contradictory." There is no "empirical" motivation of axiom VI, but it is an arbitrary limitation that turn out to be very useful and connected with the intuitive ideas about probability.
