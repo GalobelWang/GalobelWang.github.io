@@ -66,8 +66,8 @@ We can recover $d$ from the intrinsic geometry at $X_F(\mathbb{C})$ using its �
 Over the real numbers, $H_{n-1}(\mathbb{R}P^b;\mathbb{Z}_2)$ is cyclic with generator $[H]$ and $[X_F(\mathbb{R})]=d\cdot[H]$, this gives us the recovery of $d$ mod $2$.
 It’s possible to show that $X_F(\mathbb{R})$ does not provide an upper bound for $d$.
 
-From a different point of view, the Nash embedding theorem shows that any smooth, closed manifold over $\mathbb{R}$ is diffeomorphic to $X(\mathbb{R})$ for some real, smooth, projective variety.
+From a different point of view, the **Nash embedding theorem** shows that any smooth, closed manifold over $\mathbb{R}$ is diffeomorphic to $X(\mathbb{R})$ for some real, smooth, projective variety.
 For complex manifolds, the analogue statement is false.
 
-To be diffeomorphic to a complex projective variety, a manifold must be complex, Kähler, Hodge and then it will have an embedding into $\mathbb{C}P^N$ for some integer $N$ and Chow’s theorem guarantees that it’s algebraic.
-In this course, we’ll show that compact submanifolds of $$\mathbb{C}P^n$ satisfy these properties is a complex projective variety.
+To be diffeomorphic to a complex projective variety, a manifold must be complex, **Kähler**, **Hodge** and then it will have an embedding into $\mathbb{C}P^N$ for some integer $N$ and Chow’s theorem guarantees that it’s algebraic.
+In this note, we’ll show that compact submanifolds of $$\mathbb{C}P^n$ satisfy these properties is a complex projective variety.
