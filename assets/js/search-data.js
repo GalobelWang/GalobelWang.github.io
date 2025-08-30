@@ -85,6 +85,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/CA/";
+            },},{id: "projects-channel-coding-theory",
+          title: 'Channel Coding theory',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ChannelCode/";
             },},{id: "projects-fourier-analysis",
           title: 'Fourier Analysis',
           description: "",
