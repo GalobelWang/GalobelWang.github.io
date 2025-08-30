@@ -19,16 +19,13 @@ authors:
 #   - we may want to automate TOC generation in the future using
 #     jekyll-toc plugin (https://github.com/toshimaru/jekyll-toc).
 toc:
-  - name: Origins
+  - name: Smooth Manifolds and Tangent Spaces
     # if a section has subsections, you can add them as follows:
     # subsections:
     #   - name: Example Child Subsection 1
     #   - name: Example Child Subsection 2
-  - name: Law of large numbers and frequentism
-  - name: Statistical mechanics
-  - name: Hilbert's sixth problem
-  - name: Axiomatization in the "elementary" (finite) case
-  - name: Infinite families of events
+  - name: Riemannian Metrics and Geodesics
+  - name: Connections, Covariant Derivatives, and Curvature
 
 llm-instructions: |
   I am using the Chirpy theme in Jekyll.
