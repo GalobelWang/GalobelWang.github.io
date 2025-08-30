@@ -70,4 +70,4 @@ It’s possible to show that $X_F(\mathbb{R})$ does not provide an upper bound f
 
 >To be diffeomorphic to a complex projective variety, a manifold must be complex, **Kähler**, **Hodge** and then it will have an embedding into $\mathbb{C}P^N$ for some integer $N$ and Chow’s theorem guarantees that it’s algebraic.
 
-In this note, we’ll show that compact submanifolds of $$\mathbb{C}P^n$ satisfy these properties is a complex projective variety.
+In this note, we’ll show that compact submanifolds of $\mathbb{C}P^n$ satisfy these properties is a complex projective variety.
