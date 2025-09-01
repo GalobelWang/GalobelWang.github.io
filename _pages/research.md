@@ -20,9 +20,7 @@ More broadly, I'm interested in mathematical aspects of **information theory**, 
 
 ### Gaussian completely monotone conjecture
 
-In the past decade, [J. Huh](https://web.math.princeton.edu/~huh/) solved several long-standing open problems on log-concave sequences in combinatorics. The ground-breaking techniques developed in those work are from algebraic geometry: 
-
-> "We believe that behind any log-concave sequence that appears in nature there is such a Hodge structure responsible for the log-concavity".
+In the past decade, [J. Huh](https://web.math.princeton.edu/~huh/) solved several long-standing open problems on log-concave sequences in combinatorics. The ground-breaking techniques developed in those work are from algebraic geometry: "We believe that behind any log-concave sequence that appears in nature there is such a Hodge structure responsible for the log-concavity".
 
 A function is called completely monotone if its derivatives alternate in signs; e.g., $e^{-t}$. A fundamental conjecture in mathematical physics and Shannon information theory is on the complete monotonicity of Gaussian distribution (GCM conjecture), which states that $I(X+Z_t)$ is completely monotone in $t$, where $I$ is Fisher information, random variables $X$ and $Z_t$ are independent and $Z_t \sim \mathcal{N}(0,t)$ is Gaussian. Inspired by the algebraic geometry method introduced by J. Huh, GCMC is reformulated in the form of a log-convex sequence. In general, a completely monotone function can admit a log-convex sequence and a log-convex sequence can further induce a log-concave sequence. The new formulation may guide GCM conjecture to the marvelous temple of algebraic geometry.
 
@@ -77,36 +75,19 @@ where $T$ is the temperature of the system. This is called today a *Gibb's state
 
 It turns out that the ``typical'' or more probable configurations are very different, depending on the value of $T$.  If $T$ is much smaller that a certain *critical temperature* $T_c$, then the alignment tendency of the spins predominates and one sees big clusters with the same spin. Whereas if $T\gg T_c$, disorder predominates. A phase transition happens at $T_c$. In fact, this $T_c$ is only well defined in the limit where the diameter of $\Lambda$ goes to infinity and the boundary conditions become irrelevant. 
 
-### Hilbert's sixth problem
+# Algebra
 
-Hilbert, who was one of the most important mathematicians of his time, proposed in 1900 a list of the most important problems in mathematics, which still inspires mathematicians today. Some of them had to do with the axiomatization of physics under the model of mathematics. His sixth problem concerned statistical mechanics:
+### Tropical algebra
 
->"The investigations on the foundations of geometry suggest
-the problem: To treat in the same manner, by means of axioms, those physical sciences in which mathematics plays an important part; in the first rank are the theory of probabilities and mechanics.<br>
->As to the axioms of the theory of probabilities, it seems
-to me desirable that their logical investigation should be
-accompanied by a rigorous and satisfactory development
-of the method of mean values in mathematical physics, and
-in particular in the kinetic theory of gases". Thus Boltzmann's
-work on the principles of mechanics suggests the problem
-of developing mathematically the limiting processes, there
-merely indicated, which lead from the atomistic view to the
-laws of motion of continua. 
+Tropical geometry is the study of polynomials and their geometric properties when addition is replaced with minimization and multiplication is replaced with ordinary addition:
 
-An axiomatization of the theory of probability was proposed by the russian mathematician Andrei Kolmogorov in the monograph ["Foundations of the Theory of Probability"](https://altexploit.files.wordpress.com/2017/07/a-n-kolmogorov-foundations-of-the-theory-of-probability-chelsea-pub-co-1960.pdf), first published in German (as *Grundbegriffe der Wahrsckeinlichkeitrecknung*)  in 1933. In its preface, Kolmogorov says:
+$$
+x \oplus y = \min\{x, y\},
+$$
+$$
+x \otimes y = x + y.
+$$
 
-> [The axiomatization of probability] would have been a rather hopeless one before the
-introduction of Lebesgue's theories of measure and integration.
-However, after Lebesgue's publication of his investigations, the
-analogies between measure of a set and probability of an event,
-and between integral of a function and mathematical expectation
-of a random variable, became apparent. These analogies allowed
-of further extensions ; thus, for example, various properties of
-independent random variables were seen to be in complete analogy
-with the corresponding properties of orthogonal functions. 
+Tropical geometry is a variant of algebraic geometry in which polynomial graphs resemble piecewise linear meshes, and in which numbers belong to the tropical semiring instead of a field. Because classical and tropical geometry are closely related, results and methods can be converted between them. Algebraic varieties can be mapped to a tropical counterpart and, since this process still retains some geometric information about the original variety, it can be used to help prove and generalize classical results from algebraic geometry.
 
-Although Kolmogorov humbly claimed that the basic ideas were already known to the specialists, his was the first "complete exposition of the
-whole system".
-
-
-
+Fruitful interactions are emerging between combinatorics and Hodge theory, both in the applications of Hodge theory to address problems in combinatorics. My interest is the tropical analog of the classical Hodge theory for Kähler manifolds, containing **Poincaré Duality**, **Hard Lefschetz theorem** and **Hodge-Riemann relations**, together with their applications in information and coding theory.
