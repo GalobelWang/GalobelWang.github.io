@@ -75,16 +75,17 @@ where $T$ is the temperature of the system. This is called today a *Gibb's state
 
 It turns out that the ``typical'' or more probable configurations are very different, depending on the value of $T$.  If $T$ is much smaller that a certain *critical temperature* $T_c$, then the alignment tendency of the spins predominates and one sees big clusters with the same spin. Whereas if $T\gg T_c$, disorder predominates. A phase transition happens at $T_c$. In fact, this $T_c$ is only well defined in the limit where the diameter of $\Lambda$ goes to infinity and the boundary conditions become irrelevant. 
 
-# Algebra
+# Algebra and Geometry
 
-### Tropical algebra
+### Tropical algebraic geometry
 
 Tropical geometry is the study of polynomials and their geometric properties when addition is replaced with minimization and multiplication is replaced with ordinary addition:
 
-$$
+* $$
 x \oplus y = \min\{x, y\},
 $$
-$$
+
+* $$
 x \otimes y = x + y.
 $$
 
