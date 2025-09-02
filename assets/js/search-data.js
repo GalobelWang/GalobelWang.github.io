@@ -85,11 +85,6 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/CA/";
-            },},{id: "projects-channel-coding-theory",
-          title: 'Channel Coding theory',
-          description: "",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/ChannelCode/";
             },},{id: "projects-fourier-analysis",
           title: 'Fourier Analysis',
           description: "",
@@ -100,11 +95,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Galois/";
-            },},{id: "projects-information-geometry",
-          title: 'Information geometry',
+            },},{id: "projects-information-and-coding-theory",
+          title: 'Information and coding theory',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/IGOT/";
+              window.location.href = "/projects/InforCode/";
             },},{id: "projects-integrals-with-parameters",
           title: 'Integrals with Parameters',
           description: "",
@@ -140,11 +135,6 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/StabilityT/";
-            },},{id: "projects-statistical-mechanics",
-          title: 'Statistical mechanics',
-          description: "",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/StatMe/";
             },},{id: "projects-topics-in-algebra",
           title: 'Topics in algebra',
           description: "",
