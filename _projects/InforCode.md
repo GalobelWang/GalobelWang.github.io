@@ -44,7 +44,7 @@ Shannon established two “limit laws” of information processing. **(Source co
 ### What is Channel Coding about?
 
 Following is the block diagram of adigital data transmission/storage system:
-<img src="https://galobelwang.github.io/assets/img/channelcoding.png" width="70%">
+<img src="https://galobelwang.github.io/assets/img/channelcoding.png" width="90%">
 
 Using channel codes, we can make data transmission/storage more reliable. The main idea is to add **redundancy**, and this redundancy allows us to correct, up to some limits, errors that happen during transmission/storage.
 
