@@ -6,7 +6,7 @@ category: PhD
 giscus_comments: false
 ---
 
-Click [here](https://galobelwang.github.io/file/ComplexAlgebraicGeometry.pdf) to access the lecture notes. This note is a brief introduction to the geometry of Kähler manifolds and the Hodge structure of cohomology.
+Click [here](https://galobelwang.github.io/file/ComplexAlgebraicGeometry.pdf) to access the lecture notes of **Complex geometry**, taught by [Prof. Ngaiming Mok](https://hkumath.hku.hk/~nmok/). This note is a brief introduction to the geometry of Kähler manifolds and the Hodge structure of cohomology.
 
 Kähler manifolds are at the intersection of complex analytic geometry, Riemannian geometry, and symplectic geometry. Moreover, every smooth projective variety is a Kähler manifold. All of this structure is reflected in a rich theory of geometric and topological invariants. In this course we will develop techniques from sheaf theory and linear elliptic theory to study the cohomology of Kähler manifolds.
 

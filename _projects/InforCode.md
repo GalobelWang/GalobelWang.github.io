@@ -6,7 +6,7 @@ category: PhD
 giscus_comments: false
 ---
 
-This is the lecture notes for the Information and Coding Theory course in the Department of Mathematics at the University of Hong Kong, taught by [Prof. Han](https://hkumath.hku.hk/~ghan/).
+This is the lecture notes for the Information and Coding Theory course in the Department of Mathematics at the University of Hong Kong, taught by [Prof. Guangyue Han](https://hkumath.hku.hk/~ghan/).
 
 * Click [here](https://galobelwang.github.io/file/InformationTheory.pdf) to access the lecture notes of **Information theory**. 
 
