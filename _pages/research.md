@@ -44,9 +44,9 @@ I'm also interested in algebraic approach to **coding theory and error-correctin
 
 ### Maximun distance separable codes conjecture
 
-If an $\[n, k, d_{\min}\]_q$ code $\mathcal{C}$ satisfies the **singleton bound** with equality $d_{\min} = n-k+1$, then we call $\mathcal{C}$ a maximun distance separable codes (MDS code).
+If an $$[n, k, d_{\min}]_q$$ code $$\mathcal{C}$$ satisfies the **singleton bound** with equality $$d_{\min} = n-k+1$$, then we call $$\mathcal{C}$$ a maximun distance separable codes (MDS code).
 
-The main content of MDS conjecture is that, except for the trivial MDS codes or those with parameters $[2^m+2,\,3,\,2^m]_{q=2^m}$ or $[2^m+2,\,2^m-1,\,4]_{q=2^m}$, all MDS codes satisfy \(n \le q + 1\).
+The main content of MDS conjecture is that, except for the trivial MDS codes or those with parameters $$[2^m+2,\,3,\,2^m]_{q=2^m}$$ or $$[2^m+2,\,2^m-1,\,4]_{q=2^m}$$, all MDS codes satisfy $$n \le q + 1$$.
 
 In algebraic formulation, MDS conjecture is that: a set $S$ of vectors of the vector space $F_q^k$ such that every subset of $S$ of size $k \leq q$ is a basis, has size at most $q + 1$, unless $q$ is even and $k = 3$ or $k = q − 1$, in which case it has size at most $q + 2$.
 
@@ -114,9 +114,9 @@ Fruitful interactions are emerging between combinatorics and Hodge theory, both 
 
 In mathematical physics the **Knizhnik–Zamolodchikov** equations, or KZ equations, are linear differential equations satisfied by the correlation functions (on the Riemann sphere) of two-dimensional **conformal field theories** associated with an **affine Lie algebra** at a fixed level. They form a system of complex partial differential equations with regular singular points satisfied by the N-point functions of affine primary fields and can be derived using either the formalism of Lie algebras or that of **vertex algebras**.
 
-Let $$\hat{\mathfrak{g}}_{k}$$ denote the affine Lie algebra with level $k$ and dual [Coxeter number](https://en.wikipedia.org/wiki/Coxeter_number) $h$. Let $v$ be a vector from a zero mode representation of $$\hat{\mathfrak{g}}_{k}$$ and $\Phi(v, z)$ the primary field associated with it. Let $t^a$ be a basis of the underlying Lie algebra $\mathfrak{g}$, $t^{a}_{i}$ their representation on the primary field &\Phi(v_i, z)$ and $\eta$ the [Killing form](https://en.wikipedia.org/wiki/Killing_form). Then for $i, j = 1, 2, \ddots , N$ the Knizhnik–Zamolodchikov equations read
+Let $$\hat{\mathfrak{g}}_{k}$$ denote the affine Lie algebra with level $k$ and dual [Coxeter number](https://en.wikipedia.org/wiki/Coxeter_number) $h$. Let $v$ be a vector from a zero mode representation of $$\hat{\mathfrak{g}}_{k}$$ and $\Phi(v, z)$ the primary field associated with it. Let $t^a$ be a basis of the underlying Lie algebra $$\mathfrak{g}$$, $t^{a}_{i}$ their representation on the primary field &$\Phi(v_i, z)$$ and $$\eta$$ the [Killing form](https://en.wikipedia.org/wiki/Killing_form). Then for $i, j = 1, 2, \ldots , N$ the Knizhnik–Zamolodchikov equations read
 
-\[
+$$
 \left( (k + h)\partial_{z_i} + \sum_{j \ne i} \frac{\sum_{a,b} \eta^{ab} t^a_i \otimes t^b_j}{z_i - z_j} \right)
 \langle \Phi(v_N, z_N) \cdots \Phi(v_1, z_1) \rangle = 0.
-\]
+$$
