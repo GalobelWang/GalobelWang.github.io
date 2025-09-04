@@ -48,7 +48,7 @@ If an $[n, k, d_{\min}]_q$ code $\mathcal{C}$ satisfies the **singleton bound** 
 
 The main content of MDS conjecture is that, except for the trivial MDS codes or those with parameters \([2^m+2,\,3,\,2^m]_{q=2^m}\) or \([2^m+2,\,2^m-1,\,4]_{q=2^m}\), all MDS codes satisfy \(n \le q + 1\).
 
-In algebraic formulation, MDS conjecture is that: a set S of vectors of the vector space F_q^k such that every subset of S of size k ≤ q is a basis, has size at most q + 1, unless q is even and k = 3 or k = q − 1, in which case it has size at most q + 2.
+In algebraic formulation, MDS conjecture is that: a set $S$ of vectors of the vector space $F_q^k$ such that every subset of $S$ of size $k \leq q$ is a basis, has size at most $q + 1$, unless $q$ is even and $k = 3$ or $k = q − 1$, in which case it has size at most $q + 2$.
 
 <br>
 
@@ -109,3 +109,14 @@ $$
 Tropical geometry is a variant of algebraic geometry in which polynomial graphs resemble piecewise linear meshes, and in which numbers belong to the tropical semiring instead of a field. Because classical and tropical geometry are closely related, results and methods can be converted between them. Algebraic varieties can be mapped to a tropical counterpart and, since this process still retains some geometric information about the original variety, it can be used to help prove and generalize classical results from algebraic geometry.
 
 Fruitful interactions are emerging between combinatorics and Hodge theory, both in the applications of Hodge theory to address problems in combinatorics. My interest is the tropical analog of the classical Hodge theory for Kähler manifolds, containing **Poincaré Duality**, **Hard Lefschetz theorem** and **Hodge-Riemann relations**, together with their applications in information and coding theory.
+
+### Knizhnik–Zamolodchikov equations
+
+In mathematical physics the **Knizhnik–Zamolodchikov** equations, or KZ equations, are linear differential equations satisfied by the correlation functions (on the Riemann sphere) of two-dimensional **conformal field theories** associated with an **affine Lie algebra** at a fixed level. They form a system of complex partial differential equations with regular singular points satisfied by the N-point functions of affine primary fields and can be derived using either the formalism of Lie algebras or that of **vertex algebras**.
+
+Let $\hat{\mathfrak{g}}_{k}$ denote the affine Lie algebra with level $k$ and dual [Coxeter number](https://en.wikipedia.org/wiki/Coxeter_number) $h$. Let $v$ be a vector from a zero mode representation of $\hat{\mathfrak{g}}_{k}$ and $\Phi(v, z)$ the primary field associated with it. Let $t^a$ be a basis of the underlying Lie algebra $\mathfrak{g}$, $t^{a}_{i}$ their representation on the primary field &\Phi(v_i, z)$ and $\eta$ the [Killing form](https://en.wikipedia.org/wiki/Killing_form). Then for $i, j = 1, 2, \ddots , N$ the Knizhnik–Zamolodchikov equations read
+
+\[
+\left( (k + h)\partial_{z_i} + \sum_{j \ne i} \frac{\sum_{a,b} \eta^{ab} t^a_i \otimes t^b_j}{z_i - z_j} \right)
+\langle \Phi(v_N, z_N) \cdots \Phi(v_1, z_1) \rangle = 0.
+\]
