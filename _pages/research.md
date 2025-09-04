@@ -36,6 +36,22 @@ In "simple" terms, *information topology* regards a statistical system (a collec
 
 [Baudot and Bennequin](https://www.mdpi.com/1099-4300/17/5/3253) first identified Shannon's discrete entropy as a toposic invariant of certain categories of discrete observables. [Juan Pablo Vigneaux](http://www.tac.mta.ca/tac/volumes/35/38/35-38abs.html) and a series of articles extended their results in several directions. Namely, the general homological constructions were abstracted from the concrete setting of discrete variables via  *information structures* (categories that encode the relations of refinement between observables), allowing seamless extensions and generalizations to other settings such as continuous vector-valued observables. 
 
+<br>
+
+# Channel coding theory
+
+I'm also interested in algebraic approach to **coding theory and error-correcting codes**, particularly in connection with group theory, field theory and representation theory.
+
+### Maximun distance separable codes conjecture
+
+If an $[n, k, d_{\min}]_q$ code $\mathcal{C}$ satisfies the **singleton bound** with equality $d_{\min} = n-k+1$, then we call $\mathcal{C}$ a maximun distance separable codes (MDS code).
+
+The main content of MDS conjecture is that, except for the trivial MDS codes or those with parameters \([2^m+2,\,3,\,2^m]_{q=2^m}\) or \([2^m+2,\,2^m-1,\,4]_{q=2^m}\), all MDS codes satisfy \(n \le q + 1\).
+
+In algebraic formulation, MDS conjecture is that: a set S of vectors of the vector space F_q^k such that every subset of S of size k ≤ q is a basis, has size at most q + 1, unless q is even and k = 3 or k = q − 1, in which case it has size at most q + 2.
+
+<br>
+
 # Probability theory
 
 ### Integrable probability
@@ -61,7 +77,6 @@ S= - k_B \sum_{x\in X} p(x) \log p(x),
 $$
 where $p:X\to \mathbb R_{\geq 0}$ satisfies $\sum_{x\in X} p(x) = 1$. 
 
-
 In actual systems, the number of configurations is a priori infinite. The formulas above only make sense on finite portions of the system, and one is forced to consider a limiting procedure. The simplest setting on which one can perform this kind of limiting operation is the *Ising model*: Consider a finite and discrete set 
 $\Lambda \subset \mathbb Z^2$ of sites organized in a square array. Let $s_{x,y}\in \lbrace  +1,-1 \rbrace$ be a "spin" associated to the site $(x,y)\in \Lambda$. Then  $\vec s = \lbrace  s_{x,y} \rbrace_{(x,y)\in \Lambda}$ is a possible configuration of the system. The energy of this configuration is given by the Hamiltonian:
 $$
@@ -74,6 +89,8 @@ $$
 where $T$ is the temperature of the system. This is called today a *Gibb's state.* 
 
 It turns out that the ``typical'' or more probable configurations are very different, depending on the value of $T$.  If $T$ is much smaller that a certain *critical temperature* $T_c$, then the alignment tendency of the spins predominates and one sees big clusters with the same spin. Whereas if $T\gg T_c$, disorder predominates. A phase transition happens at $T_c$. In fact, this $T_c$ is only well defined in the limit where the diameter of $\Lambda$ goes to infinity and the boundary conditions become irrelevant. 
+
+<br>
 
 # Algebra and Geometry
 
