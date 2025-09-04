@@ -108,7 +108,7 @@ $$
 
 Tropical geometry is a variant of algebraic geometry in which polynomial graphs resemble piecewise linear meshes, and in which numbers belong to the tropical semiring instead of a field. Because classical and tropical geometry are closely related, results and methods can be converted between them. Algebraic varieties can be mapped to a tropical counterpart and, since this process still retains some geometric information about the original variety, it can be used to help prove and generalize classical results from algebraic geometry.
 
-Fruitful interactions are emerging between combinatorics and Hodge theory, both in the applications of Hodge theory to address problems in combinatorics. My interest is the tropical analog of the classical Hodge theory for Kähler manifolds, containing **Poincaré Duality**, **Hard Lefschetz theorem** and **Hodge-Riemann relations**, together with their applications in information and coding theory.
+Fruitful interactions are emerging between combinatorics and Hodge theory, both in the applications of Hodge theory to address problems in combinatorics. My interest is the tropical analog of the classical Hodge theory for Kähler manifolds, containing **[Poincaré Duality](https://en.wikipedia.org/wiki/Poincaré_duality)**, **[Hard Lefschetz theorem](https://en.wikipedia.org/wiki/Lefschetz_hyperplane_theorem)** and **[Hodge-Riemann relations](https://en.wikipedia.org/wiki/Riemann_form)**, together with their applications in information and coding theory.
 
 ### Knizhnik–Zamolodchikov equations
 
