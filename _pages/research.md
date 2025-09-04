@@ -38,7 +38,7 @@ In "simple" terms, *information topology* regards a statistical system (a collec
 
 <br>
 
-# Channel coding theory
+# Coding theory
 
 I'm also interested in algebraic approach to **coding theory and error-correcting codes**, particularly in connection with group theory, field theory and representation theory.
 
