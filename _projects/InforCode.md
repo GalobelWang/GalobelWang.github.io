@@ -10,7 +10,7 @@ This is the lecture notes for the Information and Coding Theory course in the De
 
 * Click [here](https://galobelwang.github.io/file/InformationTheory.pdf) to access the lecture notes of **Information theory**. 
 
-* Click [here](https://galobelwang.github.io/file/ChannelCodingTheory.pdf) to access the lecture notes of **Channel coding theory**. 
+* Click [here](/Lecturenotes/ChannelCodeL1) to access the lecture notes of **Channel coding theory**. 
 
 # A brief infroduction to the Information and Coding Theory
 
@@ -20,7 +20,7 @@ In 1948, Claude Shannon, in his paper **[A Mathematical Theory of Communication]
 
 Shannon established two “limit laws” of information processing. **(Source coding theorem)** For an i.i.d. data source, the minimum average number of bits needed for **lossless compression** equals the source entropy $H(X)$; one can approach $H(X)$ arbitrarily closely but cannot do better in the long run. **(Channel coding theorem)** For a noisy channel there exists a **capacity** $C=\max_{p(x)} I(X;Y)$. If the transmission rate $R<C$, the error probability can in principle be driven arbitrarily small; if $R>C$, reliable communication is impossible.
 
-> **Lossless Source Coding Theorem**
+> **Lossless Source Coding Theorem**<br>
 > Let $X_1,\dots,X_n\stackrel{\text{i.i.d.}}{\sim}p_X$ with entropy $H(X)=-\sum_x p_X(x)\log_2 p_X(x)$. For any $\varepsilon>0$ and sufficiently large $n$, there exist an encoder/decoder pair $(f_n,g_n)$ such that
 > $$
 > \Pr\{g_n(f_n(X^n))\neq X^n\}\le \varepsilon,
@@ -32,7 +32,7 @@ Shannon established two “limit laws” of information processing. **(Source co
 > $$
 > Hence the asymptotic minimum lossless compression rate equals $H(X)$.
 
-> **Channel Coding Theorem**
+> **Channel Coding Theorem**<br>
 > For a discrete memoryless channel $p(y|x)$, its capacity is
 > $$
 > C \;=\; \max_{p(x)} I(X;Y).

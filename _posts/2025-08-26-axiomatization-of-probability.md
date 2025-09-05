@@ -168,7 +168,7 @@ Hilbert, who was one of the most important mathematicians of his time, proposed 
 
 >"The investigations on the foundations of geometry suggest
 the problem: To treat in the same manner, by means of axioms, those physical sciences in which mathematics plays an important part; in the first rank are the theory of probabilities and mechanics.<br>
->As to the axioms of the theory of probabilities,* it seems
+>As to the axioms of the theory of probabilities, it seems
 to me desirable that their logical investigation should be
 accompanied by a rigorous and satisfactory development
 of the method of mean values in mathematical physics, and
