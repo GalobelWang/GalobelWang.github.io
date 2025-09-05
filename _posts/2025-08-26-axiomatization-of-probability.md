@@ -3,7 +3,7 @@ layout: distill
 title: Kolmogorov's axiomatization of probability
 description: Where I attempt to provide historical context for Kolmogorov's axiomatization of probability. 
 tags: education
-giscus_comments: true
+giscus_comments: false
 date: 2025-08-26
 featured: true
 
