@@ -33,7 +33,7 @@ toc:
 
 ---
 
-*The history of probability is a complex and convoluted subject that has been treated at length in many books. What I've collected here are just a few aspects of it, that I'd discussed with my students during the first lecture of my course* Ma4 Probability *at Caltech. My aim was to contextualize Kolmogorov's axiomatization of probability theory; namely, to motivate the introduction of the seemingly complex machinery of measure theory to students that are usually only familiar with very elementary accounts of probability.* 
+The history of probability is a complex and convoluted subject that has been treated at length in many books. I've collected here are just a few aspects of it. My aim was to contextualize Kolmogorov's axiomatization of probability theory; namely, to motivate the introduction of the seemingly complex machinery of measure theory to students that are usually only familiar with very elementary accounts of probability.
 
 ## Origins  
 
