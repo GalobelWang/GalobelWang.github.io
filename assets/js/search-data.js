@@ -59,17 +59,6 @@ ninja.data = [{
             window.location.href = "/blog/2025/axiomatization-of-probability/";
           
         },
-      },{id: "post-making-sense-of-the-kolmogorov-backward-equation-for-diffusion-processes",
-        
-          title: "Making sense of the Kolmogorov backward equation (for diffusion processes)",
-        
-        description: "Most of the content here is taken or extrapolated from [Applied stochastic analysis](https://www.ams.org/books/gsm/199/gsm199-endmatter.pdf).",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/Kolmogorov-backward-equation/";
-          
-        },
       },{id: "projects-abstract-algebra",
           title: 'Abstract Algebra',
           description: "",
