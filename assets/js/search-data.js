@@ -45,7 +45,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/ungrading/";
+            window.location.href = "/blog/2025/differential-geometry/";
           
         },
       },{id: "post-kolmogorov-39-s-axiomatization-of-probability",
@@ -67,7 +67,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/KBE/";
+            window.location.href = "/blog/2025/Kolmogorov-backward-equation/";
           
         },
       },{id: "projects-abstract-algebra",
