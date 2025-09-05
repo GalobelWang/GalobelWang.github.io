@@ -3,7 +3,7 @@ layout: distill
 title: A brief introduction to differential geometry
 description: Foundational preliminaries of information geometry
 tags: geometry
-giscus_comments: true
+giscus_comments: false
 date: 2025-08-28
 featured: true
 
