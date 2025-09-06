@@ -159,7 +159,7 @@ llm-instructions: |
 
 ### Introduction
 
-Welcome to the first part of our crash course on Differential Geometry for Machine Learning! In this post, we'll explore the fundamental concept of a **smooth manifold**. Think of manifolds as generalized surfaces – spaces that locally "look like" familiar Euclidean space (e.g., $$\mathbb{R}^n$$) but can have a more complex global structure.
+Here is a brief note on Differential Geometry for Information Geometry! In this post, let's explore the fundamental concept of a **smooth manifold**. Think of manifolds as generalized surfaces – spaces that locally "look like" familiar Euclidean space (e.g., $$\mathbb{R}^n$$) but can have a more complex global structure.
 
 Why are manifolds important in machine learning?
 - The **parameter space** of many machine learning models (like neural networks) can be viewed as a high-dimensional manifold.
