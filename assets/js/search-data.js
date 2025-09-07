@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-a-brief-introduction-to-differential-geometry",
+        },{id: "post-topics-in-algebraic-geometry-codes",
+        
+          title: "Topics in algebraic geometry codes",
+        
+        description: "Some relative research of algebraic geometry codes",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/topics-in-algebraic-geometry-code/";
+          
+        },
+      },{id: "post-a-brief-introduction-to-differential-geometry",
         
           title: "A brief introduction to differential geometry",
         
