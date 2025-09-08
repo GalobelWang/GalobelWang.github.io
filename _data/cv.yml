@@ -66,17 +66,21 @@
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Information theory and Probability
+    - title: Information theory
       items:
-        - Complete Monotonicity of Gaussian distribution (GCM conjecture)
-        - Information geometry and Optimal Transport theory
-        - Hilbert’s Sixth Problem and statistical mechanics
-        - Integrable Probability and Random Walk
-    - title: Algebraic geometry
-      items:
-        - Hodge structure in Probability
-        - Algebraic geometry codes
+        - Gaussian completely monotone conjecture
         - Information topology and information cohomology
+        - Information geometry and Optimal Transport theory
+    - title: Probability
+      items:
+        - Integrable probability
+        - Hodge structure in Probability
+    - title: Coding theory and cryptography
+      items:
+        - Maximun distance separable codes conjecture
+        - Algebraic geometry codes
+        - Braid group cryptography
+
 
 #- title: Projects
 #  type: time_table
