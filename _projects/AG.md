@@ -14,9 +14,9 @@ These are the lecture notes for the course in Complex Geometry and Complex Analy
 
 # A brief introduction to Mittag-Leffler problem and Weierstrass problem
 
-> **Weierstrass** <br> For every sequence $\{m_n\}\subset\mathbb{N}$, there exists a holomorphic function $f$ that has a zero of multiplicity $m_n$ at $a_n$ and no zeros elsewhere.
-
 > **Mittag–Leffler** <br> For every collection $\{g_n\}$ of meromorphic functions, where each $g_n$ is defined on a neighborhood of $a_n$ and has $a_n$ as its only pole, there exists a meromorphic function $g$ whose set of poles is exactly $\{a_n\}$, and whose principal part at $a_n$ agrees with $g_n$.
+
+> **Weierstrass** <br> For every sequence $\{m_n\}\subset\mathbb{N}$, there exists a holomorphic function $f$ that has a zero of multiplicity $m_n$ at $a_n$ and no zeros elsewhere.
 
 # Preface and Motivation of complex algebraic geometry
 

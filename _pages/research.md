@@ -38,7 +38,7 @@ In "simple" terms, *information topology* regards a statistical system (a collec
 
 <br>
 
-# Coding theory
+# Coding theory and cryptography
 
 I'm also interested in algebraic approach to **coding theory and error-correcting codes**, particularly in connection with group theory, field theory and representation theory.
 
@@ -49,6 +49,10 @@ If an $$[n, k, d_{\min}]_q$$ code $$\mathcal{C}$$ satisfies the **singleton boun
 The main content of MDS conjecture is that, except for the trivial MDS codes or those with parameters $$[2^m+2,\,3,\,2^m]_{q=2^m}$$ or $$[2^m+2,\,2^m-1,\,4]_{q=2^m}$$, all MDS codes satisfy $$n \le q + 1$$.
 
 In algebraic formulation, MDS conjecture is that: a set $S$ of vectors of the vector space $F_q^k$ such that every subset of $S$ of size $k \leq q$ is a basis, has size at most $q + 1$, unless $q$ is even and $k = 3$ or $k = q − 1$, in which case it has size at most $q + 2$.
+
+### Braid group cryptography
+
+### Algebraic geometry codes
 
 <br>
 
