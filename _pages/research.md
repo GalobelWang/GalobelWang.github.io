@@ -14,7 +14,7 @@ toc:
 
 ---
 
-# Information theory
+# **Information theory**
 
 More broadly, I'm interested in mathematical aspects of **information theory**, particularly in connection with category theory, algebra and geometry (metric geometry, geometric measure theory, complex algebraic geometry...).
 
@@ -38,7 +38,7 @@ In "simple" terms, *information topology* regards a statistical system (a collec
 
 <br>
 
-# Coding theory and cryptography
+# **Coding theory and cryptography**
 
 I'm also interested in algebraic approach to **coding theory and error-correcting codes**, particularly in connection with group theory, field theory and representation theory.
 
@@ -52,11 +52,25 @@ In algebraic formulation, MDS conjecture is that: a set $S$ of vectors of the ve
 
 ### Braid group cryptography
 
+For $n\ge 2$, the [braid group](https://en.wikipedia.org/wiki/Braid_group) $B_n$ has the Artin presentation
+
+$$
+B_n=\left\langle \sigma_1,\ldots,\sigma_{n-1}\ \middle|\ 
+\begin{aligned}
+&\sigma_i\sigma_j=\sigma_j\sigma_i && \text{for } |i-j|\ge 2,\\
+&\sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1} && \text{for } i=1,\ldots,n-2
+\end{aligned}
+\right\rangle .
+$$
+
+this is called the **Artin presentation**, and the $\sigma_i$ are **Artin’s generators**.
+
+
 ### Algebraic geometry codes
 
 <br>
 
-# Probability theory
+# **Probability theory**
 
 ### Integrable probability
 
@@ -96,7 +110,7 @@ It turns out that the ``typical'' or more probable configurations are very diffe
 
 <br>
 
-# Algebra and Geometry
+# **Algebra and Geometry**
 
 ### Tropical algebraic geometry
 
