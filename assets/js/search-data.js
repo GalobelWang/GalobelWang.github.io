@@ -135,11 +135,6 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/StabilityT/";
-            },},{id: "projects-topics-in-algebra",
-          title: 'Topics in algebra',
-          description: "",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/TopicAlgebra/";
             },},{
         id: 'social-email',
         title: 'email',
