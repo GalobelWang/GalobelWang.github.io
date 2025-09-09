@@ -19,13 +19,14 @@ authors:
 #   - we may want to automate TOC generation in the future using
 #     jekyll-toc plugin (https://github.com/toshimaru/jekyll-toc).
 toc:
-  - name: What is algebraic geometry code?
+  - name: Riemann-Roch theorem in algebraic geometry
     # if a section has subsections, you can add them as follows:
     # subsections:
     #   - name: Example Child Subsection 1
     #   - name: Example Child Subsection 2
-  - name: Algebraic geometry codes over rings
-  - name: Riemann-Roch theorem for codes and matroids
+  - name: Riemann-Roch theorem for codes
+  - name: Riemann-Roch theorem for matroids
+  - name: Riemann-Roch theorem in tropical geometry
 
 llm-instructions: |
   I am using the Chirpy theme in Jekyll.
