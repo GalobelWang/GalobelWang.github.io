@@ -38,7 +38,7 @@ In "simple" terms, *information topology* regards a statistical system (a collec
 
 <br>
 
-# **Coding theory and cryptography**
+# **Coding theory**
 
 I'm also interested in algebraic approach to **coding theory and error-correcting codes**, particularly in connection with group theory, field theory and representation theory.
 
@@ -50,23 +50,31 @@ The main content of MDS conjecture is that, except for the trivial MDS codes or 
 
 In algebraic formulation, MDS conjecture is that: a set $S$ of vectors of the vector space $F_q^k$ such that every subset of $S$ of size $k \leq q$ is a basis, has size at most $q + 1$, unless $q$ is even and $k = 3$ or $k = q − 1$, in which case it has size at most $q + 2$.
 
-### Braid group cryptography
-
-For $n\ge 2$, the [braid group](https://en.wikipedia.org/wiki/Braid_group) $B_n$ has the Artin presentation
-
-$$
-B_n=\left\langle \sigma_1,\ldots,\sigma_{n-1}\ \middle|\ 
-\begin{aligned}
-&\sigma_i\sigma_j=\sigma_j\sigma_i && \text{for } |i-j|\ge 2,\\
-&\sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1} && \text{for } i=1,\ldots,n-2
-\end{aligned}
-\right\rangle .
-$$
-
-this is called the **Artin presentation**, and the $\sigma_i$ are **Artin’s generators**.
-
-
 ### Algebraic geometry codes
+
+Algebraic–geometry (AG) codes use the language of smooth projective curves over a finite field $\mathbb F_q$. The key ingredients are the function field $\mathbb F_q(X)$ of a curve $X$, divisors $D$ and $G$ on $X$, and the Riemann–Roch space $L(G)$ of rational functions whose poles are bounded by $G$. Evaluating functions in $L(G)$ at a set of $\mathbb F_q$-rational points produces codewords; dually, using spaces of differentials $\Omega(G-D)$ and their residues gives parity–check information. This viewpoint can be phrased either in divisor/line–bundle language (via $L(G)=H^0(X,\mathcal O_X(G))$) or in function–field language, and yields a clean duality $C_L^\perp=C_\Omega$.
+
+The standard construction proceeds as follows. Pick $n$ distinct rational points $P_1,\dots,P_n\in X(\mathbb F_q)$ and set $D=\sum_i P_i$. Choose a divisor $G$ whose support is disjoint from $D$. The **evaluation code**
+
+$$
+C_L(X,\mathbf P,G)=\{(f(P_1),\dots,f(P_n)): f\in L(G)\}\subseteq \mathbb F_q^n
+$$
+
+has length $n$, and—when $2g-2<\deg G<n$—dimension and minimum distance obey the Riemann–Roch bounds
+
+$$
+k=\dim C_L=\deg G+1-g,\qquad d\ge n-\deg G.
+$$
+
+The **differential code**
+
+$$
+C_\Omega(X,\mathbf P,G)=\{(\operatorname{res}_{P_1}\omega,\dots,\operatorname{res}_{P_n}\omega): \omega\in \Omega(G-D)\}
+$$
+
+satisfies $C_L^\perp=C_\Omega$ and $d_\Omega\ge \deg G-2g+2$. Classical Reed–Solomon and BCH codes appear as the genus-$0$ special case ($X=\mathbb P^1$), while “Goppa codes” arise from particular choices of $G$ on $\mathbb P^1$. In practice, a basis of $L(G)$ gives a generator matrix; a basis of $\Omega(G-D)$ gives a parity–check matrix.
+
+Performance-wise, AG codes leverage curves with **many rational points** to obtain long lengths over fixed alphabets with strong distance. Asymptotically, for square $q$ there are explicit towers of curves (e.g., the Garcia–Stichtenoth towers) that meet the Tsfasman–Vladut–Zink (TVZ) bound, surpassing the Gilbert–Varshamov bound for large $q$. Concrete families such as Hermitian and Suzuki curves already yield excellent finite-length parameters. On the algorithmic side, there are unique-decoding methods (Feng–Rao, Berlekamp–Massey–Sakata/Gröbner-basis) and list-decoding (Guruswami–Sudan for one-point AG codes) that go beyond the designed distance. The rich duality structure also makes AG codes useful in cryptography (Goppa-based McEliece variants), secret sharing, and constructing quantum CSS codes.
 
 <br>
 
@@ -126,9 +134,22 @@ $$
 
 Tropical geometry is a variant of algebraic geometry in which polynomial graphs resemble piecewise linear meshes, and in which numbers belong to the tropical semiring instead of a field. Because classical and tropical geometry are closely related, results and methods can be converted between them. Algebraic varieties can be mapped to a tropical counterpart and, since this process still retains some geometric information about the original variety, it can be used to help prove and generalize classical results from algebraic geometry.
 
-Fruitful interactions are emerging between combinatorics and Hodge theory, both in the applications of Hodge theory to address problems in combinatorics. My interest is the tropical analog of the classical Hodge theory for Kähler manifolds, containing **[Poincaré Duality](https://en.wikipedia.org/wiki/Poincaré_duality)**, **[Hard Lefschetz theorem](https://en.wikipedia.org/wiki/Lefschetz_hyperplane_theorem)** and **[Hodge-Riemann relations](https://en.wikipedia.org/wiki/Riemann_form)**, together with their applications in information and coding theory.
+Fruitful interactions are emerging between combinatorics and Hodge theory, both in the applications of Hodge theory to address problems in combinatorics. My interest is the tropical analog of the classical Hodge theory for Kähler manifolds, containing **[Poincaré Duality](https://en.wikipedia.org/wiki/Poincaré_duality)**, **[Hard Lefschetz theorem](https://en.wikipedia.org/wiki/Lefschetz_hyperplane_theorem)** and **[Hodge-Riemann relations](https://en.wikipedia.org/wiki/Riemann_form)**, together with their applications in information and channel coding theory.
 
-### Knizhnik–Zamolodchikov equations
+### Braid group and Knizhnik–Zamolodchikov equations
+
+For $n\ge 2$, the [braid group](https://en.wikipedia.org/wiki/Braid_group) $B_n$ has the Artin presentation
+
+$$
+B_n=\left\langle \sigma_1,\ldots,\sigma_{n-1}\ \middle|\ 
+\begin{aligned}
+&\sigma_i\sigma_j=\sigma_j\sigma_i && \text{for } |i-j|\ge 2,\\
+&\sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1} && \text{for } i=1,\ldots,n-2
+\end{aligned}
+\right\rangle .
+$$
+
+this is called the **Artin presentation**, and the $\sigma_i$ are **Artin’s generators**.
 
 In mathematical physics the **Knizhnik–Zamolodchikov** equations, or KZ equations, are linear differential equations satisfied by the correlation functions (on the Riemann sphere) of two-dimensional **conformal field theories** associated with an **affine Lie algebra** at a fixed level. They form a system of complex partial differential equations with regular singular points satisfied by the N-point functions of affine primary fields and can be derived using either the formalism of Lie algebras or that of **vertex algebras**.
 
