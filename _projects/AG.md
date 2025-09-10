@@ -14,9 +14,40 @@ These are the lecture notes for the course in Complex Geometry and Complex Analy
 
 # A brief introduction to Mittag-Leffler problem and Weierstrass problem
 
-> **Mittag–Leffler** <br> For every collection $\{g_n\}$ of meromorphic functions, where each $g_n$ is defined on a neighborhood of $a_n$ and has $a_n$ as its only pole, there exists a meromorphic function $g$ whose set of poles is exactly $\{a_n\}$, and whose principal part at $a_n$ agrees with $g_n$.
+>**Mittag–Leffler** problem <br> Let $$U$$ be an open set in $$\mathbb{C}$$ and $$E \subset U$$ be a subset whose limit points, if any, occur on the boundary of $$U$$.
+>For each $$a \in E$$, let $$p_a(z)$$ be a polynomial in $$1/(z-a)$$ without constant coefficient, i.e. of the form
+>
+>$$
+>p_a(z) = \sum_{n=1}^{N_a} \frac{c_{a,n}}{(z-a)^n}.
+>$$
+>
+>Then there exists a meromorphic function $$f$$ on $$U$$ whose poles are precisely the elements of $$E$$ and such that for each such pole $$a \in E$$, the function $$f(z)-p_a(z)$$ has only a removable singularity at $$a$$; in particular, the principal part of $$f$$ at $$a$$ is $$p_a(z)$$.
+>
+>Furthermore, any other meromorphic function $$g$$ on $$U$$ with these properties can be obtained as $$g=f+h$$, where $$h$$ is an arbitrary holomorphic function on $$U$$.
 
-> **Weierstrass** <br> For every sequence $\{m_n\}\subset\mathbb{N}$, there exists a holomorphic function $f$ that has a zero of multiplicity $m_n$ at $a_n$ and no zeros elsewhere.
+
+>**Weierstrass** problem <br> Let $$U\subset\mathbb C$$ be open and let $$E\subset U$$ be a subset whose limit points (if any) lie on $$\partial U$$. For each $$a\in E$$ prescribe a multiplicity $$m_a\in\mathbb N$$.
+>
+>There exists a holomorphic function $$f$$ on $$U$$ such that:
+>
+>* the zeros of $$f$$ are precisely the points of $$E$$, and
+>* for each $$a\in E$$, the zero of $$f$$ at $$a$$ has multiplicity $$\operatorname{ord}_a(f)=m_a$$;
+>
+>equivalently, the zero divisor of $$f$$ is
+>
+>$$
+>(f)_0=\sum_{a\in E} m_a\,[a],
+>$$
+>
+>and $$f(z)\neq 0$$ for all $$z\in U\setminus E$$.
+>
+>**Uniqueness**: Any other holomorphic function $$g$$ on $$U$$ with these properties is of the form
+>
+>$$
+>g = u\cdot f,
+>$$
+>
+>where $$u$$ is a nowhere-vanishing holomorphic function on $$U$$ (i.e. $$u\in\mathcal O^\times(U)$$). In particular, fixing a normalization such as $$f(z_0)=1$$ for some $$z_0\in U\setminus E$$ yields uniqueness.
 
 # Preface and Motivation of complex algebraic geometry
 
