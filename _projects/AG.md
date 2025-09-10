@@ -10,7 +10,7 @@ These are the lecture notes for the course in Complex Geometry and Complex Analy
 
 * Click [here](https://galobelwang.github.io/file/ComplexAlgebraicGeometry.pdf) to access the lecture notes of **Complex algebraic geometry**, which is a brief introduction to the Kähler manifolds and Hodge structure of complex geometry.
 
-* Click [here](https://galobelwang.github.io/file/AdvancedComplexAnalysis.pdf) to access the lecture notes of **Advanced complex analysis** containing Riemann surface, meromorphic vector bundle, elliptic function and some central problems on compact Riemann surface ([Mittag-Leffler problem](https://en.wikipedia.org/wiki/Mittag-Leffler%27s_theorem), [Weierstrass problem](https://en.wikipedia.org/wiki/Weierstrass_factorization_theorem)).
+* Click [here](https://galobelwang.github.io/file/AdvancedComplexAnalysis.pdf) to access the lecture notes of **Advanced complex analysis** containing Riemann surface, meromorphic vector bundle, elliptic function and some central problems on compact Riemann surface ([Mittag-Leffler problem](https://en.wikipedia.org/wiki/Mittag-Leffler%27s_theorem), [Weierstrass problem](https://en.wikipedia.org/wiki/Weierstrass_factorization_theorem), and the field of meromorphic functions on compact Riemann surface $\mathcal{M}(X)$).
 
 # A brief introduction to Mittag-Leffler problem and Weierstrass problem
 
