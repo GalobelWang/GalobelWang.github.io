@@ -394,7 +394,7 @@ $$
 h^0(C,J)-h^0\!\big(C^\perp,[n]\setminus J\big)=\#J+k-n .
 $$
 
-Since $h^0(C,J)=0$ for $\#J<d=d_{\min}(C)$, introduce the normalized cardinality
+Since $h^0(C,J)=0$ for $|J|<d=d_{\min}(C)$, introduce the normalized cardinality
 
 $$
 |J|_{\mathrm{norm}}=\#J-d.
