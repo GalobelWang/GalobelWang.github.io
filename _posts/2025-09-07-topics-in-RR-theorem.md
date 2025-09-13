@@ -377,7 +377,7 @@ $$
 \xrightarrow{\ \pi_{J'}\ } \mathbb F^{J'}
 \longrightarrow H^1(C,J)
 \longrightarrow H^1(C,J\!\cup\! J')
-\longrightarrow 0. \tag{7}
+\longrightarrow 0. 
 $$
 
 As before, set $h^0(C,J)=\dim H^0(C,J)$ and $h^1(C,J)=\dim H^1(C,J)$.
