@@ -45,7 +45,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/topics-in-algebraic-geometry-code/";
+            window.location.href = "/blog/2025/topics-in-RR-theorem/";
           
         },
       },{id: "post-a-brief-introduction-to-differential-geometry",
