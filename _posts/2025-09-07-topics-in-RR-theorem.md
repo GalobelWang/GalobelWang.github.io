@@ -403,7 +403,7 @@ $$
 Then Riemann-Roch theorem becomes
 
 $$
-h^0(C,J)-h^0\!\big(C^\perp,[n]\setminus J\big)=|J|_{\mathrm{norm}}+1-g \tag{8}
+h^0(C,J)-h^0\!\big(C^\perp,[n]\setminus J\big)=|J|_{\mathrm{norm}}+1-g 
 $$
 
 where $g=n-k-d+1$ is the MDS defect of $C$.
