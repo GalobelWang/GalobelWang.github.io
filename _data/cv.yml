@@ -68,18 +68,19 @@
   contents:
     - title: Information theory
       items:
-        - Gaussian completely monotone conjecture
-        - Information topology and information cohomology
-        - Information geometry and Optimal Transport theory
-    - title: Probability
+        - Gaussian Completely Monotone conjecture
+        - Information Cohomology
+        - Information Geometry
+        - Optimal Transport theory
+    - title: Channel Coding theory
       items:
-        - Integrable probability
-        - Hodge structure in Probability
-    - title: Coding theory and cryptography
+        - Maximun Distance Separable Codes conjecture
+        - Algebraic Geometry Codes
+        - Braid Group Cryptography
+    - title: Algebra and Geometry
       items:
-        - Maximun distance separable codes conjecture
-        - Algebraic geometry codes
-        - Braid group cryptography
+        - Computational Conformal Geometry
+        - Complex Algebraic Geometry
 
 
 #- title: Projects
